@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hensa Solutions — Website
 
-## Getting Started
+Modern Next.js rebuild of [hensa.co.ke](https://www.hensa.co.ke) — Nairobi's leading branding, printing and promotional-gifts agency.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router, TypeScript) + **Tailwind CSS v4**
+- Static product catalog (274 real products scraped from the live WooCommerce store) in `src/data/catalog.json`
+- All product/category images stored locally in `public/products` and `public/categories`
+- **WhatsApp-only enquiries** — no cart, no checkout. Every product opens `wa.me/254721597714` with a pre-filled message (product name, price, quantity, note).
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build (all product pages statically generated)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Route | What's there |
+|---|---|
+| `/` | Hero, services marquee, trust bar, category grid, featured products, methodology, CTA |
+| `/shop` | Full catalogue — category filter, search, sort, load-more |
+| `/product/[slug]` | 274 static product pages with WhatsApp enquiry widget + JSON-LD |
+| `/services` | Branding, design, printing, engraving, embroidery, marketing, web design |
+| `/about` | Who we are, methodology, stats |
+| `/contact` | Contact cards, map, WhatsApp-composer contact form |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Updating content
 
-## Learn More
+- **Products**: edit `src/data/catalog.json` (name, slug, price, priceMax, description, categories, tags, localImage). Drop the image in `public/products/`.
+- **Categories / blurbs**: `src/lib/catalog.ts`
+- **Phone / WhatsApp / address / hours**: `src/lib/site.ts`
+- **Brand colors & design tokens**: `src/app/globals.css` (`--orange`, `--green`, `--ink`, `--paper`)
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- SEO: per-page metadata, `sitemap.xml` (all products), `robots.txt`, Product JSON-LD.
+- Security headers configured in `next.config.ts` (HSTS, nosniff, CSP frame-ancestors, etc.).

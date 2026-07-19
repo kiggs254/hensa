@@ -1,26 +1,253 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #faf7f1;
+  --paper-warm: #f4efe6;
+  --ink: #1c1a16;
+  --ink-soft: #55504a;
+  --orange: #f0521d;
+  --orange-deep: #d43e0e;
+  --green: #33a02c;
+  --green-deep: #1f7d1a;
+  --cream: #fffdf8;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: var(--paper);
+  --color-paper-warm: var(--paper-warm);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-orange: var(--orange);
+  --color-orange-deep: var(--orange-deep);
+  --color-green: var(--green);
+  --color-green-deep: var(--green-deep);
+  --color-cream: var(--cream);
+  --color-wa: #25d366;
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-plex-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--cream);
+}
+
+/* ---------- Print-room textures ---------- */
+
+/* subtle paper grain */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* halftone dot field */
+.halftone {
+  background-image: radial-gradient(currentColor 1.2px, transparent 1.2px);
+  background-size: 14px 14px;
+}
+.halftone-fade {
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+/* crop / registration marks on section corners */
+.cropmarks {
+  position: relative;
+}
+.cropmarks::before,
+.cropmarks::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  opacity: 0.45;
+}
+.cropmarks::before {
+  top: 0;
+  left: 0;
+  border-top: 1.5px solid var(--ink);
+  border-left: 1.5px solid var(--ink);
+}
+.cropmarks::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1.5px solid var(--ink);
+  border-right: 1.5px solid var(--ink);
+}
+
+/* dashed registration rule */
+.regline {
+  background-image: linear-gradient(
+    to right,
+    var(--ink) 33%,
+    transparent 0%
+  );
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+.animate-marquee-slow {
+  animation: marquee 70s linear infinite;
+}
+.animate-marquee-cats {
+  animation: marquee 45s linear infinite;
+}
+.marquee-pause:hover .animate-marquee-cats {
+  animation-play-state: paused;
+}
+.animate-marquee-slow-reverse {
+  animation: marquee 70s linear infinite reverse;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--tilt, 0deg));
+  }
+  50% {
+    transform: translateY(-12px) rotate(var(--tilt, 0deg));
+  }
+}
+.animate-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@keyframes hero-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.animate-hero-progress {
+  animation: hero-progress 6.5s linear both;
+}
+
+/* hide horizontal scrollbars on quick-nav strips */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes wa-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+.animate-wa-pulse {
+  animation: wa-pulse 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-marquee,
+  .animate-marquee-slow,
+  .animate-marquee-slow-reverse,
+  .animate-marquee-cats,
+  .animate-float,
+  .animate-wa-pulse,
+  .animate-hero-progress {
+    animation: none;
+  }
+  .animate-hero-progress {
+    width: 100%;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Type helpers ---------- */
+
+.font-display {
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+}
+.font-mono {
+  font-family: var(--font-plex-mono), monospace;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* spec label — like a printer's spec sheet */
+.spec {
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }

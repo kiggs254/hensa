@@ -1,0 +1,4638 @@
+[
+  {
+    "id": 16408,
+    "name": "Executive Gift Sets 008",
+    "slug": "executive-gift-sets-008",
+    "price": 8500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Gift Sets 008 are perfect for corporate gifting.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/02/gift.jpg",
+    "localImage": "/products/executive-gift-sets-008.jpg"
+  },
+  {
+    "id": 16393,
+    "name": "Pop Up Banner",
+    "slug": "pop-up-banner",
+    "price": 14500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pop Up Banner is a versatile display solution for events and promotions.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Pop Up Banner"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/02/hsbanner1.jpg",
+    "localImage": "/products/pop-up-banner.jpg"
+  },
+  {
+    "id": 16383,
+    "name": "Screen printing mesh 55T (High Quality)",
+    "slug": "screen-printing-mesh-55t-high-quality",
+    "price": 800,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Screen printing mesh 55T (High Quality) is designed for superior printing results.",
+    "categories": [
+      "printing-accessories"
+    ],
+    "tags": [
+      "Printing"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2024/04/hsmesh.jpg",
+    "localImage": "/products/screen-printing-mesh-55t-high-quality.jpg"
+  },
+  {
+    "id": 16382,
+    "name": "Screen printing fine mesh 120T (High Quality)",
+    "slug": "screen-printing-fine-mesh-120t-high-quality",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Screen printing fine mesh 120T is a high-quality product designed for precision printing.",
+    "categories": [
+      "printing-accessories"
+    ],
+    "tags": [
+      "Printing"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/02/Screen-printing-mesh-120T-600x600.jpeg",
+    "localImage": "/products/screen-printing-fine-mesh-120t-high-quality.jpeg"
+  },
+  {
+    "id": 16152,
+    "name": "Jute bag A4 Size",
+    "slug": "jute-bag-a4-size",
+    "price": 400,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a Jute bag in A4 size.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/hs107.jpg",
+    "localImage": "/products/jute-bag-a4-size.jpg"
+  },
+  {
+    "id": 16151,
+    "name": "Jute bag A3 Size",
+    "slug": "jute-bag-a3-size",
+    "price": 300,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Jute bag A3 Size is a versatile and eco-friendly option for carrying your essentials.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/hs109.jpg",
+    "localImage": "/products/jute-bag-a3-size.jpg"
+  },
+  {
+    "id": 16150,
+    "name": "Jute bags A3",
+    "slug": "jute-bags-a3",
+    "price": 550,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Jute bags A3 are eco-friendly and durable, perfect for various uses.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/hs108.jpg",
+    "localImage": "/products/jute-bags-a3.jpg"
+  },
+  {
+    "id": 16149,
+    "name": "Note books A6 Size 001",
+    "slug": "note-books-a6-size-001",
+    "price": 200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "A6 size notebooks suitable for note-taking and journaling.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-72-3.jpg",
+    "localImage": "/products/note-books-a6-size-001.jpg"
+  },
+  {
+    "id": 16148,
+    "name": "Executive Notebooks 005",
+    "slug": "executive-notebooks-005",
+    "price": 750,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black, Brown & Blue",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-64-3.jpg",
+    "localImage": "/products/executive-notebooks-005.jpg"
+  },
+  {
+    "id": 16147,
+    "name": "Notebooks A5 Size 007",
+    "slug": "notebooks-a5-size-007",
+    "price": 500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "A5 size notebooks suitable for note-taking and journaling.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-68-3.jpg",
+    "localImage": "/products/notebooks-a5-size-007.jpg"
+  },
+  {
+    "id": 16146,
+    "name": "Notebooks A5 Size 006",
+    "slug": "notebooks-a5-size-006",
+    "price": 400,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black, Blue & Yellow",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-56-3.jpg",
+    "localImage": "/products/notebooks-a5-size-006.jpg"
+  },
+  {
+    "id": 16145,
+    "name": "Executive Notebooks 006",
+    "slug": "executive-notebooks-006",
+    "price": 800,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black, Blue & Red",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-60-3.jpg",
+    "localImage": "/products/executive-notebooks-006.jpg"
+  },
+  {
+    "id": 16143,
+    "name": "Notebooks A5 Size 001",
+    "slug": "notebooks-a5-size-001",
+    "price": 350,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black, Blue, grey & Brown",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-41-3.jpg",
+    "localImage": "/products/notebooks-a5-size-001.jpg"
+  },
+  {
+    "id": 16142,
+    "name": "Notebooks B5 Size 003",
+    "slug": "notebooks-b5-size-003",
+    "price": 650,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black & Blue",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-53-3.jpg",
+    "localImage": "/products/notebooks-b5-size-003.jpg"
+  },
+  {
+    "id": 16141,
+    "name": "Notebooks A4 size",
+    "slug": "notebooks-a4-size",
+    "price": 800,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue & Black",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-33-3.jpg",
+    "localImage": "/products/notebooks-a4-size.jpg"
+  },
+  {
+    "id": 16140,
+    "name": "Executive Notebooks 004",
+    "slug": "executive-notebooks-004",
+    "price": 750,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue, Brown, Red & Black",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-36-3.jpg",
+    "localImage": "/products/executive-notebooks-004.jpg"
+  },
+  {
+    "id": 16139,
+    "name": "Notebooks A5 Size 003",
+    "slug": "notebooks-a5-size-003",
+    "price": 400,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue, Orange, Black, Red & Grey",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-9-3.jpg",
+    "localImage": "/products/notebooks-a5-size-003.jpg"
+  },
+  {
+    "id": 16138,
+    "name": "Notebooks B5 Size 002",
+    "slug": "notebooks-b5-size-002",
+    "price": 600,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue & Black",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-16-3.jpg",
+    "localImage": "/products/notebooks-b5-size-002.jpg"
+  },
+  {
+    "id": 16137,
+    "name": "Notebooks A5 Size 005",
+    "slug": "notebooks-a5-size-005",
+    "price": 450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue , Dark Green & Orange.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-19-3.jpg",
+    "localImage": "/products/notebooks-a5-size-005.jpg"
+  },
+  {
+    "id": 16076,
+    "name": "Executives Notebooks 003",
+    "slug": "executives-notebooks-003",
+    "price": 750,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Brown, Blue & Black",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-2-3.jpg",
+    "localImage": "/products/executives-notebooks-003.jpg"
+  },
+  {
+    "id": 16067,
+    "name": "Executive Gift Set 010",
+    "slug": "executive-gift-set-010",
+    "price": 5500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal mug, Notebook, Power Bank, Pen, Umbrella & Keyholder",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-19-2.jpg",
+    "localImage": "/products/executive-gift-set-010.jpg"
+  },
+  {
+    "id": 16066,
+    "name": "Executive Gift Sets 007",
+    "slug": "executive-gift-sets-007",
+    "price": 4000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Flask, Notebook, Bluetooth Speaker & Pen.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-23-2.jpg",
+    "localImage": "/products/executive-gift-sets-007.jpg"
+  },
+  {
+    "id": 16065,
+    "name": "Executive Gift Sets 006",
+    "slug": "executive-gift-sets-006",
+    "price": 3500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Flask, Notebook, Business cardholder, Pen & Keyholder.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-4-2.jpg",
+    "localImage": "/products/executive-gift-sets-006.jpg"
+  },
+  {
+    "id": 16064,
+    "name": "Executive Gift Sets 004",
+    "slug": "executive-gift-sets-004",
+    "price": 3000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Notebook, Thermal Flask LED, Pen & Keyholder.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-10-2.jpg",
+    "localImage": "/products/executive-gift-sets-004.jpg"
+  },
+  {
+    "id": 16063,
+    "name": "Executive Gift Sets 002",
+    "slug": "executive-gift-sets-002",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pen, Keyholder, Flash Disk and Business cardholder.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-18-2.jpg",
+    "localImage": "/products/executive-gift-sets-002.jpg"
+  },
+  {
+    "id": 16061,
+    "name": "Executive Gift Sets 005",
+    "slug": "executive-gift-sets-005",
+    "price": 3000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Notebook, Thermal mug & Pen.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-1-1.jpg",
+    "localImage": "/products/executive-gift-sets-005.jpg"
+  },
+  {
+    "id": 16060,
+    "name": "Tumblers",
+    "slug": "tumblers-2",
+    "price": 450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Tumblers are versatile drinkware options suitable for various occasions.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-77-2.jpg",
+    "localImage": "/products/tumblers-2.jpg"
+  },
+  {
+    "id": 16059,
+    "name": "Wooden Water Bottles",
+    "slug": "wooden-water-bottles",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wooden Water Bottles are eco-friendly and stylish hydration solutions.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-85-1.jpg",
+    "localImage": "/products/wooden-water-bottles.jpg"
+  },
+  {
+    "id": 16058,
+    "name": "Metallic Water Bottles 002",
+    "slug": "metallic-water-bottles-002",
+    "price": 500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Grey, Orange, Black, Blue & Red",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-56-2.jpg",
+    "localImage": "/products/metallic-water-bottles-002.jpg"
+  },
+  {
+    "id": 16057,
+    "name": "Water Bottles Plastic 004",
+    "slug": "water-bottles-plastic-004",
+    "price": 650,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Grey, Blue, Green, White & Red",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-62-2.jpg",
+    "localImage": "/products/water-bottles-plastic-004.jpg"
+  },
+  {
+    "id": 16056,
+    "name": "Water Bottles plastic 005",
+    "slug": "water-bottles-plastic-005",
+    "price": 700,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Yellow, Red, orange, Blue, Dark green & Grey",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-69-2.jpg",
+    "localImage": "/products/water-bottles-plastic-005.jpg"
+  },
+  {
+    "id": 16055,
+    "name": "Water Bottles Plastic 002",
+    "slug": "water-bottles-plastic-002",
+    "price": 500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Orange, Blue & Green",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-46-2.jpg",
+    "localImage": "/products/water-bottles-plastic-002.jpg"
+  },
+  {
+    "id": 16054,
+    "name": "Metallic Water bottles",
+    "slug": "metallic-water-bottles",
+    "price": 500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue, Black, Red & white",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-50-2.jpg",
+    "localImage": "/products/metallic-water-bottles.jpg"
+  },
+  {
+    "id": 16053,
+    "name": "Water Bottles(Metallic) 002",
+    "slug": "water-bottlesmetallic-002",
+    "price": 450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Water Bottles (Metallic) 002 are stylish and durable containers for hydration.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-29-2.jpg",
+    "localImage": "/products/water-bottlesmetallic-002.jpg"
+  },
+  {
+    "id": 16052,
+    "name": "Water Bottles(Metallic) 003",
+    "slug": "water-bottlesmetallic-003",
+    "price": 450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Metallic water bottles designed for hydration.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-30-2.jpg",
+    "localImage": "/products/water-bottlesmetallic-003.jpg"
+  },
+  {
+    "id": 16051,
+    "name": "Water Bottles (Metallic) 004",
+    "slug": "water-bottles-metallic-004",
+    "price": 480,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Water Bottles (Metallic) 004 are stylish and durable containers for hydration.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-31-2.jpg",
+    "localImage": "/products/water-bottles-metallic-004.jpg"
+  },
+  {
+    "id": 16050,
+    "name": "Water Bottles Plastic 001",
+    "slug": "water-bottles-plastic-001",
+    "price": 650,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue, Red, Light Green, White, Orange, Dark Green, Grey & Yellow",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-37-2.jpg",
+    "localImage": "/products/water-bottles-plastic-001.jpg"
+  },
+  {
+    "id": 15987,
+    "name": "Water Bottles(Metallic)",
+    "slug": "water-bottlesmetallic",
+    "price": 380,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Metallic water bottles are perfect for hydration on the go.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-28-2.jpg",
+    "localImage": "/products/water-bottlesmetallic.jpg"
+  },
+  {
+    "id": 15962,
+    "name": "Thermal Mugs Wooden",
+    "slug": "thermal-mugs-wooden-2",
+    "price": 1100,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mugs Wooden are perfect for keeping your beverages hot or cold.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-58-1.jpg",
+    "localImage": "/products/thermal-mugs-wooden-2.jpg"
+  },
+  {
+    "id": 15961,
+    "name": "Thermal Suctions Mug (Unspillable)",
+    "slug": "thermal-suctions-mug-unspillable-2",
+    "price": 800,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: white, Black, Blue & Red",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-53-1.jpg",
+    "localImage": "/products/thermal-suctions-mug-unspillable-2.jpg"
+  },
+  {
+    "id": 15959,
+    "name": "Thermal Mug 005",
+    "slug": "thermal-mug-005",
+    "price": 800,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mug 005 is a versatile and practical drinkware option.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-37-1.jpg",
+    "localImage": "/products/thermal-mug-005.jpg"
+  },
+  {
+    "id": 15958,
+    "name": "Tumblers",
+    "slug": "tumblers",
+    "price": 850,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Tumblers are versatile drinkware perfect for various beverages.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-43-1.jpg",
+    "localImage": "/products/tumblers.jpg"
+  },
+  {
+    "id": 15957,
+    "name": "Thermal Flasks",
+    "slug": "thermal-flasks",
+    "price": 850,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Flasks are designed to keep your beverages hot or cold for extended periods. They are made from high-quality stainless steel, ensuring durability and insulation. Available in various sizes and colors, these flasks are perfect for travel, outdoor activities, or daily use. Features include a leak-proof lid and easy-to-clean design.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-45-1.jpg",
+    "localImage": "/products/thermal-flasks.jpg"
+  },
+  {
+    "id": 15954,
+    "name": "Thermal Mug 004",
+    "slug": "thermal-mug-004",
+    "price": 950,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mug 004 is a versatile and practical drinkware option.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-30-1.jpg",
+    "localImage": "/products/thermal-mug-004.jpg"
+  },
+  {
+    "id": 15953,
+    "name": "Thermal Mug 003",
+    "slug": "thermal-mug-003",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mug 003 is a durable and stylish mug designed to keep your beverages hot or cold.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-28-1.jpg",
+    "localImage": "/products/thermal-mug-003.jpg"
+  },
+  {
+    "id": 15952,
+    "name": "Thermal Mug 002",
+    "slug": "thermal-mug-002",
+    "price": 850,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mug 002 is designed to keep your beverages hot or cold for extended periods.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-24-1.jpg",
+    "localImage": "/products/thermal-mug-002.jpg"
+  },
+  {
+    "id": 15951,
+    "name": "Thermal Flask",
+    "slug": "thermal-flask",
+    "price": 900,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Blue(Gold Top), Black, Gold(Gold Top), Grey & Blue(Silver Top).",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-18-1.jpg",
+    "localImage": "/products/thermal-flask.jpg"
+  },
+  {
+    "id": 15948,
+    "name": "Thermal Mug",
+    "slug": "thermal-mug",
+    "price": 900,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This Thermal Mug is perfect for keeping your beverages hot or cold.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Handy"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-7-1.jpg",
+    "localImage": "/products/thermal-mug.jpg"
+  },
+  {
+    "id": 15947,
+    "name": "Thermal Suctions Mug (Unspillable)",
+    "slug": "thermal-suctions-mug-unspillable",
+    "price": 850,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black, Blue & Red.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Handy"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-8-1.jpg",
+    "localImage": "/products/thermal-suctions-mug-unspillable.jpg"
+  },
+  {
+    "id": 15946,
+    "name": "Thermal Mugs Wooden",
+    "slug": "thermal-mugs-wooden",
+    "price": 850,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mugs Wooden are designed to keep your beverages hot or cold for extended periods. These mugs are made from high-quality wood, providing a unique and stylish look. They are perfect for both personal use and as gifts. The thermal insulation ensures that your drinks maintain their temperature, making them ideal for coffee, tea, or any other beverage. Enjoy your drinks on the go with these durable and attractive thermal mugs.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-14-1.jpg",
+    "localImage": "/products/thermal-mugs-wooden.jpg"
+  },
+  {
+    "id": 15945,
+    "name": "Thermal Mugs",
+    "slug": "thermal-mugs",
+    "price": 600,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Mugs are designed to keep your beverages hot or cold for extended periods. They are perfect for travel, outdoor activities, or daily commutes. Made from high-quality stainless steel, these mugs are durable and easy to clean. Available in various colors and sizes, they can be customized with your branding for a personal touch. Minimum order quantity applies.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Handy"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-6-1.jpg",
+    "localImage": "/products/thermal-mugs.jpg"
+  },
+  {
+    "id": 15944,
+    "name": "Thermal Flask Wooden",
+    "slug": "thermal-flask-wooden",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Thermal Flask Wooden is a stylish and functional product.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-3-1.jpg",
+    "localImage": "/products/thermal-flask-wooden.jpg"
+  },
+  {
+    "id": 15943,
+    "name": "Silver",
+    "slug": "silver",
+    "price": 190,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Silver is a premium product that offers exceptional quality and style.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-94.jpg",
+    "localImage": "/products/silver.jpg"
+  },
+  {
+    "id": 15942,
+    "name": "Spoon Mugs",
+    "slug": "spoon-mugs",
+    "price": 250,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Spoon Mugs are uniquely designed mugs that come with a spoon attached for convenience.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-78-1.jpg",
+    "localImage": "/products/spoon-mugs.jpg"
+  },
+  {
+    "id": 15941,
+    "name": "Beer Mugs",
+    "slug": "beer-mugs",
+    "price": 380,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Beer Mugs are perfect for enjoying your favorite beverages.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-84.jpg",
+    "localImage": "/products/beer-mugs.jpg"
+  },
+  {
+    "id": 15940,
+    "name": "Normal Mug",
+    "slug": "normal-mug",
+    "price": 150,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Normal Mug is a versatile drinkware option.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-93.jpg",
+    "localImage": "/products/normal-mug.jpg"
+  },
+  {
+    "id": 15939,
+    "name": "Concave Mugs 003",
+    "slug": "concave-mugs-003",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Big Concave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-77-1.jpg",
+    "localImage": "/products/concave-mugs-003.jpg"
+  },
+  {
+    "id": 15938,
+    "name": "Concave Mugs 002",
+    "slug": "concave-mugs-002",
+    "price": 300,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Coloured Inside",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-74-1.jpg",
+    "localImage": "/products/concave-mugs-002.jpg"
+  },
+  {
+    "id": 15909,
+    "name": "Frost &#038; Clear Mugs",
+    "slug": "frost-clear-mugs",
+    "price": 220,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Frost & Clear Mugs are stylish and functional drinkware options.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-67-1.jpg",
+    "localImage": "/products/frost-clear-mugs.jpg"
+  },
+  {
+    "id": 15908,
+    "name": "Magic Two Tone",
+    "slug": "magic-two-tone",
+    "price": 220,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Magic Two Tone is a versatile product that adds a unique touch to your projects.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-66-1.jpg",
+    "localImage": "/products/magic-two-tone.jpg"
+  },
+  {
+    "id": 15906,
+    "name": "Magic Mugs",
+    "slug": "magic-mugs",
+    "price": 200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Available Colours: Black, Blue & Red",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-68-1.jpg",
+    "localImage": "/products/magic-mugs.jpg"
+  },
+  {
+    "id": 15905,
+    "name": "Concave Mugs 001",
+    "slug": "concave-mugs-001",
+    "price": 150,
+    "priceMax": null,
+    "onSale": false,
+    "description": "White Plain",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-76-1.jpg",
+    "localImage": "/products/concave-mugs-001.jpg"
+  },
+  {
+    "id": 15851,
+    "name": "Two Tone Mugs",
+    "slug": "two-tone-mugs-2",
+    "price": 170,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Two Tone Mugs are stylish and functional drinkware options.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-62-1.jpg",
+    "localImage": "/products/two-tone-mugs-2.jpg"
+  },
+  {
+    "id": 15838,
+    "name": "Pen holders 002",
+    "slug": "pen-holders-002",
+    "price": 200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pen holders 002 are stylish and functional accessories for organizing writing instruments.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Pen Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-17.jpg",
+    "localImage": "/products/pen-holders-002.jpg"
+  },
+  {
+    "id": 15837,
+    "name": "Business Card Holders 003",
+    "slug": "business-card-holders-003",
+    "price": 150,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Business Card Holders 003 are essential accessories for organizing and presenting your business cards.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Normal Card Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-13.jpg",
+    "localImage": "/products/business-card-holders-003.jpg"
+  },
+  {
+    "id": 15836,
+    "name": "Pen Holders",
+    "slug": "pen-holders",
+    "price": 300,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Stylish and functional pen holders for your workspace.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Pen Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-6.jpg",
+    "localImage": "/products/pen-holders.jpg"
+  },
+  {
+    "id": 15835,
+    "name": "Business Card Holders 002",
+    "slug": "business-card-holders-002",
+    "price": 80,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Business Card Holders 002 are essential accessories for organizing and presenting your business cards elegantly.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Normal Card Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-11.jpg",
+    "localImage": "/products/business-card-holders-002.jpg"
+  },
+  {
+    "id": 15833,
+    "name": "Business Card Holders",
+    "slug": "business-card-holders",
+    "price": 130,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Business Card Holders are essential for organizing and presenting your business cards in a professional manner.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Normal Card Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-1.jpg",
+    "localImage": "/products/business-card-holders.jpg"
+  },
+  {
+    "id": 15830,
+    "name": "Plastic Pens 005",
+    "slug": "plastic-pens-005",
+    "price": 20,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Pens 005 are a reliable writing instrument suitable for everyday use.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-44.jpg",
+    "localImage": "/products/plastic-pens-005.jpg"
+  },
+  {
+    "id": 15827,
+    "name": "Plastic Pens 002",
+    "slug": "plastic-pens-002",
+    "price": 40,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Pens 002 are a reliable writing tool.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-41.jpg",
+    "localImage": "/products/plastic-pens-002.jpg"
+  },
+  {
+    "id": 15826,
+    "name": "Plastic Pens 003",
+    "slug": "plastic-pens-003",
+    "price": 20,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Pens 003 are a reliable writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-42.jpg",
+    "localImage": "/products/plastic-pens-003.jpg"
+  },
+  {
+    "id": 15824,
+    "name": "Wooden Pens",
+    "slug": "wooden-pens",
+    "price": 60,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wooden Pens are elegantly crafted writing instruments made from high-quality wood. They offer a unique touch to your writing experience and can be customized for branding purposes.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-34.jpg",
+    "localImage": "/products/wooden-pens.jpg"
+  },
+  {
+    "id": 15823,
+    "name": "Plastic Pens 001",
+    "slug": "plastic-pens-001",
+    "price": 25,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Pens 001 are a great choice for everyday writing needs.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-38.jpg",
+    "localImage": "/products/plastic-pens-001.jpg"
+  },
+  {
+    "id": 15822,
+    "name": "Executive Pens 0016",
+    "slug": "executive-pens-0016",
+    "price": 250,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens 0016 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-32.jpg",
+    "localImage": "/products/executive-pens-0016.jpg"
+  },
+  {
+    "id": 15821,
+    "name": "Executive Pens 0017",
+    "slug": "executive-pens-0017",
+    "price": 80,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens 0017 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-33.jpg",
+    "localImage": "/products/executive-pens-0017.jpg"
+  },
+  {
+    "id": 15820,
+    "name": "Executive Pens 0015",
+    "slug": "executive-pens-0015",
+    "price": 400,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens 0015 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-30.jpg",
+    "localImage": "/products/executive-pens-0015.jpg"
+  },
+  {
+    "id": 15819,
+    "name": "Executive Pens 0014",
+    "slug": "executive-pens-0014",
+    "price": 80,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens 0014 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-28.jpg",
+    "localImage": "/products/executive-pens-0014.jpg"
+  },
+  {
+    "id": 15818,
+    "name": "Executive Pens 0013",
+    "slug": "executive-pens-0013",
+    "price": 250,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens 0013 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-26.jpg",
+    "localImage": "/products/executive-pens-0013.jpg"
+  },
+  {
+    "id": 15817,
+    "name": "Plastic Pens 004",
+    "slug": "plastic-pens-004",
+    "price": 20,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Pens 004 are a great writing tool.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-43.jpg",
+    "localImage": "/products/plastic-pens-004.jpg"
+  },
+  {
+    "id": 15816,
+    "name": "Pen Desk",
+    "slug": "pen-desk",
+    "price": 60,
+    "priceMax": null,
+    "onSale": false,
+    "description": "The Pen Desk is a stylish and functional workspace solution.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-22.jpg",
+    "localImage": "/products/pen-desk.jpg"
+  },
+  {
+    "id": 15814,
+    "name": "Desk Organizer 008",
+    "slug": "desk-organizer-008",
+    "price": 2000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desk Organizer 008 is a functional and stylish addition to your workspace.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Crystal Organizer"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-55.jpg",
+    "localImage": "/products/desk-organizer-008.jpg"
+  },
+  {
+    "id": 15813,
+    "name": "Desk Organizers 009",
+    "slug": "desk-organizers-009",
+    "price": 3500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desk Organizers 009 is a practical solution for keeping your workspace tidy.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Crystal Organizer"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-52.jpg",
+    "localImage": "/products/desk-organizers-009.jpg"
+  },
+  {
+    "id": 15812,
+    "name": "Desk Organizers 010",
+    "slug": "desk-organizers-010",
+    "price": 2200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desk Organizers 010 are designed to help keep your workspace tidy and efficient.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Crystal Organizer"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-50.jpg",
+    "localImage": "/products/desk-organizers-010.jpg"
+  },
+  {
+    "id": 15811,
+    "name": "Desk Organizers 002 (Copy)",
+    "slug": "desk-organizers-002-copy",
+    "price": 4000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desk Organizers 002 is a practical solution for keeping your workspace tidy.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Wooden Organisers"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-48.jpg",
+    "localImage": "/products/desk-organizers-002-copy.jpg"
+  },
+  {
+    "id": 15810,
+    "name": "Desk Organizer 007",
+    "slug": "desk-organizer-007",
+    "price": 2000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desk Organizer 007 is designed to help you organize your desk efficiently. It features multiple compartments for storing pens, papers, and other office supplies, ensuring everything is within reach. The sleek design complements any office decor, making it a perfect addition to your workspace.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Crystal Organizer"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-47.jpg",
+    "localImage": "/products/desk-organizer-007.jpg"
+  },
+  {
+    "id": 15807,
+    "name": "Desk Organizers 002",
+    "slug": "desk-organizers-002",
+    "price": 1700,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desk Organizers 002 are designed to keep your workspace tidy and efficient.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Crystal Organizer"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-45.jpg",
+    "localImage": "/products/desk-organizers-002.jpg"
+  },
+  {
+    "id": 15806,
+    "name": "Flash drive 8GB",
+    "slug": "flash-drive-8gb",
+    "price": 600,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flash drive with 8GB capacity.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-60.jpg",
+    "localImage": "/products/flash-drive-8gb.jpg"
+  },
+  {
+    "id": 15805,
+    "name": "Flash Disk Leather 8GB",
+    "slug": "flash-disk-leather-8gb",
+    "price": 700,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flash Disk Leather 8GB is a stylish and functional storage solution.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-66.jpg",
+    "localImage": "/products/flash-disk-leather-8gb.jpg"
+  },
+  {
+    "id": 15804,
+    "name": "Flash drive 4GB",
+    "slug": "flash-drive-4gb",
+    "price": 550,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flash drive 4GB.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-71.jpg",
+    "localImage": "/products/flash-drive-4gb.jpg"
+  },
+  {
+    "id": 15802,
+    "name": "Flash Drive 32gb",
+    "slug": "flash-drive-32gb",
+    "price": 950,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flash Drive 32gb is a reliable storage solution.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-56.jpg",
+    "localImage": "/products/flash-drive-32gb.jpg"
+  },
+  {
+    "id": 15800,
+    "name": "Plastic Key holders",
+    "slug": "plastic-key-holders",
+    "price": 15,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Key holders are practical and durable accessories for organizing keys. They are designed to keep your keys secure and easily accessible, making them a great addition to your everyday carry.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-83.jpg",
+    "localImage": "/products/plastic-key-holders.jpg"
+  },
+  {
+    "id": 15736,
+    "name": "Sublimatable Key Holders",
+    "slug": "sublimatable-key-holders",
+    "price": 70,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Sublimatable Key Holders are customizable accessories perfect for personal or promotional use.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-82.jpg",
+    "localImage": "/products/sublimatable-key-holders.jpg"
+  },
+  {
+    "id": 15708,
+    "name": "Key holders Leather",
+    "slug": "key-holders-leather",
+    "price": 120,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Key holders made of leather.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-81.jpg",
+    "localImage": "/products/key-holders-leather.jpg"
+  },
+  {
+    "id": 15695,
+    "name": "Leather Key Holder",
+    "slug": "leather-key-holder",
+    "price": 110,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Leather Key Holder is a stylish and functional accessory for organizing your keys.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-80.jpg",
+    "localImage": "/products/leather-key-holder.jpg"
+  },
+  {
+    "id": 15484,
+    "name": "Wooden Key holders",
+    "slug": "wooden-key-holders",
+    "price": 50,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wooden Key holders are stylish and functional accessories for organizing keys.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2023/01/Layer-79.jpg",
+    "localImage": "/products/wooden-key-holders.jpg"
+  },
+  {
+    "id": 9519,
+    "name": "Khaki Gift Bags",
+    "slug": "khaki-gift-bags",
+    "price": 90,
+    "priceMax": 3170,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/SIZES-600x600.jpg",
+    "localImage": "/products/khaki-gift-bags.jpg"
+  },
+  {
+    "id": 9443,
+    "name": "Give Away Non-Woven Bags",
+    "slug": "give-away-non-woven-bags",
+    "price": 30,
+    "priceMax": 3060,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/white-3-600x600.jpg",
+    "localImage": "/products/give-away-non-woven-bags.jpg"
+  },
+  {
+    "id": 9399,
+    "name": "Drawstring Bags",
+    "slug": "drawstring-bags",
+    "price": 280,
+    "priceMax": 340,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/branded-2-600x600.jpg",
+    "localImage": "/products/drawstring-bags.jpg"
+  },
+  {
+    "id": 9361,
+    "name": "D Cut Non-Woven Bags",
+    "slug": "d-cut-non-woven-bags",
+    "price": 30,
+    "priceMax": 350,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/orange-4-600x600.jpg",
+    "localImage": "/products/d-cut-non-woven-bags.jpg"
+  },
+  {
+    "id": 9338,
+    "name": "Plain Jute Bags",
+    "slug": "plain-jute-bags",
+    "price": 650,
+    "priceMax": 3850,
+    "onSale": false,
+    "description": "A4 A3 Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/Plain-Jute-Bag-600x600.jpg",
+    "localImage": "/products/plain-jute-bags.jpg"
+  },
+  {
+    "id": 9315,
+    "name": "Colored Jute Bags",
+    "slug": "colored-jute-bags",
+    "price": 650,
+    "priceMax": 3850,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/Colored-Jute-Bags-Green-600x600.jpg",
+    "localImage": "/products/colored-jute-bags.jpg"
+  },
+  {
+    "id": 9084,
+    "name": "Two Tone Ball Pen",
+    "slug": "two-tone-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a Two Tone Ball Pen.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/two-tone-ball-pen-600x600.jpg",
+    "localImage": "/products/two-tone-ball-pen.jpg"
+  },
+  {
+    "id": 9083,
+    "name": "Sharp Edge Ball Pen",
+    "slug": "sharp-edge-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Sharp Edge Ball Pen is a reliable writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/sharp-edge-ball-pen-600x600.jpg",
+    "localImage": "/products/sharp-edge-ball-pen.jpg"
+  },
+  {
+    "id": 9082,
+    "name": "Primary Ball Pen",
+    "slug": "primary-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "The Primary Ball Pen is a reliable writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/primary-ball-pen-600x600.jpg",
+    "localImage": "/products/primary-ball-pen.jpg"
+  },
+  {
+    "id": 9081,
+    "name": "Neptune Ball Pen",
+    "slug": "neptune-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Neptune Ball Pen is a reliable writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/neptune-ball-pen-600x600.jpg",
+    "localImage": "/products/neptune-ball-pen.jpg"
+  },
+  {
+    "id": 9080,
+    "name": "Flamingo Ball Pen",
+    "slug": "flamingo-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flamingo Ball Pen is a stylish writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/flamingo-ball-pen-600x600.jpg",
+    "localImage": "/products/flamingo-ball-pen.jpg"
+  },
+  {
+    "id": 9079,
+    "name": "Butler Ball Pen",
+    "slug": "butler-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "The Butler Ball Pen is a stylish writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/butler-ball-pen--600x600.jpg",
+    "localImage": "/products/butler-ball-pen.jpg"
+  },
+  {
+    "id": 9078,
+    "name": "Ball Pens – 005",
+    "slug": "ball-pens-005",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ball Pens – 005 are essential writing instruments for everyday use.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/ball-pen-600x600.jpg",
+    "localImage": "/products/ball-pens-005.jpg"
+  },
+  {
+    "id": 9077,
+    "name": "Ball Pens – 004",
+    "slug": "ball-pens-004",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ball Pens – 004 are essential writing instruments for everyday use.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/ball-pen-4-600x600.jpg",
+    "localImage": "/products/ball-pens-004.jpg"
+  },
+  {
+    "id": 9076,
+    "name": "Ball Pens – 003",
+    "slug": "ball-pens-003",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ball Pens – 003 are essential writing instruments for everyday use.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/ball-pen-3-600x600.jpg",
+    "localImage": "/products/ball-pens-003.jpg"
+  },
+  {
+    "id": 9075,
+    "name": "Ball Pens – 002",
+    "slug": "ball-pens-002",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ball Pens – 002 are essential writing instruments suitable for everyday use.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/ball-pen-2-600x600.jpg",
+    "localImage": "/products/ball-pens-002.jpg"
+  },
+  {
+    "id": 9074,
+    "name": "Aruba Ball Pen",
+    "slug": "aruba-ball-pen",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "The Aruba Ball Pen is a stylish writing instrument.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/aruba-ball-pen-600x600.jpg",
+    "localImage": "/products/aruba-ball-pen.jpg"
+  },
+  {
+    "id": 9072,
+    "name": "Executive Pens – 010",
+    "slug": "executive-pens-010",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 010 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/010-600x600.jpg",
+    "localImage": "/products/executive-pens-010.jpg"
+  },
+  {
+    "id": 9071,
+    "name": "Executive Pens – 009",
+    "slug": "executive-pens-009",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 009 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/009-600x600.jpg",
+    "localImage": "/products/executive-pens-009.jpg"
+  },
+  {
+    "id": 9070,
+    "name": "Executive Pens – 008",
+    "slug": "executive-pens-008",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 008 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/008-600x600.jpg",
+    "localImage": "/products/executive-pens-008.jpg"
+  },
+  {
+    "id": 9069,
+    "name": "Executive Pens – 007",
+    "slug": "executive-pens-007",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 007 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/007-600x600.jpg",
+    "localImage": "/products/executive-pens-007.jpg"
+  },
+  {
+    "id": 9068,
+    "name": "Executive Pens – 006",
+    "slug": "executive-pens-006",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 006 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/006-600x600.jpg",
+    "localImage": "/products/executive-pens-006.jpg"
+  },
+  {
+    "id": 9067,
+    "name": "Executive Pens – 005",
+    "slug": "executive-pens-005",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 005 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/005-600x600.jpg",
+    "localImage": "/products/executive-pens-005.jpg"
+  },
+  {
+    "id": 9065,
+    "name": "Executive Pens – 004",
+    "slug": "executive-pens-004",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 004 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/004-600x600.jpg",
+    "localImage": "/products/executive-pens-004.jpg"
+  },
+  {
+    "id": 9064,
+    "name": "Executive Pens – 003",
+    "slug": "executive-pens-003",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 003 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/003-600x600.jpg",
+    "localImage": "/products/executive-pens-003.jpg"
+  },
+  {
+    "id": 9063,
+    "name": "Executive Pens – 002",
+    "slug": "executive-pens-002",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 002 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/002-600x600.jpg",
+    "localImage": "/products/executive-pens-002.jpg"
+  },
+  {
+    "id": 9062,
+    "name": "Executive Pens – 001",
+    "slug": "executive-pens-001",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Executive Pens – 001 are high-quality writing instruments designed for professionals.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/001-600x600.jpg",
+    "localImage": "/products/executive-pens-001.jpg"
+  },
+  {
+    "id": 9042,
+    "name": "Executive Notebook – 008",
+    "slug": "executive-notebook-008",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/all-6-600x600.jpg",
+    "localImage": "/products/executive-notebook-008.jpg"
+  },
+  {
+    "id": 9034,
+    "name": "Executive Notebook – 006",
+    "slug": "executive-notebook-006",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/all-4-600x600.jpg",
+    "localImage": "/products/executive-notebook-006.jpg"
+  },
+  {
+    "id": 9033,
+    "name": "Executive Notebook – 007",
+    "slug": "executive-notebook-007",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/all-5-600x600.jpg",
+    "localImage": "/products/executive-notebook-007.jpg"
+  },
+  {
+    "id": 9025,
+    "name": "Executive Notebook – 004",
+    "slug": "executive-notebook-004",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/all-3-600x600.jpg",
+    "localImage": "/products/executive-notebook-004.jpg"
+  },
+  {
+    "id": 9024,
+    "name": "Executive Notebook – 003",
+    "slug": "executive-notebook-003",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/blue-10-600x600.jpg",
+    "localImage": "/products/executive-notebook-003.jpg"
+  },
+  {
+    "id": 9004,
+    "name": "Executive Notebook – 002",
+    "slug": "executive-notebook-002",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/all-1-600x600.jpg",
+    "localImage": "/products/executive-notebook-002.jpg"
+  },
+  {
+    "id": 8995,
+    "name": "Executive Notebook – 001",
+    "slug": "executive-notebook-001",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/all-600x600.jpg",
+    "localImage": "/products/executive-notebook-001.jpg"
+  },
+  {
+    "id": 8977,
+    "name": "Silver Travel Mug",
+    "slug": "silver-travel-mug",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Handy"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/silver-travel-mug-600x600.jpg",
+    "localImage": "/products/silver-travel-mug.jpg"
+  },
+  {
+    "id": 8976,
+    "name": "Domed Sticker Application",
+    "slug": "domed-sticker-application",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Domed Sticker Application is a product designed for various applications.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/metallic-domed-sticker-application-2-600x600.jpg",
+    "localImage": "/products/domed-sticker-application.jpg"
+  },
+  {
+    "id": 8975,
+    "name": "Cambridge Keyholder",
+    "slug": "cambridge-keyholder",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "The Cambridge Keyholder is a stylish and functional accessory for organizing your keys.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/cambrige-keyholder-600x600.jpg",
+    "localImage": "/products/cambridge-keyholder.jpg"
+  },
+  {
+    "id": 8973,
+    "name": "Executive Notebook with Power Bank &#038; Flash Drive",
+    "slug": "executive-notebook-with-power-bank-flash-drive",
+    "price": 8500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice Power bank Notebook Flash disk Pen Card slot and pen position. Available Colors: Blue, Black Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Power Bank &amp; Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/all-1-600x600.jpg",
+    "localImage": "/products/executive-notebook-with-power-bank-flash-drive.jpg"
+  },
+  {
+    "id": 8972,
+    "name": "Pen With Flash Disk",
+    "slug": "pen-with-flash-disk",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a Pen With Flash Disk.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Pens"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/pen-with-flash-disk-sky-blue-600x600.jpg",
+    "localImage": "/products/pen-with-flash-disk.jpg"
+  },
+  {
+    "id": 8971,
+    "name": "Table Tent Calendars",
+    "slug": "table-tent-calendars",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Table Tent Calendars are a great way to keep your brand visible throughout the year.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Calendars"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/table-tent-calendars-600x600.jpg",
+    "localImage": "/products/table-tent-calendars.jpg"
+  },
+  {
+    "id": 8969,
+    "name": "One Leaf Wall Calendar",
+    "slug": "one-leaf-wall-calendar",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a One Leaf Wall Calendar.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Calendars"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/one-leaf-wall-calendar-600x600.jpg",
+    "localImage": "/products/one-leaf-wall-calendar.jpg"
+  },
+  {
+    "id": 8968,
+    "name": "Desktop Calendars",
+    "slug": "desktop-calendars",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Desktop Calendars are a practical and stylish way to keep track of your schedule.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Calendars"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/desktop-calendars-600x600.jpg",
+    "localImage": "/products/desktop-calendars.jpg"
+  },
+  {
+    "id": 8939,
+    "name": "White Normal Mug",
+    "slug": "white-normal-mug",
+    "price": 400,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options t Sublimation Capacity: 300ml Instructions for a long-lasting mug t Hand wash the mug before the first use t Wash the outside of the mug with a soft sponge or just water to preserve print. t Do not soak the mug in soap t Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. t Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/normal-mug-2-600x600.jpg",
+    "localImage": "/products/white-normal-mug.jpg"
+  },
+  {
+    "id": 8937,
+    "name": "Silver &#038; Gold Mug",
+    "slug": "silver-gold-mug",
+    "price": 650,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation Capacity: 300ml Instructions for a long-lasting mug Hand wash the mug before the first use Wash the outside of the mug with a soft sponge or just water to preserve print. Do not soak the mug in soap Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/Gold-mug-600x600.jpg",
+    "localImage": "/products/silver-gold-mug.jpg"
+  },
+  {
+    "id": 8935,
+    "name": "Heart &#8216;Couple' Mugs",
+    "slug": "heart-couple-mugs",
+    "price": 650,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation Instructions for a long-lasting mug Hand wash the mug before the first use Wash the outside of the mug with a soft sponge or just water to preserve print. Do not soak the mug in soap Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/heart-mug-couple-600x600.jpg",
+    "localImage": "/products/heart-couple-mugs.jpg"
+  },
+  {
+    "id": 8932,
+    "name": "Heart Mug",
+    "slug": "heart-mug",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation Instructions for a long lasting mug Hand wash the mug before the first use Wash the outside of the mug with a soft sponge or just water to preserve print. Do not soak the mug in soap Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/heart-mug-600x600.jpg",
+    "localImage": "/products/heart-mug.jpg"
+  },
+  {
+    "id": 8923,
+    "name": "Magic Mug",
+    "slug": "magic-mug",
+    "price": 925,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation Capacity: 300ml Instructions for a long-lasting mug Hand wash the mug before the first use Wash the outside of the mug with a soft sponge or just water to preserve print. Do not soak the mug in soap Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/magic-mug-illustration-600x600.jpg",
+    "localImage": "/products/magic-mug.jpg"
+  },
+  {
+    "id": 8921,
+    "name": "Plastic Keyholders",
+    "slug": "plastic-keyholders",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Plastic Keyholders are practical and versatile accessories for organizing keys.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/PLASTIC-KEYHOLDER-600x600.jpg",
+    "localImage": "/products/plastic-keyholders.jpg"
+  },
+  {
+    "id": 8877,
+    "name": "Gold Sequin Throw Pillow",
+    "slug": "gold-sequin-throw-pillow",
+    "price": 1100,
+    "priceMax": 1800,
+    "onSale": true,
+    "description": "Branding Options Screen Print Vinyl Print",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Black Throw Pillow"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/gold-sequin-throw-pillow-600x600.jpg",
+    "localImage": "/products/gold-sequin-throw-pillow.jpg"
+  },
+  {
+    "id": 8874,
+    "name": "Love Mom Throw Pillow",
+    "slug": "love-mom-throw-pillow",
+    "price": 1100,
+    "priceMax": 1800,
+    "onSale": true,
+    "description": "Branding Options Screen Print Vinyl Print",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Black Throw Pillow"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/love-mom-throw-pillow-600x600.jpg",
+    "localImage": "/products/love-mom-throw-pillow.jpg"
+  },
+  {
+    "id": 8871,
+    "name": "Wife Throw Pillow",
+    "slug": "wife-throw-pillow",
+    "price": 1100,
+    "priceMax": 1800,
+    "onSale": true,
+    "description": "Branding Options Screen Print Vinyl Print",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Black Throw Pillow"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wife-throw-pillow-600x600.jpg",
+    "localImage": "/products/wife-throw-pillow.jpg"
+  },
+  {
+    "id": 8770,
+    "name": "Waist Apron",
+    "slug": "waist-apron",
+    "price": 500,
+    "priceMax": 750,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Aprons"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/waist-apron-green-600x600.jpg",
+    "localImage": "/products/waist-apron.jpg"
+  },
+  {
+    "id": 8737,
+    "name": "3D Non-Woven Bags",
+    "slug": "3d-non-woven-bags",
+    "price": 40,
+    "priceMax": 3080,
+    "onSale": false,
+    "description": "Branding Options Screen Print MOQ 1,000pcs",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/blue-6-600x600.jpg",
+    "localImage": "/products/3d-non-woven-bags.jpg"
+  },
+  {
+    "id": 8603,
+    "name": "Glossy/Matte Finish Gift Bags",
+    "slug": "glossy-matte-finish-gift-bags",
+    "price": 130,
+    "priceMax": 3280,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/black-3-600x600.jpg",
+    "localImage": "/products/glossy-matte-finish-gift-bags.jpg"
+  },
+  {
+    "id": 8600,
+    "name": "Grocery Bags",
+    "slug": "grocery-bags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Grocery Bags are versatile and practical for carrying items.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/GROCERY-600x600.jpg",
+    "localImage": "/products/grocery-bags.jpg"
+  },
+  {
+    "id": 8583,
+    "name": "Branded Jute Bags",
+    "slug": "branded-jute-bags",
+    "price": 650,
+    "priceMax": 3850,
+    "onSale": false,
+    "description": "A4 A3 Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/jute-bag-3-600x600.jpg",
+    "localImage": "/products/branded-jute-bags.jpg"
+  },
+  {
+    "id": 8572,
+    "name": "Madison Tote Conference Bag",
+    "slug": "madison-tote-conference-bag",
+    "price": 850,
+    "priceMax": 3850,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/madison-tone-tote-bag-black-600x600.jpg",
+    "localImage": "/products/madison-tote-conference-bag.jpg"
+  },
+  {
+    "id": 8569,
+    "name": "Tote Conference Bag",
+    "slug": "tote-conference-bag",
+    "price": 850,
+    "priceMax": 2350,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/cream-600x600.jpg",
+    "localImage": "/products/tote-conference-bag.jpg"
+  },
+  {
+    "id": 8563,
+    "name": "Laptop Bags",
+    "slug": "laptop-bags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Laptop Bags are designed to provide protection and style for your devices.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/bag-5-600x600.jpg",
+    "localImage": "/products/laptop-bags.jpg"
+  },
+  {
+    "id": 8562,
+    "name": "Messenger Bag",
+    "slug": "black-messenger-bag",
+    "price": 1300,
+    "priceMax": 3800,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/black-messenger-conference-bag-600x600.jpg",
+    "localImage": "/products/black-messenger-bag.jpg"
+  },
+  {
+    "id": 8544,
+    "name": "Tone Tote Conference Bags",
+    "slug": "tone-tote-conference-bags",
+    "price": 950,
+    "priceMax": 2950,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/12/black-2-600x600.jpg",
+    "localImage": "/products/tone-tote-conference-bags.jpg"
+  },
+  {
+    "id": 8533,
+    "name": "Valentine Card",
+    "slug": "valentine-card",
+    "price": 150,
+    "priceMax": 550,
+    "onSale": false,
+    "description": "This Valentine Card is perfect for expressing your feelings to someone special.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Valentine Card"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/valentine-card-600x600.jpg",
+    "localImage": "/products/valentine-card.jpg"
+  },
+  {
+    "id": 8528,
+    "name": "Success Card",
+    "slug": "success-card",
+    "price": 150,
+    "priceMax": 550,
+    "onSale": false,
+    "description": "Success Card is a thoughtful way to express your feelings and celebrate special moments.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Success Card"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/success-card-600x600.jpg",
+    "localImage": "/products/success-card.jpg"
+  },
+  {
+    "id": 8523,
+    "name": "Sympathy Card",
+    "slug": "sympathy-card",
+    "price": 150,
+    "priceMax": 550,
+    "onSale": false,
+    "description": "Sympathy Card is designed to convey your heartfelt sentiments during difficult times.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Sympathy Card"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/sympathy-card-600x600.jpg",
+    "localImage": "/products/sympathy-card.jpg"
+  },
+  {
+    "id": 8379,
+    "name": "White Water Bottles",
+    "slug": "white-water-bottles",
+    "price": 1150,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/white-water-bottle-005-600x600.jpg",
+    "localImage": "/products/white-water-bottles.jpg"
+  },
+  {
+    "id": 8378,
+    "name": "Double Wall Water Bottles",
+    "slug": "double-wall-water-bottles",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation This product features custom branding options.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/500-ml-Double-wall-water-bottle-600x600.jpg",
+    "localImage": "/products/double-wall-water-bottles.jpg"
+  },
+  {
+    "id": 8376,
+    "name": "White Travel Mug",
+    "slug": "white-travel-mug",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Handy"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/white-travel-mug-600x600.jpg",
+    "localImage": "/products/white-travel-mug.jpg"
+  },
+  {
+    "id": 8370,
+    "name": "Colored Thermos",
+    "slug": "colored-thermos",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving 1 position print.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Green-Thermos--600x600.jpg",
+    "localImage": "/products/colored-thermos.jpg"
+  },
+  {
+    "id": 8359,
+    "name": "X Banners",
+    "slug": "x-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "X Banners are a great promotional tool for events and advertising.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "X Banners"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/banner-1-600x600.jpg",
+    "localImage": "/products/x-banners.jpg"
+  },
+  {
+    "id": 8355,
+    "name": "Telescopic Banners",
+    "slug": "telescopic-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Telescopic Banners are versatile and portable display solutions for events and promotions.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Telescopic"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/sizes-600x600.jpg",
+    "localImage": "/products/telescopic-banners.jpg"
+  },
+  {
+    "id": 8350,
+    "name": "Tear Drop Banners",
+    "slug": "tear-drop-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Tear Drop Banners are a great way to promote your brand or event.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Tear Drop"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/tear-drop-1-600x600.jpg",
+    "localImage": "/products/tear-drop-banners.jpg"
+  },
+  {
+    "id": 8345,
+    "name": "Table Top Banners",
+    "slug": "table-top-banners",
+    "price": 2500,
+    "priceMax": 3500,
+    "onSale": false,
+    "description": "Branding Materials: Satin Banner",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Table Top"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/2-2-600x600.jpg",
+    "localImage": "/products/table-top-banners.jpg"
+  },
+  {
+    "id": 8341,
+    "name": "Narrow Base Banners",
+    "slug": "narrow-base-banners",
+    "price": 8500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Materials: Satin Banner",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Narrow Base Banners"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/narrow-base-1-600x600.jpg",
+    "localImage": "/products/narrow-base-banners.jpg"
+  },
+  {
+    "id": 8337,
+    "name": "Lamppost Banners",
+    "slug": "lamppost-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Lamppost Banners are a great way to enhance visibility and promote events or businesses.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Lamppost Banners"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/3-600x600.jpg",
+    "localImage": "/products/lamppost-banners.jpg"
+  },
+  {
+    "id": 8332,
+    "name": "Gazebos Banner",
+    "slug": "gazebos-banner",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Gazebos Banner is a versatile product suitable for various outdoor events.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Gazebos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/2-600x600.jpg",
+    "localImage": "/products/gazebos-banner.jpg"
+  },
+  {
+    "id": 8327,
+    "name": "Eyelet or Hanging Banners",
+    "slug": "eyelet-or-hanging-banners",
+    "price": 1200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Hanging Banners"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Eyelet-1-600x600.jpg",
+    "localImage": "/products/eyelet-or-hanging-banners.jpg"
+  },
+  {
+    "id": 8300,
+    "name": "Broad Base Pull Up Banners",
+    "slug": "broad-base-banner",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Broad Base Pull Up Banners are versatile and portable display solutions for events and promotions.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Broad Base"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/broad-base-banner-3-600x600.jpg",
+    "localImage": "/products/broad-base-banner.jpg"
+  },
+  {
+    "id": 8303,
+    "name": "Billboards",
+    "slug": "billboards",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Billboards are large outdoor advertising structures designed to capture attention and convey messages effectively.",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Billboards"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/4-600x600.jpg",
+    "localImage": "/products/billboards.jpg"
+  },
+  {
+    "id": 8302,
+    "name": "Backdrop Banner",
+    "slug": "backdrop-banner",
+    "price": 13500,
+    "priceMax": 14500,
+    "onSale": false,
+    "description": "Branding Materials: Satin Banner",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Backdrop Banner"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/back-drop-banner-600x600.jpg",
+    "localImage": "/products/backdrop-banner.jpg"
+  },
+  {
+    "id": 8296,
+    "name": "Pylon Signages",
+    "slug": "pylon-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pylon Signages are designed to provide clear visibility and branding for your business.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/pylon-signages-600x600.jpg",
+    "localImage": "/products/pylon-signages.jpg"
+  },
+  {
+    "id": 8295,
+    "name": "Lightbox Signages",
+    "slug": "lightbox-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Lightbox Signages are a great way to enhance visibility and attract attention.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/lightbox-signages-600x600.jpg",
+    "localImage": "/products/lightbox-signages.jpg"
+  },
+  {
+    "id": 8297,
+    "name": "Led Signages",
+    "slug": "led-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "LED signages are a great way to enhance visibility and communication.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/led-signages-600x600.jpg",
+    "localImage": "/products/led-signages.jpg"
+  },
+  {
+    "id": 8293,
+    "name": "Glass Signages",
+    "slug": "glass-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Glass Signages are a great way to enhance your space.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Glass-signages-600x600.jpg",
+    "localImage": "/products/glass-signages.jpg"
+  },
+  {
+    "id": 8290,
+    "name": "Directional Signages 2",
+    "slug": "directional-signages-2",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Directional Signages 2 are designed to provide clear guidance and information in various settings.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/directional-signages-2-600x600.jpg",
+    "localImage": "/products/directional-signages-2.jpg"
+  },
+  {
+    "id": 8289,
+    "name": "3D Signages",
+    "slug": "3d-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "3D Signages are visually striking and customizable displays that enhance your branding.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/3D-signages-600x600.jpg",
+    "localImage": "/products/3d-signages.jpg"
+  },
+  {
+    "id": 8281,
+    "name": "2D Signages",
+    "slug": "2d-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "2D Signages are versatile and customizable signage solutions.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/2D-signages-600x600.jpg",
+    "localImage": "/products/2d-signages.jpg"
+  },
+  {
+    "id": 8279,
+    "name": "Sequin Pillow",
+    "slug": "sequin-pillow",
+    "price": 1450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Sequin pillows are a stylish and playful addition to any room, perfect for adding a touch of glamour.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Sequin Pillow"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/sequin-piloow-600x600.jpg",
+    "localImage": "/products/sequin-pillow.jpg"
+  },
+  {
+    "id": 8271,
+    "name": "Black Throw Pillow",
+    "slug": "black-throw-pillow",
+    "price": 1100,
+    "priceMax": 1800,
+    "onSale": true,
+    "description": "Branding Options Screen Print Vinyl Print",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Black Throw Pillow"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/black-throw-pillow-600x600.jpg",
+    "localImage": "/products/black-throw-pillow.jpg"
+  },
+  {
+    "id": 8264,
+    "name": "Wallets",
+    "slug": "wallets",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wallets are designed to be both stylish and functional, perfect for everyday use.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Wallets"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/inside-4-600x600.jpg",
+    "localImage": "/products/wallets.jpg"
+  },
+  {
+    "id": 8237,
+    "name": "Family Photo Book",
+    "slug": "family-photo-book",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a Family Photo Book.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Family Photo Book"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/family-600x600.jpg",
+    "localImage": "/products/family-photo-book.jpg"
+  },
+  {
+    "id": 8234,
+    "name": "Engraved Gift",
+    "slug": "engraved-gift",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Engraved Gift is a personalized item perfect for special occasions.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Wooden Awards"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wife-gift-600x600.jpg",
+    "localImage": "/products/engraved-gift.jpg"
+  },
+  {
+    "id": 8229,
+    "name": "Personalised Message Frames",
+    "slug": "personalised-message-frames",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Personalised Message Frames are a unique way to display your cherished memories.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Personalised Message Frames"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/personlised-message-frames-600x600.jpg",
+    "localImage": "/products/personalised-message-frames.jpg"
+  },
+  {
+    "id": 8224,
+    "name": "Wall Mounts",
+    "slug": "wall-mounts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wall Mounts are essential for securely displaying your items.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Wall Mounts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/canvas-paper-print-600x600.jpg",
+    "localImage": "/products/wall-mounts.jpg"
+  },
+  {
+    "id": 8223,
+    "name": "Frame Photos",
+    "slug": "frame-photos",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Frame Photos are perfect for displaying your cherished memories.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Frame Photos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/frame-600x600.jpg",
+    "localImage": "/products/frame-photos.jpg"
+  },
+  {
+    "id": 8217,
+    "name": "Tech Business Gift Set",
+    "slug": "tech-business-gift-set",
+    "price": 8500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice. Thermal flask Mouse power bank OTG flash disk Pen & Bookmark Available Colors Gold Black Blue Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Tech Business Gift Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Gold-2-600x600.jpg",
+    "localImage": "/products/tech-business-gift-set.jpg"
+  },
+  {
+    "id": 8202,
+    "name": "Stationery Business Set",
+    "slug": "stationery-business-set",
+    "price": 3500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice Contents 8GB Flash Drive Key Holder Ballpoint Pen Business Card Holder A packaging box Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Stationery Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Gold-1-600x600.jpg",
+    "localImage": "/products/stationery-business-set.jpg"
+  },
+  {
+    "id": 8201,
+    "name": "Executive Business Gift Set with Power Bank",
+    "slug": "executive-business-gift-set-with-power-bank",
+    "price": 10200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice The set contains the following items: Thermal Flask Notebook Pen & Bluetooth speaker. power bank Available in wood finish Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Power Bank &amp; Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/power-bank-2-600x600.jpg",
+    "localImage": "/products/executive-business-gift-set-with-power-bank.jpg"
+  },
+  {
+    "id": 8191,
+    "name": "Executive Business Set with card holder",
+    "slug": "executive-business-set-with-card-holder",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Business Set with a card holder.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Set with card holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/black-24-600x600.jpg",
+    "localImage": "/products/executive-business-set-with-card-holder.jpg"
+  },
+  {
+    "id": 8185,
+    "name": "Executive Business Set",
+    "slug": "executive-business-set",
+    "price": 4500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice The set contains the following items: A pen An A5 leather cue notebook A thermos, 500ml A business card holder A packaging box (40cm x 28cm x 8cm) Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Executive Business Set"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Gold-600x600.jpg",
+    "localImage": "/products/executive-business-set.jpg"
+  },
+  {
+    "id": 8184,
+    "name": "Executive Business Gift Set with a Speaker",
+    "slug": "executive-business-gift-set-with-a-speaker",
+    "price": 4500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice The set contains the following items: Thermal Flask Notebook Pen & Bluetooth speaker. Available Colors: Black, Red, Blue Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Set with a Speaker"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/red-25-600x600.jpg",
+    "localImage": "/products/executive-business-gift-set-with-a-speaker.jpg"
+  },
+  {
+    "id": 8175,
+    "name": "Wooden Awards",
+    "slug": "wooden-awards",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wooden Awards are a perfect way to recognize achievements.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Wooden Awards"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wooden-4-600x600.jpg",
+    "localImage": "/products/wooden-awards.jpg"
+  },
+  {
+    "id": 8174,
+    "name": "Corporate Crystals Awards",
+    "slug": "corporate-crystals-awards",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Corporate Crystals Awards are elegant recognition pieces designed to celebrate achievements.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Corporate Crystals Awards"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Crystal-600x600.png",
+    "localImage": "/products/corporate-crystals-awards.png"
+  },
+  {
+    "id": 8169,
+    "name": "Certificates Awards",
+    "slug": "certificates-awards",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Digital Printing Paper Grammage Art 350gsm Ivory paper Antelope / Embossed paper NB The certificate doesn’t come with the frame. The frame used for display purposes only.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Certificates"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/woooden-frame-engraved-cert-2-600x600.jpg",
+    "localImage": "/products/certificates-awards.jpg"
+  },
+  {
+    "id": 8160,
+    "name": "Pen and Holder",
+    "slug": "pen-and-holder",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Custom branded with name, logo, or brand of choice Contents Key Holder Executive pen Branding Options Laser Engraving",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Pen Gifset"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/black-2-1-600x600.jpg",
+    "localImage": "/products/pen-and-holder.jpg"
+  },
+  {
+    "id": 8157,
+    "name": "Wooden Flash Drive",
+    "slug": "wooden-flash-drive",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wooden Flash Drive is a stylish and eco-friendly storage solution for your data. Its unique wooden design adds a touch of elegance, while providing reliable performance. Perfect for personal use or as a corporate gift.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Wooden Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wooden-flash-drive--600x600.jpg",
+    "localImage": "/products/wooden-flash-drive.jpg"
+  },
+  {
+    "id": 8155,
+    "name": "Steel USB",
+    "slug": "steel-usb",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a Steel USB.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Steel USB"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/USB-steel--600x600.jpg",
+    "localImage": "/products/steel-usb.jpg"
+  },
+  {
+    "id": 8153,
+    "name": "Rotary USB",
+    "slug": "rotary-usb",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Rotary USB is a versatile and practical product.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Rotary USB"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Rotary-USB-600x600.jpg",
+    "localImage": "/products/rotary-usb.jpg"
+  },
+  {
+    "id": 8147,
+    "name": "Wooden Organisers",
+    "slug": "wooden-organisers",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wooden Organisers are perfect for keeping your space tidy and organized.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Wooden Organisers"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wooden-1-600x600.jpg",
+    "localImage": "/products/wooden-organisers.jpg"
+  },
+  {
+    "id": 8138,
+    "name": "Multi Holder",
+    "slug": "multi-holder",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Multi Holder is a versatile product designed for organizing and holding various items.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Multi Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/holders-600x600.jpg",
+    "localImage": "/products/multi-holder.jpg"
+  },
+  {
+    "id": 8136,
+    "name": "Leather Holder",
+    "slug": "leather-holder",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Leather Holder is a stylish and functional accessory.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Leather Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/leather-holder-600x600.jpg",
+    "localImage": "/products/leather-holder.jpg"
+  },
+  {
+    "id": 8129,
+    "name": "Stainless Steel Holder",
+    "slug": "stainless-steel-holder",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Stainless Steel Holder is a durable and stylish accessory for your space.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Stainless Steel Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/stainless-steel-holder-600x600.jpg",
+    "localImage": "/products/stainless-steel-holder.jpg"
+  },
+  {
+    "id": 8120,
+    "name": "Pit Shirts",
+    "slug": "pit-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pit Shirts are versatile and comfortable shirts suitable for various occasions.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Pit Shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/pit-shirt-light-blue-1-600x600.jpg",
+    "localImage": "/products/pit-shirts.jpg"
+  },
+  {
+    "id": 8117,
+    "name": "Robertson Shirts",
+    "slug": "robertson-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Robertson Shirts are stylish and versatile garments suitable for various occasions.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Robertson Shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/robertson-shirt-navy-blue-1-600x600.jpg",
+    "localImage": "/products/robertson-shirts.jpg"
+  },
+  {
+    "id": 8113,
+    "name": "Racewear Shirts",
+    "slug": "racewear-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Racewear Shirts are designed for performance and comfort.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Racewear Shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/racewear-pink-1-600x600.jpg",
+    "localImage": "/products/racewear-shirts.jpg"
+  },
+  {
+    "id": 8111,
+    "name": "Gents Shirts",
+    "slug": "gents-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Gents Shirts are stylish and comfortable attire for men.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Men Shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Options-1-600x600.jpg",
+    "localImage": "/products/gents-shirts.jpg"
+  },
+  {
+    "id": 8109,
+    "name": "Daytona Shirts",
+    "slug": "daytona-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Daytona Shirts are stylish and versatile garments suitable for various occasions.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Daytona Shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/daytona-1-600x600.jpg",
+    "localImage": "/products/daytona-shirts.jpg"
+  },
+  {
+    "id": 8102,
+    "name": "Ladies Apparel Design 2",
+    "slug": "ladies-apparel-design-2",
+    "price": 500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ladies Apparel Design 2 is a stylish clothing option for women.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Ladies Apparels"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/black-20-600x600.jpg",
+    "localImage": "/products/ladies-apparel-design-2.jpg"
+  },
+  {
+    "id": 8091,
+    "name": "Ladies Design Options",
+    "slug": "ladies-design-options",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ladies Design Options are available for customization.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Shirt Options"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/options-600x600.jpg",
+    "localImage": "/products/ladies-design-options.jpg"
+  },
+  {
+    "id": 8052,
+    "name": "Rubber Stamps &#038; Company Seal",
+    "slug": "rubber-stamps-company-seal",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Rubber Stamps & Company Seal are essential tools for branding and personalization.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "rubber stamps &amp; company seal"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/sel-inking-2-600x600.jpg",
+    "localImage": "/products/rubber-stamps-company-seal.jpg"
+  },
+  {
+    "id": 8047,
+    "name": "Publications",
+    "slug": "publications",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Publications are essential resources for sharing information.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Publications"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/AGMs-600x600.jpg",
+    "localImage": "/products/publications.jpg"
+  },
+  {
+    "id": 8015,
+    "name": "Payments and Vouchers",
+    "slug": "payments-and-vouchers",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Payments and Vouchers are essential tools for managing transactions and rewards.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "payments and vouchers"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/item-voucher-600x600.jpg",
+    "localImage": "/products/payments-and-vouchers.jpg"
+  },
+  {
+    "id": 7995,
+    "name": "Executive Notebook – 005 (A5 Size)",
+    "slug": "executive-notebook-005",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is an Executive Notebook – 005 in A5 size.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/all-600x600.jpg",
+    "localImage": "/products/executive-notebook-005.jpg"
+  },
+  {
+    "id": 7990,
+    "name": "Customised Notebook",
+    "slug": "customised-notebook",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a customised notebook.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Notebooks"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Top-bindingspiral-600x600.jpg",
+    "localImage": "/products/customised-notebook.jpg"
+  },
+  {
+    "id": 7982,
+    "name": "Leather Folders",
+    "slug": "leather-folders",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Leather Folders are stylish and functional accessories for organizing documents.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Folders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/inside-600x600.jpg",
+    "localImage": "/products/leather-folders.jpg"
+  },
+  {
+    "id": 7978,
+    "name": "Customised Folders",
+    "slug": "customised-folders",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Customised Folders are tailored to meet your specific needs.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Folders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/folder-1-600x600.jpg",
+    "localImage": "/products/customised-folders.jpg"
+  },
+  {
+    "id": 7974,
+    "name": "Flyers",
+    "slug": "flyers",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flyers are a great way to promote your business or event.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Flyers"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/one-side-flyer-A5-600x600.jpg",
+    "localImage": "/products/flyers.jpg"
+  },
+  {
+    "id": 7968,
+    "name": "Coasters",
+    "slug": "coasters",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Coasters are essential for protecting surfaces while adding a touch of style to your home or office.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Coasters"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/coaster-1-600x600.jpg",
+    "localImage": "/products/coasters.jpg"
+  },
+  {
+    "id": 7964,
+    "name": "Brochures",
+    "slug": "brochures",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Offset Printing Digital Printing Options: Trifold Brochure – Both sides DL Bifold Brochure Square trifold brochure",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Brochures"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/DL-bifold-brochure-600x600.jpg",
+    "localImage": "/products/brochures.jpg"
+  },
+  {
+    "id": 7946,
+    "name": "Diary 001",
+    "slug": "diary-001",
+    "price": 1250,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Size Available: A5 Branding Options Laser Engraving Pad Printing",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Diary"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/brown-4-600x600.jpg",
+    "localImage": "/products/diary-001.jpg"
+  },
+  {
+    "id": 7941,
+    "name": "Staff ID",
+    "slug": "staff-id",
+    "price": 200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Lamination Direct Digital Print",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Staff ID"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/ID-1-600x600.jpg",
+    "localImage": "/products/staff-id.jpg"
+  },
+  {
+    "id": 7936,
+    "name": "Receipts and Invoices",
+    "slug": "receipts-and-invoices",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Receipts and Invoices are essential tools for managing transactions.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/invoive-600x600.jpg",
+    "localImage": "/products/receipts-and-invoices.jpg"
+  },
+  {
+    "id": 7931,
+    "name": "Posters",
+    "slug": "posters",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Digital Printing Offset Printing Paper Grammage Art 150gsm Art 170gsm Art 200gsm MOQ 200 pcs Digital Printing Offset Printing",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Posters"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Awards-posters-600x600.jpg",
+    "localImage": "/products/posters.jpg"
+  },
+  {
+    "id": 7926,
+    "name": "Letterheads",
+    "slug": "letterheads",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Letterheads are essential for professional correspondence.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Letterheads"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/letterhead-4-600x600.jpg",
+    "localImage": "/products/letterheads.jpg"
+  },
+  {
+    "id": 7920,
+    "name": "Envelopes",
+    "slug": "envelopes",
+    "price": 150,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Envelopes are essential for mailing and organizing documents.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Envelopes"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/A4-white-600x600.jpg",
+    "localImage": "/products/envelopes.jpg"
+  },
+  {
+    "id": 7915,
+    "name": "Certificates",
+    "slug": "certificates",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Digital Printing Paper Grammage Art 350gsm Ivory paper Antelope / Embossed paper NB The certificate doesn’t come with the frame. The frame used for display purposes only.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Certificates"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/certificate-600x600.jpg",
+    "localImage": "/products/certificates.jpg"
+  },
+  {
+    "id": 7909,
+    "name": "Wall Calendars",
+    "slug": "wall-calendars",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wall Calendars are a great way to stay organized throughout the year.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Calendars"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wall-calendars-600x600.jpg",
+    "localImage": "/products/wall-calendars.jpg"
+  },
+  {
+    "id": 7898,
+    "name": "Business Cards",
+    "slug": "business-cards",
+    "price": 5,
+    "priceMax": 15,
+    "onSale": false,
+    "description": "Branding Options Digital Printing Paper Grammage – matte 350 gsm One-sided Size: 8.5cm x 5.5 cm Both sided Size: 8.5cm x 5.5 cm Round cornered: One-sided Size: 8.7cm x 5.7cm Both sided Size: 8.7cm x 5.7 cm",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Business Cards"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/one-sided-600x600.jpg",
+    "localImage": "/products/business-cards.jpg"
+  },
+  {
+    "id": 7884,
+    "name": "Plain Umbrella",
+    "slug": "plain-umbrella",
+    "price": 750,
+    "priceMax": 3300,
+    "onSale": false,
+    "description": "Features: Strong shaft Strong framework Windproof Branding Options Screen Print Sublimation",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Umbrella"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/blue-5-600x600.jpg",
+    "localImage": "/products/plain-umbrella.jpg"
+  },
+  {
+    "id": 7868,
+    "name": "Parasol Umbrellas",
+    "slug": "parasol-umbrellas",
+    "price": 2500,
+    "priceMax": 5000,
+    "onSale": false,
+    "description": "Features: 1.8-meter diameter Strong Framework Long adjustable shaft NB: Stand Sold Separately Branding Options Screen Print Sublimation",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Umbrella"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-19-600x600.jpg",
+    "localImage": "/products/parasol-umbrellas.jpg"
+  },
+  {
+    "id": 7848,
+    "name": "Panel Umbrellas",
+    "slug": "panel-umbrellas",
+    "price": 750,
+    "priceMax": 3250,
+    "onSale": false,
+    "description": "Branding Options Screen Print Sublimation",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Umbrella"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/green-11-600x600.jpg",
+    "localImage": "/products/panel-umbrellas.jpg"
+  },
+  {
+    "id": 7840,
+    "name": "Mouse Pads",
+    "slug": "mouse-pads",
+    "price": 200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Heat Press",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/white-Gel-wrist-mousepad-600x600.jpg",
+    "localImage": "/products/mouse-pads.jpg"
+  },
+  {
+    "id": 7829,
+    "name": "Metallic Keyholders",
+    "slug": "metallic-keyholders",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Metallic Keyholders are stylish and functional accessories for your keys.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [
+      "Key Holders"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/metallic-6-600x600.jpg",
+    "localImage": "/products/metallic-keyholders.jpg"
+  },
+  {
+    "id": 7791,
+    "name": "Plastic Water Bottles",
+    "slug": "water-bottles",
+    "price": 950,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing This product is a custom branded water bottle.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Translucent-water-bottle-600x600.jpg",
+    "localImage": "/products/water-bottles.jpg"
+  },
+  {
+    "id": 7779,
+    "name": "Slam Water Bottles",
+    "slug": "slam-water-bottles",
+    "price": 550,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Option Pad Printing",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/orange-9-600x600.jpg",
+    "localImage": "/products/slam-water-bottles.jpg"
+  },
+  {
+    "id": 7762,
+    "name": "Baltic Water Bottles",
+    "slug": "baltic-water-bottles",
+    "price": 500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Option Pad Printing",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/pink-4-600x600.jpg",
+    "localImage": "/products/baltic-water-bottles.jpg"
+  },
+  {
+    "id": 7752,
+    "name": "Stainless Water Bottles",
+    "slug": "stainless-water-bottles",
+    "price": 750,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Water Bottles"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Branded-17-600x600.jpg",
+    "localImage": "/products/stainless-water-bottles.jpg"
+  },
+  {
+    "id": 7739,
+    "name": "Flap Conference Bags",
+    "slug": "flap-conference-bags",
+    "price": 1500,
+    "priceMax": 4500,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-16-600x600.jpg",
+    "localImage": "/products/flap-conference-bags.jpg"
+  },
+  {
+    "id": 7733,
+    "name": "Two Tone Conference Bags",
+    "slug": "two-tone-conference-bags",
+    "price": 650,
+    "priceMax": 3150,
+    "onSale": false,
+    "description": "Branding Options Screen Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-15-600x600.jpg",
+    "localImage": "/products/two-tone-conference-bags.jpg"
+  },
+  {
+    "id": 7725,
+    "name": "Vegas Conference Bags",
+    "slug": "vegas-conference-bags",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Bags"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/black-vegas-600x600.jpg",
+    "localImage": "/products/vegas-conference-bags.jpg"
+  },
+  {
+    "id": 7688,
+    "name": "Two Tone Mugs",
+    "slug": "two-tone-mugs",
+    "price": 650,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation Capacity: 300ml Instructions for a long-lasting mug Hand wash the mug before the first use Wash the outside of the mug with a soft sponge or just water to preserve print. Do not soak the mug in soap Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/two-tone-red-mug-600x600.jpg",
+    "localImage": "/products/two-tone-mugs.jpg"
+  },
+  {
+    "id": 7673,
+    "name": "USB Wristbands",
+    "slug": "usb-wristbands",
+    "price": 1000,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "USB"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-14-600x600.jpg",
+    "localImage": "/products/usb-wristbands.jpg"
+  },
+  {
+    "id": 7651,
+    "name": "Silicone Wristband",
+    "slug": "silicone-wristband",
+    "price": 100,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Silicone"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-2-4-600x600.jpg",
+    "localImage": "/products/silicone-wristband.jpg"
+  },
+  {
+    "id": 7645,
+    "name": "Handy Thermal Mug",
+    "slug": "handy-thermal-mug",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving 1 position print.",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Handy"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Blue-Handy-Thermal-mug-600x600.jpg",
+    "localImage": "/products/handy-thermal-mug.jpg"
+  },
+  {
+    "id": 7637,
+    "name": "Stainless Thermos",
+    "slug": "stainless-thermos",
+    "price": 1500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Pad Printing Laser Engraving",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Thermos"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Stainless-steelThermos--600x600.jpg",
+    "localImage": "/products/stainless-thermos.jpg"
+  },
+  {
+    "id": 7625,
+    "name": "V Neck T-Shirts",
+    "slug": "v-neck-t-shirts",
+    "price": 700,
+    "priceMax": 900,
+    "onSale": false,
+    "description": "Branding Options Screen Print Heat Transfer Vinyl Printing Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Tshirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-2-3-600x600.jpg",
+    "localImage": "/products/v-neck-t-shirts.jpg"
+  },
+  {
+    "id": 7607,
+    "name": "Round Neck Tshirts",
+    "slug": "round-neck-tshirts",
+    "price": 450,
+    "priceMax": 500,
+    "onSale": false,
+    "description": "Branding Options Screen Print Heat Transfer Vinyl Printing Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Tshirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-11-600x600.jpg",
+    "localImage": "/products/round-neck-tshirts.jpg"
+  },
+  {
+    "id": 7603,
+    "name": "Sweat Shirts",
+    "slug": "sweat-shirts",
+    "price": 2500,
+    "priceMax": 3000,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Sweat Shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-10-600x600.jpg",
+    "localImage": "/products/sweat-shirts.jpg"
+  },
+  {
+    "id": 7594,
+    "name": "Sleeveless Tops",
+    "slug": "sleeveless-tops",
+    "price": 1250,
+    "priceMax": 4250,
+    "onSale": false,
+    "description": "Branding Options Screen Print Heat Press",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Sleeveless Tops"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/BRANDED-9-600x600.jpg",
+    "localImage": "/products/sleeveless-tops.jpg"
+  },
+  {
+    "id": 7681,
+    "name": "Branded Spoon Mugs",
+    "slug": "branded-spoon-mugs",
+    "price": 700,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Sublimation Capacity: 300ml Instructions for a long-lasting mug Hand wash the mug before the first use Wash the outside of the mug with a soft sponge or just water to preserve print. Do not soak the mug in soap Avoid scratching the mug with sharp objects or picking on the design. This will help in preserving the color print of the mug. Do not Microwave",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Mugs"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Branded-spoon-mug-600x600.jpg",
+    "localImage": "/products/branded-spoon-mugs.jpg"
+  },
+  {
+    "id": 7558,
+    "name": "Reflectors Jackets",
+    "slug": "reflectors",
+    "price": 350,
+    "priceMax": 500,
+    "onSale": false,
+    "description": "Branding Options Screen Print Sublimation Print",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Reflectors"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-8-600x600.jpg",
+    "localImage": "/products/reflectors.jpg"
+  },
+  {
+    "id": 7559,
+    "name": "Polo T-Shirts",
+    "slug": "polo-t-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options: Screen Print Heat Transfer Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Polo shirts"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/Lime-Green-600x600.jpg",
+    "localImage": "/products/polo-t-shirts.jpg"
+  },
+  {
+    "id": 7548,
+    "name": "Overalls",
+    "slug": "overalls",
+    "price": 2200,
+    "priceMax": 5000,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Overalls"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded--600x600.jpg",
+    "localImage": "/products/overalls.jpg"
+  },
+  {
+    "id": 7535,
+    "name": "Hoodies",
+    "slug": "hoodies",
+    "price": 2500,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Hoodies"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-back-600x600.jpg",
+    "localImage": "/products/hoodies.jpg"
+  },
+  {
+    "id": 7528,
+    "name": "Bush Hats",
+    "slug": "bush-hats",
+    "price": 1200,
+    "priceMax": 2200,
+    "onSale": false,
+    "description": "Branding Options: Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Hats"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-5-600x600.jpg",
+    "localImage": "/products/bush-hats.jpg"
+  },
+  {
+    "id": 7517,
+    "name": "Bucket Hats",
+    "slug": "bucket-hats",
+    "price": 1200,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options: t Embroidery MOQ 50pcs",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Hats"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/white-1-600x600.jpg",
+    "localImage": "/products/bucket-hats.jpg"
+  },
+  {
+    "id": 7509,
+    "name": "Beanies",
+    "slug": "beanies",
+    "price": 550,
+    "priceMax": 1550,
+    "onSale": false,
+    "description": "Branding Options: Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Hats"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/green-1-600x600.jpg",
+    "localImage": "/products/beanies.jpg"
+  },
+  {
+    "id": 7497,
+    "name": "Chef Jackets and Beanies",
+    "slug": "chef-jackets-and-beanies",
+    "price": 2500,
+    "priceMax": 4000,
+    "onSale": false,
+    "description": "Branding Options: Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Chef jackets and beanies"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-3-600x600.jpg",
+    "localImage": "/products/chef-jackets-and-beanies.jpg"
+  },
+  {
+    "id": 7488,
+    "name": "Visor Caps",
+    "slug": "visor-caps",
+    "price": 450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Branding Options: Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Caps"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-2-600x600.jpg",
+    "localImage": "/products/visor-caps.jpg"
+  },
+  {
+    "id": 7476,
+    "name": "Buckle Caps",
+    "slug": "buckle-caps",
+    "price": 550,
+    "priceMax": 2050,
+    "onSale": false,
+    "description": "Branding Options: Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Caps"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-1-600x600.jpg",
+    "localImage": "/products/buckle-caps.jpg"
+  },
+  {
+    "id": 7448,
+    "name": "Neck Apron",
+    "slug": "neck-apron",
+    "price": 500,
+    "priceMax": 3250,
+    "onSale": false,
+    "description": "Branding Options Screen Print Embroidery",
+    "categories": [
+      "promotional-items"
+    ],
+    "tags": [
+      "Aprons"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/branded-600x600.jpg",
+    "localImage": "/products/neck-apron.jpg"
+  },
+  {
+    "id": 1716,
+    "name": "Wedding Photo Book",
+    "slug": "crimson-palms-hotel",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "This is a Wedding Photo Book.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Wedding Photo Book"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/wedding-600x600.jpg",
+    "localImage": "/products/crimson-palms-hotel.jpg"
+  },
+  {
+    "id": 370,
+    "name": "Crystal Organizer",
+    "slug": "crystal-organizer",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Crystal Organizer is a versatile storage solution.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Crystal Organizer"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/Crystal-organizer-4-600x600.jpg",
+    "localImage": "/products/crystal-organizer.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Normal Card Holder",
+    "slug": "normal-card-holder",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Normal Card Holder.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Normal Card Holder"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/blue-600x600.jpg",
+    "localImage": "/products/normal-card-holder.jpg"
+  },
+  {
+    "id": 51,
+    "name": "Directional Signages",
+    "slug": "directional-signages",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Directional Signages are essential for guiding and informing visitors in various environments.",
+    "categories": [
+      "signages"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/directional-signages-600x600.jpg",
+    "localImage": "/products/directional-signages.jpg"
+  },
+  {
+    "id": 50,
+    "name": "Door Frame Banner",
+    "slug": "door-frame-banner",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Door Frame Banner",
+    "categories": [
+      "banners"
+    ],
+    "tags": [
+      "Door Frame"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/1-600x600.jpg",
+    "localImage": "/products/door-frame-banner.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Ladies Apparels",
+    "slug": "ladies-apparels",
+    "price": 450,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Ladies Apparels are stylish and comfortable clothing options for women.",
+    "categories": [
+      "corporate-apparel"
+    ],
+    "tags": [
+      "Ladies Apparels"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2020/11/red-22-600x600.jpg",
+    "localImage": "/products/ladies-apparels.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Bookmarks",
+    "slug": "bookmarks",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Bookmarks are a great way to keep your place in your favorite books.",
+    "categories": [
+      "corporate-stationery"
+    ],
+    "tags": [],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/religous-600x600.jpg",
+    "localImage": "/products/bookmarks.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Birthday Card",
+    "slug": "birthday-card",
+    "price": 150,
+    "priceMax": 550,
+    "onSale": false,
+    "description": "Printed both sides A6 A5 A4 A3 Printed one side A6 A5 A4 A3 NB: The card includes lamination (Gloss/ Matte) as desired.",
+    "categories": [
+      "individual-gifts"
+    ],
+    "tags": [
+      "Birthday Card"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/birthday-600x600.jpg",
+    "localImage": "/products/birthday-card.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Flash Drive",
+    "slug": "flash-drive",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flash Drive is a portable storage device that allows you to easily transfer and store data. It is compact and convenient for everyday use.",
+    "categories": [
+      "corporate-gifts"
+    ],
+    "tags": [
+      "Flash Drive"
+    ],
+    "image": "https://www.hensa.co.ke/wp-content/uploads/2017/06/flash-drie-600x600.jpg",
+    "localImage": "/products/flash-drive.jpg"
+  }
+]

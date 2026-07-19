@@ -1,0 +1,157 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Reveal from "@/components/Reveal";
+import { categories, products } from "@/lib/catalog";
+import EnquireButton from "@/components/EnquireButton";
+import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "About Hensa — Nairobi's Leading Branding Agency",
+  description:
+    "Hensa Solutions is the leading branding agency based in Nairobi, Kenya — creating and developing brands for businesses across East Africa through printing, branding and advertising.",
+  alternates: { canonical: "/about" },
+};
+
+const METHOD = [
+  {
+    n: "01",
+    t: "Discovery",
+    d: "We take time to holistically understand your key strategies, goals, challenges and opportunities so as to facilitate impactful results.",
+  },
+  {
+    n: "02",
+    t: "Concept",
+    d: "Strategy mapping, user-experience design and technology integration — harmonised with your business processes.",
+  },
+  {
+    n: "03",
+    t: "Integration",
+    d: "We convert ideas into tangible, functional solutions, with quality-assurance testing at every step.",
+  },
+  {
+    n: "04",
+    t: "Launching",
+    d: "We actualise solutions through relevant expertise and a well-conceptualised strategy.",
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <>
+      <section className="grain relative overflow-hidden border-b border-ink/10">
+        <div className="halftone halftone-fade pointer-events-none absolute -left-16 -top-16 h-80 w-80 text-orange/25" />
+        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
+          <p className="spec text-green-deep">About Hensa</p>
+          <h1 className="font-display mt-3 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-6xl">
+            We put East African brands{" "}
+            <span className="text-orange">on the map</span> — and on mugs,
+            shirts, banners &amp; billboards.
+          </h1>
+          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft">
+            We are the leading branding agency based in Nairobi, Kenya. We
+            specialize in creating and developing brands for businesses in
+            East Africa, and we're well known for our expertise in printing,
+            branding and advertising. Our team of professionals has a wealth
+            of experience in helping businesses establish and grow their
+            brands.
+          </p>
+
+          {/* stats */}
+          <div className="mt-12 grid max-w-2xl grid-cols-3 gap-px overflow-hidden border border-ink/10 bg-ink/10">
+            {[
+              { v: `${products.length}+`, l: "Products in catalogue" },
+              { v: `${categories.length}`, l: "Product categories" },
+              { v: "47", l: "Counties we deliver to" },
+            ].map((s) => (
+              <div key={s.l} className="bg-cream p-5 text-center">
+                <p className="font-display text-3xl font-extrabold text-orange sm:text-4xl">
+                  {s.v}
+                </p>
+                <p className="spec mt-1.5 text-ink-soft">{s.l}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* who / how / uniqueness */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+        <div className="grid gap-5 md:grid-cols-3">
+          {[
+            {
+              t: "Who we are",
+              d: "A full-service branding house: strategists, designers, printers and finishers working as one team, one roof, one standard of quality.",
+              accent: "text-orange",
+            },
+            {
+              t: "How we do it",
+              d: "We offer a wide range of services — brand strategy, design, printing, advertising and digital marketing — helping clients reach their audiences through creativity and innovation.",
+              accent: "text-green-deep",
+            },
+            {
+              t: "Our uniqueness",
+              d: "Everything in-house means faster turnarounds, tighter quality control and honest pricing. You talk to the people who actually make your products.",
+              accent: "text-orange",
+            },
+          ].map((c, i) => (
+            <Reveal key={c.t} delay={i * 90}>
+              <div className="cropmarks h-full border border-ink/10 bg-cream p-7">
+                <h2 className={`font-display text-xl font-bold ${c.accent}`}>
+                  {c.t}
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{c.d}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* methodology */}
+      <section className="border-y border-ink/10 bg-paper-warm py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <Reveal>
+            <p className="spec text-orange">Our methodology</p>
+            <h2 className="font-display mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Four phases. Zero guesswork.
+            </h2>
+          </Reveal>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {METHOD.map((s, i) => (
+              <Reveal key={s.n} delay={i * 90}>
+                <div className="relative h-full border border-ink/10 bg-cream p-6">
+                  <span className="spec absolute -top-3 left-5 bg-orange px-2 py-1 text-white">
+                    PHASE {s.n}
+                  </span>
+                  <h3 className="font-display mt-3 text-xl font-bold">{s.t}</h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-ink-soft">{s.d}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
+        <Reveal>
+          <h2 className="font-display text-3xl font-extrabold tracking-tight sm:text-5xl">
+            Ready to grow your brand with us?
+          </h2>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <EnquireButton className="flex items-center gap-2 rounded-full bg-green px-8 py-4 font-display font-bold text-white shadow-[0_8px_24px_rgba(51,160,44,0.35)] transition-all hover:-translate-y-0.5 hover:bg-green-deep">
+              <WhatsAppIcon className="h-5 w-5" />
+              Talk to us on WhatsApp
+            </EnquireButton>
+            <Link
+              href="/shop"
+              className="group flex items-center gap-2 rounded-full border-2 border-ink px-8 py-[14px] font-display font-bold transition-colors hover:border-orange hover:text-orange"
+            >
+              Browse products
+              <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+    </>
+  );
+}
