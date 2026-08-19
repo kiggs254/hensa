@@ -79,6 +79,18 @@ export default function Home() {
 
   const slides: HeroSlide[] = [
     {
+      kicker: "Campaign season · every party",
+      title: ["Your party's ", "colours", ", printed."],
+      copy: "Election-ready merchandise for every candidate — t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",
+      cta: { label: "Shop campaign gear", href: "/shop?category=campaign" },
+      image: {
+        src: "/campaign/campaign-tshirts.jpg",
+        alt: "Political campaign t-shirts branded for every party",
+      },
+      sticker: { big: "All parties", small: "campaign merch" },
+      theme: "dark",
+    },
+    {
       kicker: "Nairobi's branding workshop",
       title: ["Everything your ", "logo", " belongs on."],
       copy: `${products.length} branded products — from a single mug to a fleet of billboards — printed with utmost expertise and delivered countrywide.`,

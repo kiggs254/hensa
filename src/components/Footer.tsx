@@ -35,7 +35,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 pb-2 pt-10 sm:px-6">
+      <div className="relative mx-auto max-w-7xl px-4 pb-10 pt-10 sm:px-6">
         {/* ---------- headline CTA ---------- */}
         <div className="grid gap-8 border-b border-cream/10 pb-12 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">
@@ -194,23 +194,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ---------- giant bleeding wordmark ---------- */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none relative select-none overflow-hidden"
-      >
-        <p
-          className="font-display -mb-[0.28em] -mt-[0.16em] text-center font-extrabold leading-none tracking-[-0.04em] text-transparent"
-          style={{
-            fontSize: "clamp(4.5rem, 22vw, 22rem)",
-            WebkitTextStroke: "1.5px rgba(255,253,248,0.16)",
-          }}
-        >
-          HENSA
-        </p>
-        {/* fade the wordmark into the page edge */}
-        <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink to-transparent" />
-      </div>
     </footer>
   );
 }
