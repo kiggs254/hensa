@@ -1,4 +1,5 @@
 import raw from "@/data/catalog.json";
+import campaign from "@/data/campaign.json";
 
 export interface Product {
   id: number;
@@ -22,7 +23,7 @@ export interface Category {
   count: number;
 }
 
-export const products: Product[] = raw as Product[];
+export const products: Product[] = [...raw, ...campaign] as Product[];
 
 const CATEGORY_META: Omit<Category, "count">[] = [
   {
@@ -72,6 +73,12 @@ const CATEGORY_META: Omit<Category, "count">[] = [
     name: "Printing Accessories",
     blurb: "Screen-printing meshes and professional consumables for print work.",
     image: "/products/screen-printing-mesh-55t-high-quality.jpg",
+  },
+  {
+    slug: "campaign",
+    name: "Campaign & Political",
+    blurb: "Election-ready merchandise for every party — t-shirts, caps, banners, lessos, flags and more, in your colours.",
+    image: "/categories/campaign.jpg",
   },
 ];
 

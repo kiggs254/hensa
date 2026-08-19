@@ -9,6 +9,7 @@ import ProductCard from "@/components/ProductCard";
 import Reveal from "@/components/Reveal";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 import Testimonials from "@/components/Testimonials";
+import CampaignSlider from "@/components/CampaignSlider";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
 const FEATURED_SLUGS = [
@@ -258,6 +259,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* ============ CAMPAIGN / POLITICS ============ */}
+      <CampaignSlider />
 
       {/* ============ WHAT WE OFFER ============ */}
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6">

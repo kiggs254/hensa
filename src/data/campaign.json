@@ -1,0 +1,954 @@
+[
+  {
+    "id": 900000,
+    "name": "Campaign 3D Non-Woven Bags",
+    "slug": "campaign-3d-non-woven-bags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "3D Non-Woven Bags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-3d-non-woven-bags.jpg"
+  },
+  {
+    "id": 900003,
+    "name": "Campaign Aluminium Water Bottles",
+    "slug": "campaign-alluminium-water-bottles",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Aluminium Water Bottles branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-alluminium-water-bottles.jpg"
+  },
+  {
+    "id": 900004,
+    "name": "Campaign Aprons",
+    "slug": "campaign-aprons",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Aprons branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-aprons.jpg"
+  },
+  {
+    "id": 900005,
+    "name": "Campaign Backdrop Banners",
+    "slug": "campaign-backdrop-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Backdrop Banners branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-backdrop-banners.jpg"
+  },
+  {
+    "id": 900006,
+    "name": "Campaign Balloons",
+    "slug": "campaign-balloons-image",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Balloons branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-balloons-image.jpg"
+  },
+  {
+    "id": 900007,
+    "name": "Campaign Bookmarks",
+    "slug": "campaign-bookmarks",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Bookmarks branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-bookmarks.jpg"
+  },
+  {
+    "id": 900001,
+    "name": "Campaign Bottle Openers",
+    "slug": "campaign-bottleoppeners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Bottle Openers branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-bottleoppeners.jpg"
+  },
+  {
+    "id": 900008,
+    "name": "Campaign Bucket Hats",
+    "slug": "campaign-bucket-hats",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Bucket Hats branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-bucket-hats.jpg"
+  },
+  {
+    "id": 900009,
+    "name": "Campaign Button Badges",
+    "slug": "campaign-button-badges",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Button Badges branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-button-badges.jpg"
+  },
+  {
+    "id": 900010,
+    "name": "Campaign Calendars",
+    "slug": "campaign-callenders",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Calendars branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-callenders.jpg"
+  },
+  {
+    "id": 900011,
+    "name": "Campaign Caps",
+    "slug": "campaign-caps",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Caps branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-caps.jpg"
+  },
+  {
+    "id": 900012,
+    "name": "Campaign Corporate Shirts",
+    "slug": "campaign-corporate-shirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Corporate Shirts branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-corporate-shirts.jpg"
+  },
+  {
+    "id": 900013,
+    "name": "Campaign Dust Coats",
+    "slug": "campaign-dust-coats",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Dust Coats branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-dust-coats.jpg"
+  },
+  {
+    "id": 900014,
+    "name": "Campaign Eyelet Banners",
+    "slug": "campaign-eyelet-banner",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Eyelet Banners branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-eyelet-banner.jpg"
+  },
+  {
+    "id": 900015,
+    "name": "Campaign Flags",
+    "slug": "campaign-flags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Flags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-flags.jpg"
+  },
+  {
+    "id": 900016,
+    "name": "Campaign Folders",
+    "slug": "campaign-folders",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Folders branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-folders.jpg"
+  },
+  {
+    "id": 900017,
+    "name": "Campaign Gazebos",
+    "slug": "campaign-gazebos",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Gazebos branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-gazebos.jpg"
+  },
+  {
+    "id": 900018,
+    "name": "Campaign Hand Fans",
+    "slug": "campaign-handfans",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Hand Fans branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-handfans.jpg"
+  },
+  {
+    "id": 900019,
+    "name": "Campaign Handkerchiefs",
+    "slug": "campaign-handkerchiefs",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Handkerchiefs branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-handkerchiefs.jpg"
+  },
+  {
+    "id": 900020,
+    "name": "Campaign Head Scarves",
+    "slug": "campaign-headscarfs",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Head Scarves branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-headscarfs.jpg"
+  },
+  {
+    "id": 900021,
+    "name": "Campaign Hoodies",
+    "slug": "campaign-hoodies",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Hoodies branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-hoodies.jpg"
+  },
+  {
+    "id": 900022,
+    "name": "Campaign Jute Bags",
+    "slug": "campaign-jute-bags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Jute Bags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-jute-bags.jpg"
+  },
+  {
+    "id": 900023,
+    "name": "Campaign Keychains",
+    "slug": "campaign-keychains",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Keychains branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-keychains.jpg"
+  },
+  {
+    "id": 900002,
+    "name": "Campaign Mousepads",
+    "slug": "campaign-mousepads",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Mousepads branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-mousepads.jpg"
+  },
+  {
+    "id": 900024,
+    "name": "Campaign Mugs",
+    "slug": "campaign-mugs",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Mugs branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-mugs.jpg"
+  },
+  {
+    "id": 900025,
+    "name": "Campaign Name Tags",
+    "slug": "campaign-nametags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Name Tags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-nametags.jpg"
+  },
+  {
+    "id": 900027,
+    "name": "Campaign Notebooks",
+    "slug": "campaign-notebooks",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Notebooks branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-notebooks.jpg"
+  },
+  {
+    "id": 900028,
+    "name": "Campaign Notepads",
+    "slug": "campaign-notepads",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Notepads branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-notepads.jpg"
+  },
+  {
+    "id": 900029,
+    "name": "Campaign Overalls",
+    "slug": "campaign-overalls",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Overalls branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-overalls.jpg"
+  },
+  {
+    "id": 900030,
+    "name": "Campaign Paper Cups",
+    "slug": "campaign-paper-cups",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Paper Cups branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-paper-cups.jpg"
+  },
+  {
+    "id": 900031,
+    "name": "Campaign Paper Flags",
+    "slug": "campaign-paper-flags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Paper Flags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-paper-flags.jpg"
+  },
+  {
+    "id": 900032,
+    "name": "Campaign Parasols",
+    "slug": "campaign-parasols",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Parasols branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-parasols.jpg"
+  },
+  {
+    "id": 900026,
+    "name": "Campaign Pens",
+    "slug": "campaign-normal-pens",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pens branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-normal-pens.jpg"
+  },
+  {
+    "id": 900033,
+    "name": "Campaign Placards",
+    "slug": "campaign-placcards",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Placards branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-placcards.jpg"
+  },
+  {
+    "id": 900034,
+    "name": "Campaign Pop-Up Banners",
+    "slug": "campaign-popup-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Pop-Up Banners branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-popup-banners.jpg"
+  },
+  {
+    "id": 900035,
+    "name": "Campaign Puff Jackets",
+    "slug": "campaign-puff-jackets",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Puff Jackets branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-puff-jackets.jpg"
+  },
+  {
+    "id": 900036,
+    "name": "Campaign Reflectors",
+    "slug": "campaign-reflectors",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Reflectors branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-reflectors.jpg"
+  },
+  {
+    "id": 900037,
+    "name": "Campaign Roll-Up Banners",
+    "slug": "campaign-rollup-banners",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Roll-Up Banners branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-rollup-banners.jpg"
+  },
+  {
+    "id": 900038,
+    "name": "Campaign Safari Hats",
+    "slug": "campaign-safari-hats",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Safari Hats branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-safari-hats.jpg"
+  },
+  {
+    "id": 900039,
+    "name": "Campaign Safari Jackets",
+    "slug": "campaign-safari-jackets",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Safari Jackets branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-safari-jackets.jpg"
+  },
+  {
+    "id": 900040,
+    "name": "Campaign Scarves",
+    "slug": "campaign-scarfs",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Scarves branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-scarfs.jpg"
+  },
+  {
+    "id": 900041,
+    "name": "Campaign Stickers",
+    "slug": "campaign-stickers",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Stickers branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-stickers.jpg"
+  },
+  {
+    "id": 900042,
+    "name": "Campaign String Bags",
+    "slug": "campaign-string-bags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "String Bags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-string-bags.jpg"
+  },
+  {
+    "id": 900043,
+    "name": "Campaign Sun Visor Caps",
+    "slug": "campaign-sunvisor-caps",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Sun Visor Caps branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-sunvisor-caps.jpg"
+  },
+  {
+    "id": 900048,
+    "name": "Campaign T-Shirts",
+    "slug": "campaign-tshirts",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "T-Shirts branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-tshirts.jpg"
+  },
+  {
+    "id": 900044,
+    "name": "Campaign Table Tents",
+    "slug": "campaign-tabletents",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Table Tents branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-tabletents.jpg"
+  },
+  {
+    "id": 900045,
+    "name": "Campaign Tabletop Flags",
+    "slug": "campaign-tabletop-flags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Tabletop Flags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-tabletop-flags.jpg"
+  },
+  {
+    "id": 900046,
+    "name": "Campaign Teardrop Banners",
+    "slug": "campaign-teardrop-banner",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Teardrop Banners branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-teardrop-banner.jpg"
+  },
+  {
+    "id": 900047,
+    "name": "Campaign Tote Bags",
+    "slug": "campaign-tote-bags",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Tote Bags branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-tote-bags.jpg"
+  },
+  {
+    "id": 900049,
+    "name": "Campaign Tumblers",
+    "slug": "campaign-tumblers",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Tumblers branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-tumblers.jpg"
+  },
+  {
+    "id": 900050,
+    "name": "Campaign Umbrellas",
+    "slug": "campaign-umbrellas",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Umbrellas branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-umbrellas.jpg"
+  },
+  {
+    "id": 900051,
+    "name": "Campaign Vehicle Branding",
+    "slug": "campaign-vehicle-branding",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Vehicle Branding branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-vehicle-branding.jpg"
+  },
+  {
+    "id": 900052,
+    "name": "Campaign Wall Clocks",
+    "slug": "campaign-wallclocks",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wall Clocks branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-wallclocks.jpg"
+  },
+  {
+    "id": 900053,
+    "name": "Campaign Water Bottles",
+    "slug": "campaign-water-bottles",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Water Bottles branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-water-bottles.jpg"
+  },
+  {
+    "id": 900054,
+    "name": "Campaign Wristbands",
+    "slug": "campaign-wristbands",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "Wristbands branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-wristbands.jpg"
+  },
+  {
+    "id": 900055,
+    "name": "Campaign X-Stand Banners",
+    "slug": "campaign-xstand-banner",
+    "price": 0,
+    "priceMax": null,
+    "onSale": false,
+    "description": "X-Stand Banners branded for your campaign — party colours, logo and slogan printed to order. Bulk quantities, fast turnaround and countrywide delivery.",
+    "categories": [
+      "campaign"
+    ],
+    "tags": [
+      "Political Campaign"
+    ],
+    "image": "",
+    "localImage": "/campaign/campaign-xstand-banner.jpg"
+  }
+]
