@@ -64,3 +64,45 @@ export function QuoteIcon({ className = "h-8 w-8" }: { className?: string }) {
     </svg>
   );
 }
+
+export function TruckIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H14a1 1 0 0 1 1 1v9H3V6.5Z" />
+      <path d="M15 8h3.5L21 11v4h-6" />
+      <circle cx="7" cy="17.5" r="1.8" />
+      <circle cx="17" cy="17.5" r="1.8" />
+    </svg>
+  );
+}
+
+export function MpesaIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <rect x="6" y="2.5" width="12" height="19" rx="2.5" />
+      <path d="M10 5.5h4" />
+      <circle cx="12" cy="14" r="3" />
+      <path d="M12 12.6v2.8M10.7 13.4h2.2M10.7 14.6h2.2" />
+    </svg>
+  );
+}
+
+export function ShieldCheckIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M12 2.5 4.5 5.5v6c0 4.4 3.1 7.7 7.5 9 4.4-1.3 7.5-4.6 7.5-9v-6L12 2.5Z" />
+      <path d="M9 12l2 2 4-4" />
+    </svg>
+  );
+}
+
+export function GiftIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M20 12v8.5H4V12" />
+      <path d="M2.5 7.5h19V12h-19z" />
+      <path d="M12 7.5v13" />
+      <path d="M12 7.5S11 3.5 8.5 3.5a2 2 0 0 0 0 4H12Zm0 0S13 3.5 15.5 3.5a2 2 0 0 1 0 4H12Z" />
+    </svg>
+  );
+}

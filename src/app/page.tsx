@@ -10,7 +10,14 @@ import Reveal from "@/components/Reveal";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 import Testimonials from "@/components/Testimonials";
 import CampaignSlider from "@/components/CampaignSlider";
-import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
+import {
+  WhatsAppIcon,
+  ArrowIcon,
+  TruckIcon,
+  MpesaIcon,
+  ShieldCheckIcon,
+  GiftIcon,
+} from "@/components/icons";
 
 const FEATURED_SLUGS = [
   "hoodies",
@@ -39,22 +46,26 @@ const TRUST = [
   {
     title: "Countrywide Delivery",
     body: "We deliver across Kenya — Nairobi to the counties, right to your door.",
-    color: "text-orange",
+    accent: "orange" as const,
+    icon: <TruckIcon className="h-5 w-5" />,
   },
   {
     title: "M-Pesa Accepted",
     body: "Comfortable payments the Kenyan way. Lipa na M-Pesa, sorted.",
-    color: "text-green-deep",
+    accent: "green" as const,
+    icon: <MpesaIcon className="h-5 w-5" />,
   },
   {
     title: "Only Best Brands",
     body: "Quality materials and finishes that hold your logo with pride.",
-    color: "text-orange",
+    accent: "orange" as const,
+    icon: <ShieldCheckIcon className="h-5 w-5" />,
   },
   {
     title: "Free Gifts & Discounts",
     body: "Loyal clients enjoy free gifts and discounts on bulk orders.",
-    color: "text-green-deep",
+    accent: "green" as const,
+    icon: <GiftIcon className="h-5 w-5" />,
   },
 ];
 
@@ -200,13 +211,34 @@ export default function Home() {
 
       {/* ============ TRUST BAR ============ */}
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
-        <div className="grid gap-px overflow-hidden border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-px overflow-hidden rounded-2xl border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
           {TRUST.map((t, i) => (
             <Reveal key={t.title} delay={i * 90} className="bg-cream">
-              <div className="h-full p-6">
-                <p className={`spec ${t.color}`}>{String(i + 1).padStart(2, "0")}</p>
-                <h3 className="font-display mt-2 text-lg font-bold">{t.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{t.body}</p>
+              <div className="group relative h-full p-6">
+                <div className="flex items-center justify-between">
+                  <span
+                    className={`flex h-11 w-11 items-center justify-center rounded-xl transition-colors duration-300 ${
+                      t.accent === "orange"
+                        ? "bg-orange/10 text-orange group-hover:bg-orange group-hover:text-white"
+                        : "bg-green/10 text-green-deep group-hover:bg-green group-hover:text-white"
+                    }`}
+                  >
+                    {t.icon}
+                  </span>
+                  <span
+                    className={`font-mono text-2xl font-bold text-ink/8 transition-colors ${
+                      t.accent === "orange"
+                        ? "group-hover:text-orange/25"
+                        : "group-hover:text-green/25"
+                    }`}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <h3 className="font-display mt-4 text-lg font-bold">{t.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
+                  {t.body}
+                </p>
               </div>
             </Reveal>
           ))}
