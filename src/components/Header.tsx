@@ -19,6 +19,7 @@ const NAV = [
   { href: "/", label: "Home" },
   { href: "/shop", label: "Shop", mega: true },
   { href: "/services", label: "Our Services" },
+  { href: "/faq", label: "FAQ" },
   { href: "/about", label: "About Hensa" },
   { href: "/contact", label: "Contact Us" },
 ];

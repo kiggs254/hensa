@@ -5,6 +5,8 @@ import Image from "next/image";
 import { services, serviceBySlug } from "@/data/services";
 import { products, type Product } from "@/lib/catalog";
 import { site } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { serviceNode, breadcrumbNode, faqNode } from "@/lib/structured-data";
 import EnquireButton from "@/components/EnquireButton";
 import ProductCard from "@/components/ProductCard";
 import Reveal from "@/components/Reveal";
@@ -83,27 +85,23 @@ export default async function ServicePage({
 
   const enquiryPayload = { service: service.name };
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: service.name,
-    description: service.short,
-    areaServed: "Kenya",
-    provider: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
-      telephone: site.phone,
-    },
-    url: `${site.url}/services/${service.slug}`,
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <JsonLd
+        data={serviceNode({
+          name: service.name,
+          description: `${service.short} ${service.intro[0]}`,
+          slug: service.slug,
+        })}
       />
+      <JsonLd
+        data={breadcrumbNode([
+          { name: "Home", path: "/" },
+          { name: "Our Services", path: "/services" },
+          { name: service.name, path: `/services/${service.slug}` },
+        ])}
+      />
+      {service.faqs.length > 0 && <JsonLd data={faqNode(service.faqs)} />}
 
       {/* ============ HERO ============ */}
       <section className="grain relative overflow-hidden border-b border-ink/10 bg-paper-warm">

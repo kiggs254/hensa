@@ -177,6 +177,22 @@ export default function Footer() {
               Get directions
               <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
+
+            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
+              {[
+                { href: "/faq", label: "FAQ" },
+                { href: "/about", label: "About" },
+                { href: "/shop", label: "Shop" },
+              ].map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="text-cream/65 transition-colors hover:text-orange"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 

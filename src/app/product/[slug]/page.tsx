@@ -9,6 +9,8 @@ import {
   categoryBySlug,
 } from "@/lib/catalog";
 import { site } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbNode } from "@/lib/structured-data";
 import ProductEnquiry from "@/components/ProductEnquiry";
 import ProductCard from "@/components/ProductCard";
 
@@ -53,15 +55,23 @@ export default async function ProductPage({
     name: product.name,
     image: `${site.url}${product.localImage}`,
     description: product.description,
+    category: cat?.name,
     brand: { "@type": "Brand", name: site.name },
+    manufacturer: { "@id": `${site.url}/#organization` },
+    // no Offer node: this is a quote-on-enquiry business with no public prices
   };
+
+  const breadcrumb = breadcrumbNode([
+    { name: "Home", path: "/" },
+    { name: "Shop", path: "/shop" },
+    ...(cat ? [{ name: cat.name, path: `/shop?category=${cat.slug}` }] : []),
+    { name: product.name, path: `/product/${product.slug}` },
+  ]);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
+      <JsonLd data={breadcrumb} />
 
       {/* breadcrumb */}
       <nav className="spec flex flex-wrap items-center gap-2 text-ink-soft" aria-label="Breadcrumb">
