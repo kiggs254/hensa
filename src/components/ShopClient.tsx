@@ -50,16 +50,6 @@ function Circle({
             }`}
           />
         ) : null}
-        {hasChildren && (
-          <span
-            aria-hidden
-            className="absolute bottom-1 right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-paper bg-orange text-white shadow-sm transition-transform duration-300 group-hover:scale-110"
-          >
-            <svg viewBox="0 0 24 24" className="h-2.5 w-2.5" fill="currentColor">
-              <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" />
-            </svg>
-          </span>
-        )}
       </span>
       <span
         className={`flex items-center gap-1 text-xs font-semibold leading-tight transition-colors ${
