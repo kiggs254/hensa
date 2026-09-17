@@ -85,7 +85,7 @@ export default async function Home() {
       kicker: "Campaign season · every party",
       title: ["Your party's ", "colours", ", printed."],
       copy: "Election-ready merchandise for every candidate — t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",
-      cta: { label: "Shop campaign gear", href: "/shop?category=campaign" },
+      cta: { label: "Browse campaign gear", href: "/catalog?category=campaign" },
       image: {
         src: "/campaign/campaign-tshirts.jpg",
         alt: "Political campaign t-shirts branded for every party",
@@ -97,7 +97,7 @@ export default async function Home() {
       kicker: "Nairobi's branding workshop",
       title: ["Everything your ", "logo", " belongs on."],
       copy: `${products.length} branded products — from a single mug to a fleet of billboards — printed with utmost expertise and delivered countrywide.`,
-      cta: { label: "Shop the catalogue", href: "/shop" },
+      cta: { label: "Browse the catalogue", href: "/catalog" },
       image: {
         src: img("executive-gift-sets-008", "/products/hoodies.jpg"),
         alt: "Executive branded gift set",
@@ -109,7 +109,7 @@ export default async function Home() {
       kicker: "Promotional apparel",
       title: ["Merch your team will ", "actually", " wear."],
       copy: "Hoodies, polos, tees, caps and reflectors — screen-printed or embroidered with your brand, in sizes S to XXXL.",
-      cta: { label: "Shop apparel", href: "/shop?category=promotional-items" },
+      cta: { label: "Browse apparel", href: "/catalog?category=promotional-items" },
       image: { src: img("hoodies", "/products/hoodies.jpg"), alt: "Custom printed hoodie" },
       sticker: { big: "S – XXXL", small: "all sizes available" },
       theme: "green",
@@ -118,7 +118,7 @@ export default async function Home() {
       kicker: "Banners & signage",
       title: ["Be ", "impossible", " to miss."],
       copy: "Pop-up banners, backdrops, teardrops and 3D signage that pull eyes at every event, expo and storefront.",
-      cta: { label: "Shop banners", href: "/shop?category=banners" },
+      cta: { label: "Browse banners", href: "/catalog?category=banners" },
       image: {
         src: img("pop-up-banner", "/categories/banners.jpg"),
         alt: "Branded pop-up banner",
@@ -130,7 +130,7 @@ export default async function Home() {
       kicker: "Corporate gifts & stationery",
       title: ["Gifts that ", "mean", " business."],
       copy: "Executive gift sets, notebooks, pens and awards — thoughtful, branded and boardroom-ready for clients and staff.",
-      cta: { label: "Shop gifts", href: "/shop?category=corporate-gifts" },
+      cta: { label: "Browse gifts", href: "/catalog?category=corporate-gifts" },
       image: {
         src: img("executive-notebooks-005", "/categories/corporate-gifts.jpg"),
         alt: "Executive branded notebooks",
@@ -151,7 +151,7 @@ export default async function Home() {
 
       {/* ============ CATEGORY QUICK-NAV (auto-scrolling) ============ */}
       <nav
-        aria-label="Shop by category"
+        aria-label="Browse by category"
         className="marquee-pause relative z-30 mx-auto max-w-7xl px-4 pb-4 pt-8 sm:px-6 lg:pt-10"
       >
         {/* The edge fade is painted by the two gradient overlays at the bottom
@@ -165,7 +165,7 @@ export default async function Home() {
             {[...categories, ...categories].map((c, i) => (
               <div key={`${c.slug}-${i}`} className="group relative w-24 flex-none">
                 <Link
-                  href={`/shop?category=${c.slug}`}
+                  href={`/catalog?category=${c.slug}`}
                   tabIndex={i < categories.length ? 0 : -1}
                   aria-hidden={i >= categories.length}
                   className="flex flex-col items-center gap-2.5 text-center"
@@ -190,7 +190,7 @@ export default async function Home() {
                     {(SUBCATS[c.slug] ?? []).map((s) => (
                       <Link
                         key={s}
-                        href={`/shop?q=${encodeURIComponent(s)}`}
+                        href={`/catalog?q=${encodeURIComponent(s)}`}
                         tabIndex={-1}
                         className="block rounded-lg px-3 py-1.5 text-left text-xs font-semibold text-ink-soft transition-colors hover:bg-orange/10 hover:text-orange"
                       >
@@ -198,7 +198,7 @@ export default async function Home() {
                       </Link>
                     ))}
                     <Link
-                      href={`/shop?category=${c.slug}`}
+                      href={`/catalog?category=${c.slug}`}
                       tabIndex={-1}
                       className="spec mt-1 block border-t border-dashed border-ink/15 px-3 pb-1 pt-2 text-left text-[9px] text-green-deep transition-colors hover:text-orange"
                     >
@@ -268,19 +268,19 @@ export default async function Home() {
         <div className="scrollbar-hide -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-3 sm:-mx-6 sm:px-6 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
           {[
             {
-              href: "/shop?category=corporate-apparel",
+              href: "/catalog?category=corporate-apparel",
               img: "/promos/corporate-apparel.jpg",
-              alt: "Corporate apparel — branded caps and kitchen aprons. Shop now.",
+              alt: "Corporate apparel — branded caps and kitchen aprons. Browse now.",
             },
             {
-              href: "/shop?category=promotional-items",
+              href: "/catalog?category=promotional-items",
               img: "/promos/promotional-items.jpg",
-              alt: "Promotional items — branded mugs, t-shirts and tote bags. Shop now.",
+              alt: "Promotional items — branded mugs, t-shirts and tote bags. Browse now.",
             },
             {
-              href: "/shop?category=banners",
+              href: "/catalog?category=banners",
               img: "/promos/banners.jpg",
-              alt: "Banners — X-banners and hanging banners for your brand. Shop now.",
+              alt: "Banners — X-banners and hanging banners for your brand. Browse now.",
             },
           ].map((p, i) => (
             <Reveal
@@ -332,10 +332,10 @@ export default async function Home() {
         </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-          {/* the shop — featured tile */}
+          {/* the catalog — featured tile */}
           <Reveal className="sm:col-span-2 lg:row-span-2">
             <Link
-              href="/shop"
+              href="/catalog"
               className="group relative flex h-full min-h-[22rem] flex-col justify-end overflow-hidden rounded-3xl border border-ink/10 bg-ink lg:min-h-[29rem]"
             >
               <Image
@@ -347,7 +347,7 @@ export default async function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/5" />
               <div className="relative p-7 lg:p-9">
-                <p className="spec text-orange">The shop</p>
+                <p className="spec text-orange">The catalog</p>
                 <h3 className="font-display mt-2 text-3xl font-extrabold text-cream lg:text-4xl">
                   {products.length} products, ready for your logo
                 </h3>
@@ -419,7 +419,7 @@ export default async function Home() {
                 </h2>
               </div>
               <Link
-                href="/shop"
+                href="/catalog"
                 className="group flex items-center gap-2 font-display font-bold text-green-deep transition-colors hover:text-orange"
               >
                 View everything

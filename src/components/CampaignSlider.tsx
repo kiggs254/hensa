@@ -77,10 +77,10 @@ export default function CampaignSlider() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3.5">
               <Link
-                href="/shop?category=campaign"
+                href="/catalog?category=campaign"
                 className="group flex items-center gap-2 rounded-full bg-orange px-7 py-3.5 font-display font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-orange-deep"
               >
-                Shop campaign gear
+                Browse campaign gear
                 <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <button

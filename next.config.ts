@@ -35,6 +35,11 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    // "Shop" was renamed to "Catalog"; keep old links + bookmarks working.
+    // Query strings (?category=, ?q=) are forwarded automatically.
+    return [{ source: "/shop", destination: "/catalog", permanent: true }];
+  },
 };
 
 export default nextConfig;

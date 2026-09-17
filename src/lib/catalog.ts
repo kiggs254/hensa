@@ -41,6 +41,15 @@ export interface Category {
   blurb: string;
   image: string;
   count: number;
+  /** Direct child categories (only those that have products), for the drill-down strip. */
+  children?: SubCategory[];
+}
+
+export interface SubCategory {
+  slug: string;
+  name: string;
+  image: string;
+  count: number;
 }
 
 /** Curated top-level copy + local fallback art (the images also live in the API). */
@@ -68,12 +77,22 @@ export async function getCategories(): Promise<Category[]> {
   return roots
     .map((r) => {
       const meta = CATEGORY_META[r.slug];
+      const children = (r.children ?? [])
+        .map((c) => ({
+          slug: c.slug,
+          name: c.name,
+          image: c.image || "",
+          count: counts.get(c.slug) ?? 0,
+        }))
+        .filter((c) => c.count > 0)
+        .sort((a, b) => a.name.localeCompare(b.name));
       return {
         slug: r.slug,
         name: r.name,
         blurb: meta?.blurb ?? r.description ?? "",
         image: r.image || meta?.image || "",
         count: counts.get(r.slug) ?? 0,
+        children,
         _order: meta?.order ?? 99,
       };
     })

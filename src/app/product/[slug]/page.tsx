@@ -66,8 +66,8 @@ export default async function ProductPage({
 
   const breadcrumb = breadcrumbNode([
     { name: "Home", path: "/" },
-    { name: "Shop", path: "/shop" },
-    ...(cat ? [{ name: cat.name, path: `/shop?category=${cat.slug}` }] : []),
+    { name: "Catalog", path: "/catalog" },
+    ...(cat ? [{ name: cat.name, path: `/catalog?category=${cat.slug}` }] : []),
     { name: product.name, path: `/product/${product.slug}` },
   ]);
 
@@ -80,11 +80,11 @@ export default async function ProductPage({
       <nav className="spec flex flex-wrap items-center gap-2 text-ink-soft" aria-label="Breadcrumb">
         <Link href="/" className="hover:text-orange">Home</Link>
         <span>/</span>
-        <Link href="/shop" className="hover:text-orange">Shop</Link>
+        <Link href="/catalog" className="hover:text-orange">Catalog</Link>
         {cat && (
           <>
             <span>/</span>
-            <Link href={`/shop?category=${cat.slug}`} className="hover:text-orange">
+            <Link href={`/catalog?category=${cat.slug}`} className="hover:text-orange">
               {cat.name}
             </Link>
           </>

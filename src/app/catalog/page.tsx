@@ -6,10 +6,10 @@ import { getProducts, getCategories } from "@/lib/catalog";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Shop — Branded Products & Corporate Gifts",
+  title: "Catalog — Branded Products & Corporate Gifts",
   description:
-    "Browse 270+ branded products: banners, corporate apparel, gifts, stationery, promotional items and signage. Enquire instantly on WhatsApp.",
-  alternates: { canonical: "/shop" },
+    "Browse 500+ branded products: banners, corporate apparel, gifts, stationery, promotional items, signage and trophies & awards. Enquire instantly on WhatsApp.",
+  alternates: { canonical: "/catalog" },
 };
 
 export default async function ShopPage() {
@@ -19,7 +19,7 @@ export default async function ShopPage() {
       <div className="mb-10">
         <p className="spec text-orange">The full catalogue</p>
         <h1 className="font-display mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Our Shop
+          Our Catalog
         </h1>
         <p className="mt-3 max-w-2xl text-ink-soft">
           Every item can be branded with your logo. Pick a product, hit{" "}

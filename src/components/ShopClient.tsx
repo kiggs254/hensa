@@ -3,12 +3,89 @@
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
-import { type Product, type Category } from "@/lib/catalog";
+import { type Product, type Category, type SubCategory } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
 const PAGE_SIZE = 24;
 
 type Sort = "featured" | "name";
+
+/** One category avatar in the strip. */
+function Circle({
+  image,
+  iconMode = false,
+  label,
+  count,
+  selected,
+  hasChildren = false,
+  onClick,
+}: {
+  image?: string;
+  iconMode?: boolean;
+  label: string;
+  count?: number;
+  selected: boolean;
+  hasChildren?: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-pressed={selected}
+      className="group flex w-20 flex-none flex-col items-center gap-2.5 text-center sm:w-24"
+    >
+      <span
+        className={`relative block h-20 w-20 overflow-hidden rounded-full bg-white ring-offset-2 ring-offset-paper transition-all duration-300 sm:h-[5.5rem] sm:w-[5.5rem] ${
+          selected
+            ? "ring-2 ring-orange"
+            : "border border-ink/10 group-hover:border-transparent group-hover:ring-2 group-hover:ring-orange"
+        }`}
+      >
+        {image ? (
+          <Image
+            src={image}
+            alt=""
+            fill
+            sizes="96px"
+            className={`transition-transform duration-500 group-hover:scale-110 ${
+              iconMode ? "object-contain p-5" : "object-cover"
+            }`}
+          />
+        ) : null}
+        {hasChildren && (
+          <span
+            aria-hidden
+            className="absolute bottom-1 right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-paper bg-orange text-white shadow-sm transition-transform duration-300 group-hover:scale-110"
+          >
+            <svg viewBox="0 0 24 24" className="h-2.5 w-2.5" fill="currentColor">
+              <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" />
+            </svg>
+          </span>
+        )}
+      </span>
+      <span
+        className={`flex items-center gap-1 text-xs font-semibold leading-tight transition-colors ${
+          selected ? "text-orange" : "text-ink group-hover:text-orange"
+        }`}
+      >
+        {label}
+        {typeof count === "number" ? ` (${count})` : ""}
+        {hasChildren && (
+          <svg
+            viewBox="0 0 24 24"
+            className="h-3 w-3 flex-none text-ink-soft transition-colors group-hover:text-orange"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            aria-hidden
+          >
+            <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        )}
+      </span>
+    </button>
+  );
+}
 
 export default function ShopClient({
   products,
@@ -25,6 +102,30 @@ export default function ShopClient({
   const query = searchParams.get("q") ?? "";
   const [sort, setSort] = useState<Sort>("featured");
   const [visible, setVisible] = useState(PAGE_SIZE);
+
+  // slug -> parent slug, for subcategories only
+  const parentBySub = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const c of categories)
+      for (const s of c.children ?? []) m.set(s.slug, c.slug);
+    return m;
+  }, [categories]);
+  const catBySlug = useMemo(() => {
+    const m = new Map<string, Category>();
+    for (const c of categories) m.set(c.slug, c);
+    return m;
+  }, [categories]);
+
+  // Which parent's subcategories are on display (null = top-level strip).
+  const [drillParent, setDrillParent] = useState<string | null>(
+    () => parentBySub.get(activeCategory) ?? null
+  );
+
+  // Deep links / footer links to a subcategory open its drill view.
+  useEffect(() => {
+    const p = parentBySub.get(activeCategory);
+    if (p) setDrillParent(p);
+  }, [activeCategory, parentBySub]);
 
   useEffect(() => {
     setVisible(PAGE_SIZE);
@@ -49,7 +150,7 @@ export default function ShopClient({
         break;
     }
     return list;
-  }, [activeCategory, query, sort]);
+  }, [activeCategory, query, sort, products]);
 
   const setCategory = (slug: string) => {
     router.replace(slug ? `${pathname}?category=${slug}` : pathname, {
@@ -57,73 +158,99 @@ export default function ShopClient({
     });
   };
 
+  const onTopClick = (c: Category) => {
+    setCategory(c.slug);
+    setDrillParent(c.children && c.children.length ? c.slug : null);
+  };
+  const onBack = () => {
+    if (drillParent) setCategory(drillParent);
+    setDrillParent(null);
+  };
+
+  const parent = drillParent ? catBySlug.get(drillParent) : null;
+
   return (
     <div>
-      {/* category circles */}
-      <div className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2 lg:justify-between">
-        <button
-          onClick={() => setCategory("")}
-          aria-pressed={!activeCategory}
-          className="group flex w-20 flex-none flex-col items-center gap-2.5 text-center sm:w-24"
-        >
-          <span
-            className={`relative block h-20 w-20 overflow-hidden rounded-full bg-white ring-offset-2 ring-offset-paper transition-all duration-300 sm:h-[5.5rem] sm:w-[5.5rem] ${
-              !activeCategory
-                ? "ring-2 ring-orange"
-                : "border border-ink/10 group-hover:border-transparent group-hover:ring-2 group-hover:ring-orange"
-            }`}
-          >
-            <Image
-              src="/icon.png"
-              alt=""
-              fill
-              sizes="96px"
-              className="object-contain p-5 transition-transform duration-500 group-hover:scale-110"
+      {/* category strip — top-level, or a parent's subcategories */}
+      {parent ? (
+        <div key={parent.slug} className="strip-in">
+          <div className="mb-4 flex flex-wrap items-center gap-3">
+            <button
+              onClick={onBack}
+              className="group inline-flex items-center gap-1.5 rounded-full border border-ink/15 bg-cream px-3.5 py-1.5 text-sm font-semibold text-ink transition-colors hover:border-orange hover:text-orange"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-4 w-4 transition-transform group-hover:-translate-x-0.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                aria-hidden
+              >
+                <path
+                  d="M15 6l-6 6 6 6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              All categories
+            </button>
+            <span className="flex items-baseline gap-2">
+              <span className="font-display text-lg font-extrabold tracking-tight text-ink">
+                {parent.name}
+              </span>
+              <span className="spec text-ink-soft">
+                {parent.count} item{parent.count === 1 ? "" : "s"}
+              </span>
+            </span>
+          </div>
+          <div className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2">
+            <Circle
+              image={parent.image}
+              label={`All ${parent.name}`}
+              count={parent.count}
+              selected={activeCategory === parent.slug}
+              onClick={() => setCategory(parent.slug)}
             />
-          </span>
-          <span
-            className={`text-xs font-semibold leading-tight transition-colors ${
-              !activeCategory ? "text-orange" : "text-ink group-hover:text-orange"
-            }`}
-          >
-            All Products ({products.length})
-          </span>
-        </button>
-
-        {categories.map((c) => (
-          <button
-            key={c.slug}
-            onClick={() => setCategory(c.slug)}
-            aria-pressed={activeCategory === c.slug}
-            className="group flex w-20 flex-none flex-col items-center gap-2.5 text-center sm:w-24"
-          >
-            <span
-              className={`relative block h-20 w-20 overflow-hidden rounded-full ring-offset-2 ring-offset-paper transition-all duration-300 sm:h-[5.5rem] sm:w-[5.5rem] ${
-                activeCategory === c.slug
-                  ? "ring-2 ring-orange"
-                  : "border border-ink/10 group-hover:border-transparent group-hover:ring-2 group-hover:ring-orange"
-              }`}
-            >
-              <Image
-                src={c.image}
-                alt=""
-                fill
-                sizes="96px"
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+            {parent.children!.map((s: SubCategory) => (
+              <Circle
+                key={s.slug}
+                image={s.image}
+                label={s.name}
+                selected={activeCategory === s.slug}
+                onClick={() => setCategory(s.slug)}
               />
-            </span>
-            <span
-              className={`text-xs font-semibold leading-tight transition-colors ${
-                activeCategory === c.slug
-                  ? "text-orange"
-                  : "text-ink group-hover:text-orange"
-              }`}
-            >
-              {c.name}
-            </span>
-          </button>
-        ))}
-      </div>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div
+          key="root"
+          className="strip-in scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2 lg:justify-between"
+        >
+          <Circle
+            iconMode
+            image="/icon.png"
+            label="All Products"
+            count={products.length}
+            selected={!activeCategory}
+            onClick={() => {
+              setCategory("");
+              setDrillParent(null);
+            }}
+          />
+          {categories.map((c) => (
+            <Circle
+              key={c.slug}
+              image={c.image}
+              label={c.name}
+              hasChildren={!!c.children?.length}
+              selected={activeCategory === c.slug}
+              onClick={() => onTopClick(c)}
+            />
+          ))}
+        </div>
+      )}
 
       {/* active search + sort */}
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

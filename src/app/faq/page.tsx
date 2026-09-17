@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 
 const RELATED = [
   { label: "Large Format Printing", href: "/services/large-format-printing" },
-  { label: "Corporate Gifts", href: "/shop?category=corporate-gifts" },
-  { label: "Promotional Items", href: "/shop?category=promotional-items" },
-  { label: "Banners", href: "/shop?category=banners" },
-  { label: "Campaign & Political", href: "/shop?category=campaign" },
+  { label: "Corporate Gifts", href: "/catalog?category=corporate-gifts" },
+  { label: "Promotional Items", href: "/catalog?category=promotional-items" },
+  { label: "Banners", href: "/catalog?category=banners" },
+  { label: "Campaign & Political", href: "/catalog?category=campaign" },
   { label: "All services", href: "/services" },
 ];
 

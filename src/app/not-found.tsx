@@ -13,10 +13,10 @@ export default function NotFound() {
         The catalogue, however, is very much alive.
       </p>
       <Link
-        href="/shop"
+        href="/catalog"
         className="group mt-9 flex items-center gap-2 rounded-full bg-ink px-7 py-4 font-display font-bold text-cream transition-all hover:-translate-y-0.5 hover:bg-orange"
       >
-        Back to the shop
+        Back to the catalog
         <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </Link>
     </div>

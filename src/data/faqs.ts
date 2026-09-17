@@ -92,7 +92,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "Do you print campaign and political merchandise?",
-        a: "Yes. Hensa Solutions produces election and campaign merchandise for every party and candidate on a strictly non-partisan basis — branded t-shirts, caps, lessos, reflectors, banners, flags and full regalia in your party colours, delivered to any county. See our campaign range in the shop.",
+        a: "Yes. Hensa Solutions produces election and campaign merchandise for every party and candidate on a strictly non-partisan basis — branded t-shirts, caps, lessos, reflectors, banners, flags and full regalia in your party colours, delivered to any county. See our campaign range in the catalog.",
       },
     ],
   },

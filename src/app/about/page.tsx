@@ -146,7 +146,7 @@ export default async function AboutPage() {
               Talk to us on WhatsApp
             </EnquireButton>
             <Link
-              href="/shop"
+              href="/catalog"
               className="group flex items-center gap-2 rounded-full border-2 border-ink px-8 py-[14px] font-display font-bold transition-colors hover:border-orange hover:text-orange"
             >
               Browse products

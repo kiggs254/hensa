@@ -16,7 +16,7 @@ export async function GET() {
     .join("\n");
 
   const cats = categories
-    .map((c) => `- ${c.name} (${c.count} products): ${site.url}/shop?category=${c.slug}`)
+    .map((c) => `- ${c.name} (${c.count} products): ${site.url}/catalog?category=${c.slug}`)
     .join("\n");
 
   const body = `# ${site.name}
@@ -48,8 +48,8 @@ ${cats}
 ## Key pages
 - Home: ${site.url}/
 - Services overview: ${site.url}/services
-- Shop / catalogue: ${site.url}/shop
-- Campaign & political merchandise: ${site.url}/shop?category=campaign
+- Catalog: ${site.url}/catalog
+- Campaign & political merchandise: ${site.url}/catalog?category=campaign
 - Frequently asked questions: ${site.url}/faq
 - About: ${site.url}/about
 - Contact: ${site.url}/contact

@@ -7,7 +7,7 @@ export const revalidate = 300;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [products, categories] = await Promise.all([getProducts(), getCategories()]);
-  const staticPages = ["", "/shop", "/services", "/faq", "/about", "/contact"].map(
+  const staticPages = ["", "/catalog", "/services", "/faq", "/about", "/contact"].map(
     (p) => ({
       url: `${site.url}${p}`,
       changeFrequency: "weekly" as const,
@@ -16,7 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   const categoryPages = categories.map((c) => ({
-    url: `${site.url}/shop?category=${c.slug}`,
+    url: `${site.url}/catalog?category=${c.slug}`,
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));

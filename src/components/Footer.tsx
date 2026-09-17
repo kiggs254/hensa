@@ -136,17 +136,17 @@ export default function Footer({
             )}
           </div>
 
-          {/* shop */}
-          <nav className="lg:col-span-3" aria-label="Shop">
+          {/* catalog */}
+          <nav className="lg:col-span-3" aria-label="Catalog">
             <h3 className="spec mb-4 flex items-center gap-2 text-orange">
               <span className="h-px w-4 bg-orange/50" />
-              Shop
+              Catalog
             </h3>
             <ul className="space-y-2.5 text-sm">
               {categories.map((c) => (
                 <li key={c.slug}>
                   <Link
-                    href={`/shop?category=${c.slug}`}
+                    href={`/catalog?category=${c.slug}`}
                     className="group inline-flex items-baseline gap-2 text-cream/65 transition-colors hover:text-orange"
                   >
                     <span className="font-mono text-[10px] text-cream/25 transition-colors group-hover:text-orange/60">
@@ -226,7 +226,7 @@ export default function Footer({
               {[
                 { href: "/faq", label: "FAQ" },
                 { href: "/about", label: "About" },
-                { href: "/shop", label: "Shop" },
+                { href: "/catalog", label: "Catalog" },
               ].map((l) => (
                 <Link
                   key={l.href}

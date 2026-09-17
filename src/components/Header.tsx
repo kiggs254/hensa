@@ -17,7 +17,7 @@ import {
 
 const NAV = [
   { href: "/", label: "Home" },
-  { href: "/shop", label: "Shop", mega: true },
+  { href: "/catalog", label: "Catalog", mega: true },
   { href: "/services", label: "Our Services" },
   { href: "/faq", label: "FAQ" },
   { href: "/about", label: "About Hensa" },
@@ -93,7 +93,7 @@ export default function Header({ categories }: { categories: Category[] }) {
     const q = searchInput.current?.value.trim();
     if (!q) return;
     setSearch(false);
-    router.push(`/shop?q=${encodeURIComponent(q)}`);
+    router.push(`/catalog?q=${encodeURIComponent(q)}`);
   };
 
   return (
@@ -164,7 +164,7 @@ export default function Header({ categories }: { categories: Category[] }) {
                     aria-haspopup="true"
                     onFocus={openMega}
                     className={`flex items-center rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-ink/5 ${
-                      pathname.startsWith("/shop") ||
+                      pathname.startsWith("/catalog") ||
                       pathname.startsWith("/product")
                         ? "text-orange"
                         : ""
@@ -281,7 +281,7 @@ export default function Header({ categories }: { categories: Category[] }) {
               {QUICK_SEARCHES.map((q) => (
                 <Link
                   key={q}
-                  href={`/shop?q=${encodeURIComponent(q)}`}
+                  href={`/catalog?q=${encodeURIComponent(q)}`}
                   tabIndex={search ? 0 : -1}
                   onClick={() => setSearch(false)}
                   className="rounded-full border border-ink/15 px-3 py-1 text-xs font-semibold text-ink-soft transition-colors hover:border-orange hover:text-orange"
@@ -306,12 +306,12 @@ export default function Header({ categories }: { categories: Category[] }) {
           <div className="mx-auto grid max-w-7xl grid-cols-12 gap-8 px-6 py-8">
             {/* categories */}
             <div className="col-span-8">
-              <p className="spec text-orange">Shop by category</p>
+              <p className="spec text-orange">Browse by category</p>
               <div className="mt-4 grid grid-cols-4 gap-3">
                 {categories.map((c) => (
                   <Link
                     key={c.slug}
-                    href={`/shop?category=${c.slug}`}
+                    href={`/catalog?category=${c.slug}`}
                     tabIndex={mega ? 0 : -1}
                     className="group/tile relative block h-28 overflow-hidden rounded-xl border border-ink/10"
                   >
@@ -341,7 +341,7 @@ export default function Header({ categories }: { categories: Category[] }) {
                 {QUICK_SEARCHES.map((q) => (
                   <Link
                     key={q}
-                    href={`/shop?q=${encodeURIComponent(q)}`}
+                    href={`/catalog?q=${encodeURIComponent(q)}`}
                     tabIndex={mega ? 0 : -1}
                     className="rounded-full border border-ink/15 px-3 py-1 text-xs font-semibold text-ink-soft transition-colors hover:border-orange hover:text-orange"
                   >
@@ -406,7 +406,7 @@ export default function Header({ categories }: { categories: Category[] }) {
                 Countrywide delivery · M-Pesa accepted · Bulk discounts
               </p>
               <Link
-                href="/shop"
+                href="/catalog"
                 tabIndex={mega ? 0 : -1}
                 className="group/all flex items-center gap-2 text-sm font-bold text-green-deep transition-colors hover:text-orange"
               >
@@ -432,12 +432,12 @@ export default function Header({ categories }: { categories: Category[] }) {
                 {item.label}
               </Link>
             ))}
-            <p className="spec mb-2 mt-4 text-ink-soft">Shop by category</p>
+            <p className="spec mb-2 mt-4 text-ink-soft">Browse by category</p>
             <div className="grid grid-cols-2 gap-2">
               {categories.map((c) => (
                 <Link
                   key={c.slug}
-                  href={`/shop?category=${c.slug}`}
+                  href={`/catalog?category=${c.slug}`}
                   className="flex items-center gap-2.5 rounded-xl border border-ink/10 p-2 text-sm font-medium"
                 >
                   <span className="relative block h-9 w-9 flex-none overflow-hidden rounded-lg">

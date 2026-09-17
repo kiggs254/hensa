@@ -287,7 +287,7 @@ export default async function ServicePage({
                 </h2>
               </div>
               <Link
-                href="/shop"
+                href="/catalog"
                 className="group flex items-center gap-2 font-display font-bold text-green-deep transition-colors hover:text-orange"
               >
                 Browse everything

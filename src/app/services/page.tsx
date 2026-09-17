@@ -87,7 +87,7 @@ export default function ServicesPage() {
                 Start a project
               </EnquireButton>
               <Link
-                href="/shop"
+                href="/catalog"
                 className="group flex items-center gap-2 rounded-full border-2 border-ink/15 px-6 py-3 font-display font-bold transition-colors hover:border-orange hover:text-orange"
               >
                 See the products
@@ -283,7 +283,7 @@ export default function ServicesPage() {
                   Ask on WhatsApp
                 </EnquireButton>
                 <Link
-                  href="/shop"
+                  href="/catalog"
                   className="group flex items-center gap-2 rounded-full border border-cream/30 px-8 py-4 font-display font-bold transition-colors hover:border-orange hover:text-orange"
                 >
                   See the products
