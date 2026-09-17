@@ -1,9 +1,12 @@
 import type { MetadataRoute } from "next";
-import { products, categories } from "@/lib/catalog";
+import { getProducts, getCategories } from "@/lib/catalog";
 import { services } from "@/data/services";
 import { site } from "@/lib/site";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const revalidate = 300;
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [products, categories] = await Promise.all([getProducts(), getCategories()]);
   const staticPages = ["", "/shop", "/services", "/faq", "/about", "/contact"].map(
     (p) => ({
       url: `${site.url}${p}`,

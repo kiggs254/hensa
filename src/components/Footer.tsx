@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { categories, products } from "@/lib/catalog";
+import { type Category } from "@/lib/catalog";
 import { services } from "@/data/services";
 import { site } from "@/lib/site";
 import EnquireButton from "@/components/EnquireButton";
@@ -9,14 +9,20 @@ import OpenStatus from "@/components/OpenStatus";
 import BackToTop from "@/components/BackToTop";
 import { WhatsAppIcon, PhoneIcon, MailIcon, PinIcon, ArrowIcon } from "@/components/icons";
 
-const JOB_SPEC = [
+const jobSpec = (productCount: number) => [
   { k: "Studio", v: "Nairobi, KE" },
-  { k: "Catalogue", v: `${products.length} products` },
+  { k: "Catalogue", v: `${productCount} products` },
   { k: "Delivery", v: "Countrywide" },
   { k: "Payment", v: "M-Pesa accepted" },
 ];
 
-export default function Footer() {
+export default function Footer({
+  categories,
+  productCount,
+}: {
+  categories: Category[];
+  productCount: number;
+}) {
   return (
     <footer className="relative overflow-hidden bg-ink text-cream">
       {/* halftone glow */}
@@ -63,7 +69,7 @@ export default function Footer() {
 
         {/* ---------- job spec strip ---------- */}
         <dl className="grid grid-cols-2 gap-px overflow-hidden border-b border-cream/10 bg-cream/10 sm:grid-cols-4">
-          {JOB_SPEC.map((s) => (
+          {jobSpec(productCount).map((s) => (
             <div key={s.k} className="bg-ink px-4 py-5">
               <dt className="spec text-[9px] text-cream/40">{s.k}</dt>
               <dd className="font-display mt-1 text-sm font-bold">{s.v}</dd>

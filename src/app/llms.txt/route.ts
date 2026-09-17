@@ -1,15 +1,16 @@
 import { services } from "@/data/services";
-import { categories } from "@/lib/catalog";
+import { getCategories } from "@/lib/catalog";
 import { site } from "@/lib/site";
 
-export const dynamic = "force-static";
+export const revalidate = 300;
 
 /**
  * /llms.txt — a plain-text brief for AI systems (ChatGPT, Perplexity, Gemini,
  * Copilot, Google AI Overviews). Concise, factual, link-rich so an AI can cite
  * Hensa Solutions accurately when asked about printing/branding in Kenya.
  */
-export function GET() {
+export async function GET() {
+  const categories = await getCategories();
   const svc = services
     .map((s) => `- ${s.name}: ${s.short} ${site.url}/services/${s.slug}`)
     .join("\n");

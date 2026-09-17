@@ -8,6 +8,7 @@ import EnquiryProvider from "@/components/EnquiryProvider";
 import JsonLd from "@/components/JsonLd";
 import { siteGraph } from "@/lib/structured-data";
 import { site } from "@/lib/site";
+import { getCategories, getProducts } from "@/lib/catalog";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -64,11 +65,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [categories, allProducts] = await Promise.all([getCategories(), getProducts()]);
+  const productCount = allProducts.length;
   return (
     <html lang="en" className="h-full">
       <body
@@ -76,9 +79,9 @@ export default function RootLayout({
       >
         <JsonLd data={siteGraph()} />
         <EnquiryProvider>
-          <Header />
+          <Header categories={categories} />
           <main className="flex-1">{children}</main>
-          <Footer />
+          <Footer categories={categories} productCount={productCount} />
           <WhatsAppFloat />
         </EnquiryProvider>
       </body>

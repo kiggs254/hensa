@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import { categories, products } from "@/lib/catalog";
+import { getCategories, getProducts } from "@/lib/catalog";
+
+export const revalidate = 300;
 import EnquireButton from "@/components/EnquireButton";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
@@ -35,7 +37,8 @@ const METHOD = [
   },
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const [categories, products] = await Promise.all([getCategories(), getProducts()]);
   return (
     <>
       <section className="grain relative overflow-hidden border-b border-ink/10">

@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  products,
-  productBySlug,
-  relatedProducts,
+  getProducts,
+  getProductBySlug,
+  getRelatedProducts,
   categoryBySlug,
 } from "@/lib/catalog";
 import { site } from "@/lib/site";
@@ -14,8 +14,11 @@ import { breadcrumbNode } from "@/lib/structured-data";
 import ProductEnquiry from "@/components/ProductEnquiry";
 import ProductCard from "@/components/ProductCard";
 
-export function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
+export const revalidate = 300;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  return (await getProducts()).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -24,7 +27,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const product = productBySlug(slug);
+  const product = await getProductBySlug(slug);
   if (!product) return {};
   return {
     title: product.name,
@@ -43,11 +46,11 @@ export default async function ProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = productBySlug(slug);
+  const product = await getProductBySlug(slug);
   if (!product) notFound();
 
-  const cat = categoryBySlug(product.categories[0]);
-  const related = relatedProducts(product);
+  const cat = await categoryBySlug(product.categorySlug || product.categories[0]);
+  const related = await getRelatedProducts(product);
 
   const jsonLd = {
     "@context": "https://schema.org",

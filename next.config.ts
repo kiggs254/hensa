@@ -23,6 +23,9 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: false,
   images: {
     dangerouslyAllowSVG: false,
+    remotePatterns: [
+      { protocol: "https", hostname: "media.e-biz.co.ke" },
+    ],
   },
   async headers() {
     return [

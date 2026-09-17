@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { categories } from "@/lib/catalog";
+import { type Category } from "@/lib/catalog";
 import { site } from "@/lib/site";
 import { useEnquiry } from "@/components/EnquiryProvider";
 import {
@@ -47,7 +47,7 @@ const QUICK_SEARCHES = [
   "Pens",
 ];
 
-export default function Header() {
+export default function Header({ categories }: { categories: Category[] }) {
   const [open, setOpen] = useState(false);
   const [mega, setMega] = useState(false);
   const [search, setSearch] = useState(false);

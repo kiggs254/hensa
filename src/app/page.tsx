@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { categories, products } from "@/lib/catalog";
+import { getCategories, getProducts } from "@/lib/catalog";
+
+export const revalidate = 300;
 import { clientLogos } from "@/data/clients";
 import { services } from "@/data/services";
 import { site } from "@/lib/site";
@@ -69,7 +71,8 @@ const TRUST = [
   },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const [categories, products] = await Promise.all([getCategories(), getProducts()]);
   const featured = FEATURED_SLUGS.map((s) =>
     products.find((p) => p.slug === s)
   ).filter((p): p is NonNullable<typeof p> => Boolean(p));

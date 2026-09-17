@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import ShopClient from "@/components/ShopClient";
+import { getProducts, getCategories } from "@/lib/catalog";
+
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Shop — Branded Products & Corporate Gifts",
@@ -9,7 +12,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/shop" },
 };
 
-export default function ShopPage() {
+export default async function ShopPage() {
+  const [products, categories] = await Promise.all([getProducts(), getCategories()]);
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
       <div className="mb-10">
@@ -24,7 +28,7 @@ export default function ShopPage() {
         </p>
       </div>
       <Suspense>
-        <ShopClient />
+        <ShopClient products={products} categories={categories} />
       </Suspense>
     </div>
   );

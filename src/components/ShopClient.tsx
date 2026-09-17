@@ -3,14 +3,20 @@
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
-import { products, categories } from "@/lib/catalog";
+import { type Product, type Category } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 
 const PAGE_SIZE = 24;
 
 type Sort = "featured" | "name";
 
-export default function ShopClient() {
+export default function ShopClient({
+  products,
+  categories,
+}: {
+  products: Product[];
+  categories: Category[];
+}) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();

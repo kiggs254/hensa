@@ -1,15 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import { categoryBySlug, type Product } from "@/lib/catalog";
+import { type Product } from "@/lib/catalog";
 import { site } from "@/lib/site";
 import EnquireButton from "@/components/EnquireButton";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
 export default function ProductCard({ product }: { product: Product }) {
-  const cat = categoryBySlug(product.categories[0]);
   // the specific tag ("Notebooks", "Pop Up Banner") is more useful than the
-  // broad category — 263 of 274 products carry one
-  const subtitle = product.tags[0] ?? cat?.name;
+  // broad category, falling back to the product's top-level category name
+  const subtitle = product.tags[0] ?? product.categoryName;
 
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-cream transition-all duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-[0_24px_50px_rgba(28,26,22,0.16)]">

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { services, serviceBySlug } from "@/data/services";
-import { products, type Product } from "@/lib/catalog";
+import { getProducts, type Product } from "@/lib/catalog";
 import { site } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import { serviceNode, breadcrumbNode, faqNode } from "@/lib/structured-data";
@@ -31,8 +31,9 @@ export async function generateMetadata({
   };
 }
 
-function matchProducts(keywords: string[], n: number): Product[] {
+async function matchProducts(keywords: string[], n: number): Promise<Product[]> {
   const kws = keywords.map((k) => k.toLowerCase());
+  const products = await getProducts();
   return products
     .map((p) => {
       const hay = `${p.name} ${p.tags.join(" ")}`.toLowerCase();
@@ -77,7 +78,7 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const a = ACCENTS[service.accent];
-  const gallery = matchProducts(service.keywords, 8);
+  const gallery = await matchProducts(service.keywords, 8);
   const heroImages = gallery.slice(0, 2);
   const related = service.related
     .map((r) => serviceBySlug(r))
