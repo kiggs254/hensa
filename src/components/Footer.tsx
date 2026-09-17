@@ -126,7 +126,7 @@ export default function Footer({
                       rel="noopener noreferrer"
                       aria-label={s.label}
                       title={s.label}
-                      className="flex h-9 w-9 items-center justify-center rounded-full border border-orange/40 text-orange transition-all hover:-translate-y-0.5 hover:border-orange hover:bg-orange hover:text-white"
+                      className="flex h-9 w-9 items-center justify-center rounded-full bg-orange text-white shadow-[0_6px_16px_rgba(240,82,29,0.30)] transition-all hover:-translate-y-0.5 hover:bg-orange-deep hover:shadow-[0_10px_24px_rgba(240,82,29,0.45)]"
                     >
                       <Icon className="h-4 w-4" />
                     </a>
