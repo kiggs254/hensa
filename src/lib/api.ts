@@ -114,7 +114,7 @@ function mapProduct(
 export async function apiGetAllProducts(): Promise<Product[]> {
   const [{ childToRoot, bySlug }, data] = await Promise.all([
     categoryIndex(),
-    sf<{ products: ApiProduct[] }>("/products?limit=500"),
+    sf<{ products: ApiProduct[] }>("/products?limit=1000"),
   ]);
   return (data?.products ?? []).map((p) => mapProduct(p, childToRoot, bySlug));
 }
@@ -172,7 +172,7 @@ export async function apiGetSocialLinks(): Promise<SocialLink[]> {
 export async function apiGetProductsInCategory(slug: string): Promise<Product[]> {
   const [{ childToRoot, bySlug }, data] = await Promise.all([
     categoryIndex(),
-    sf<{ products: ApiProduct[] }>(`/products?category_slug=${encodeURIComponent(slug)}&limit=500`),
+    sf<{ products: ApiProduct[] }>(`/products?category_slug=${encodeURIComponent(slug)}&limit=1000`),
   ]);
   return (data?.products ?? []).map((p) => mapProduct(p, childToRoot, bySlug));
 }

@@ -47,7 +47,8 @@ export interface Category {
 const CATEGORY_META: Record<string, { blurb: string; image: string; order: number }> = {
   banners: { order: 0, blurb: "Pop-up, teardrop, backdrop, X-banners, billboards & gazebos for events and promotions.", image: "/categories/banners.jpg" },
   "corporate-apparel": { order: 1, blurb: "Gents' and ladies' corporate shirts, chef jackets and tailored workwear.", image: "/categories/corporate-apparel.jpg" },
-  "corporate-gifts": { order: 2, blurb: "Executive gift sets, awards, flash disks, desk organisers and card holders.", image: "/categories/corporate-gifts.jpg" },
+  "corporate-gifts": { order: 2, blurb: "Executive gift sets, flash disks, desk organisers and card holders.", image: "/categories/corporate-gifts.jpg" },
+  "trophies-awards": { order: 2.5, blurb: "Trophies, medals, plaques, shields and crystal, glass, wood & resin awards — engraved and branded to order.", image: "/categories/corporate-gifts.jpg" },
   "corporate-stationery": { order: 3, blurb: "Notebooks, pens, business cards, letterheads, calendars, diaries and more.", image: "/categories/corporate-stationery.jpg" },
   "individual-gifts": { order: 4, blurb: "Photo books, framed photos, throw pillows, cards and personalised keepsakes.", image: "/categories/individual-gifts.jpg" },
   "promotional-items": { order: 5, blurb: "T-shirts, hoodies, caps, mugs, water bottles, bags and giveaways that carry your brand.", image: "/categories/promotional-items.jpg" },
