@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { permanentRedirect } from "next/navigation";
 import ShopClient from "@/components/ShopClient";
 import { getProducts, getCategories } from "@/lib/catalog";
 
@@ -12,7 +13,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/catalog" },
 };
 
-export default async function ShopPage() {
+export default async function CatalogPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string; q?: string }>;
+}) {
+  // Legacy ?category= links now live at /catalog/<slug> — send them there.
+  const { category } = await searchParams;
+  if (category) permanentRedirect(`/catalog/${category}`);
+
   const [products, categories] = await Promise.all([getProducts(), getCategories()]);
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">

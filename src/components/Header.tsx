@@ -311,7 +311,7 @@ export default function Header({ categories }: { categories: Category[] }) {
                 {categories.map((c) => (
                   <Link
                     key={c.slug}
-                    href={`/catalog?category=${c.slug}`}
+                    href={`/catalog/${c.slug}`}
                     tabIndex={mega ? 0 : -1}
                     className="group/tile relative block h-28 overflow-hidden rounded-xl border border-ink/10"
                   >
@@ -434,7 +434,7 @@ export default function Header({ categories }: { categories: Category[] }) {
               {categories.map((c) => (
                 <Link
                   key={c.slug}
-                  href={`/catalog?category=${c.slug}`}
+                  href={`/catalog/${c.slug}`}
                   className="flex items-center gap-2.5 rounded-xl border border-ink/10 p-2 text-sm font-medium"
                 >
                   <span className="relative block h-9 w-9 flex-none overflow-hidden rounded-lg">

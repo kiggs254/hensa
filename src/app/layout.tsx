@@ -50,6 +50,8 @@ export const metadata: Metadata = {
   ],
   applicationName: site.name,
   authors: [{ name: site.name, url: site.url }],
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   openGraph: {
     siteName: site.name,
     title: `${site.name} — Printing, Branding & Promotional Products in Nairobi`,

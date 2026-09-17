@@ -15,11 +15,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  const categoryPages = categories.map((c) => ({
-    url: `${site.url}/catalog?category=${c.slug}`,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
+  const categoryPages = categories.flatMap((c) => [
+    {
+      url: `${site.url}/catalog/${c.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...(c.children ?? []).map((s) => ({
+      url: `${site.url}/catalog/${s.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    })),
+  ]);
 
   const servicePages = services.map((s) => ({
     url: `${site.url}/services/${s.slug}`,

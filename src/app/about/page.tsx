@@ -10,7 +10,7 @@ import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "About Hensa — Nairobi's Leading Branding Agency",
   description:
-    "Hensa Solutions is the leading branding agency based in Nairobi, Kenya — creating and developing brands for businesses across East Africa through printing, branding and advertising.",
+    "Hensa Solutions is the leading branding agency based in Nairobi, Kenya — creating and developing brands for businesses across East Africa and clients worldwide through printing, branding and advertising.",
   alternates: { canonical: "/about" },
 };
 
@@ -46,14 +46,15 @@ export default async function AboutPage() {
         <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24">
           <p className="spec text-green-deep">About Hensa</p>
           <h1 className="font-display mt-3 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-6xl">
-            We put East African brands{" "}
+            We put brands{" "}
             <span className="text-orange">on the map</span> — and on mugs,
             shirts, banners &amp; billboards.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft">
             We are the leading branding agency based in Nairobi, Kenya. We
-            specialize in creating and developing brands for businesses in
-            East Africa, and we're well known for our expertise in printing,
+            specialize in creating and developing brands for businesses across
+            East Africa and around the world, and we're well known for our
+            expertise in printing,
             branding and advertising. Our team of professionals has a wealth
             of experience in helping businesses establish and grow their
             brands.

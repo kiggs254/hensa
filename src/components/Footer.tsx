@@ -106,8 +106,8 @@ export default function Footer({
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
               The leading branding agency in Nairobi, Kenya — creating and
-              developing brands across East Africa through printing, branding
-              and advertising.
+              developing brands across East Africa and for clients worldwide
+              through printing, branding and advertising.
             </p>
             <div className="mt-5">
               <OpenStatus />
@@ -144,7 +144,7 @@ export default function Footer({
               {categories.map((c) => (
                 <li key={c.slug}>
                   <Link
-                    href={`/catalog?category=${c.slug}`}
+                    href={`/catalog/${c.slug}`}
                     className="inline-flex text-cream/65 transition-colors hover:text-orange"
                   >
                     {c.name}

@@ -77,42 +77,42 @@ function Circle({
 export default function ShopClient({
   products,
   categories,
+  initialCategory = "",
 }: {
   products: Product[];
   categories: Category[];
+  initialCategory?: string;
 }) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
 
-  const activeCategory = searchParams.get("category") ?? "";
+  // The active category comes from the route (/catalog/<slug>), not a query param.
+  const activeCategory = initialCategory;
   const query = searchParams.get("q") ?? "";
   const [sort, setSort] = useState<Sort>("featured");
   const [visible, setVisible] = useState(PAGE_SIZE);
 
-  // slug -> parent slug, for subcategories only
+  const catBySlug = useMemo(() => {
+    const m = new Map<string, Category>();
+    for (const c of categories) m.set(c.slug, c);
+    return m;
+  }, [categories]);
   const parentBySub = useMemo(() => {
     const m = new Map<string, string>();
     for (const c of categories)
       for (const s of c.children ?? []) m.set(s.slug, c.slug);
     return m;
   }, [categories]);
-  const catBySlug = useMemo(() => {
-    const m = new Map<string, Category>();
-    for (const c of categories) m.set(c.slug, c);
-    return m;
-  }, [categories]);
 
-  // Which parent's subcategories are on display (null = top-level strip).
-  const [drillParent, setDrillParent] = useState<string | null>(
-    () => parentBySub.get(activeCategory) ?? null
-  );
-
-  // Deep links / footer links to a subcategory open its drill view.
-  useEffect(() => {
-    const p = parentBySub.get(activeCategory);
-    if (p) setDrillParent(p);
-  }, [activeCategory, parentBySub]);
+  // Drill view is derived from the URL: a subcategory shows its parent's strip;
+  // a top-level category that has children shows its own subcategories.
+  const drillParent = useMemo(() => {
+    const sub = parentBySub.get(activeCategory);
+    if (sub) return sub;
+    const cat = catBySlug.get(activeCategory);
+    return cat?.children?.length ? activeCategory : null;
+  }, [activeCategory, parentBySub, catBySlug]);
 
   useEffect(() => {
     setVisible(PAGE_SIZE);
@@ -140,19 +140,9 @@ export default function ShopClient({
   }, [activeCategory, query, sort, products]);
 
   const setCategory = (slug: string) => {
-    router.replace(slug ? `${pathname}?category=${slug}` : pathname, {
-      scroll: false,
-    });
+    router.push(slug ? `/catalog/${slug}` : "/catalog", { scroll: false });
   };
-
-  const onTopClick = (c: Category) => {
-    setCategory(c.slug);
-    setDrillParent(c.children && c.children.length ? c.slug : null);
-  };
-  const onBack = () => {
-    if (drillParent) setCategory(drillParent);
-    setDrillParent(null);
-  };
+  const onBack = () => router.push("/catalog", { scroll: false });
 
   const parent = drillParent ? catBySlug.get(drillParent) : null;
 
@@ -214,10 +204,7 @@ export default function ShopClient({
             image="/icon.png"
             label="All Products"
             selected={!activeCategory}
-            onClick={() => {
-              setCategory("");
-              setDrillParent(null);
-            }}
+            onClick={() => setCategory("")}
           />
           {categories.map((c) => (
             <Circle
@@ -226,7 +213,7 @@ export default function ShopClient({
               label={c.name}
               hasChildren={!!c.children?.length}
               selected={activeCategory === c.slug}
-              onClick={() => onTopClick(c)}
+              onClick={() => setCategory(c.slug)}
             />
           ))}
         </div>
@@ -237,14 +224,7 @@ export default function ShopClient({
         <div>
           {query.trim() && (
             <button
-              onClick={() =>
-                router.replace(
-                  activeCategory
-                    ? `${pathname}?category=${activeCategory}`
-                    : pathname,
-                  { scroll: false }
-                )
-              }
+              onClick={() => router.replace(pathname, { scroll: false })}
               className="group flex items-center gap-2 rounded-full border border-orange bg-orange/10 px-4 py-2 text-sm font-semibold text-orange transition-colors hover:bg-orange hover:text-white"
             >
               Searching: &ldquo;{query.trim()}&rdquo;

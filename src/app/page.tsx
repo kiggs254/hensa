@@ -85,7 +85,7 @@ export default async function Home() {
       kicker: "Campaign season · every party",
       title: ["Your party's ", "colours", ", printed."],
       copy: "Election-ready merchandise for every candidate — t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",
-      cta: { label: "Browse campaign gear", href: "/catalog?category=campaign" },
+      cta: { label: "Browse campaign gear", href: "/catalog/campaign" },
       image: {
         src: "/campaign/campaign-tshirts.jpg",
         alt: "Political campaign t-shirts branded for every party",
@@ -109,7 +109,7 @@ export default async function Home() {
       kicker: "Promotional apparel",
       title: ["Merch your team will ", "actually", " wear."],
       copy: "Hoodies, polos, tees, caps and reflectors — screen-printed or embroidered with your brand, in sizes S to XXXL.",
-      cta: { label: "Browse apparel", href: "/catalog?category=promotional-items" },
+      cta: { label: "Browse apparel", href: "/catalog/promotional-items" },
       image: { src: img("hoodies", "/products/hoodies.jpg"), alt: "Custom printed hoodie" },
       sticker: { big: "S – XXXL", small: "all sizes available" },
       theme: "green",
@@ -118,7 +118,7 @@ export default async function Home() {
       kicker: "Banners & signage",
       title: ["Be ", "impossible", " to miss."],
       copy: "Pop-up banners, backdrops, teardrops and 3D signage that pull eyes at every event, expo and storefront.",
-      cta: { label: "Browse banners", href: "/catalog?category=banners" },
+      cta: { label: "Browse banners", href: "/catalog/banners" },
       image: {
         src: img("pop-up-banner", "/categories/banners.jpg"),
         alt: "Branded pop-up banner",
@@ -130,7 +130,7 @@ export default async function Home() {
       kicker: "Corporate gifts & stationery",
       title: ["Gifts that ", "mean", " business."],
       copy: "Executive gift sets, notebooks, pens and awards — thoughtful, branded and boardroom-ready for clients and staff.",
-      cta: { label: "Browse gifts", href: "/catalog?category=corporate-gifts" },
+      cta: { label: "Browse gifts", href: "/catalog/corporate-gifts" },
       image: {
         src: img("executive-notebooks-005", "/categories/corporate-gifts.jpg"),
         alt: "Executive branded notebooks",
@@ -165,7 +165,7 @@ export default async function Home() {
             {[...categories, ...categories].map((c, i) => (
               <div key={`${c.slug}-${i}`} className="group relative w-24 flex-none">
                 <Link
-                  href={`/catalog?category=${c.slug}`}
+                  href={`/catalog/${c.slug}`}
                   tabIndex={i < categories.length ? 0 : -1}
                   aria-hidden={i >= categories.length}
                   className="flex flex-col items-center gap-2.5 text-center"
@@ -198,7 +198,7 @@ export default async function Home() {
                       </Link>
                     ))}
                     <Link
-                      href={`/catalog?category=${c.slug}`}
+                      href={`/catalog/${c.slug}`}
                       tabIndex={-1}
                       className="spec mt-1 block border-t border-dashed border-ink/15 px-3 pb-1 pt-2 text-left text-[9px] text-green-deep transition-colors hover:text-orange"
                     >
@@ -268,17 +268,17 @@ export default async function Home() {
         <div className="scrollbar-hide -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-3 sm:-mx-6 sm:px-6 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
           {[
             {
-              href: "/catalog?category=corporate-apparel",
+              href: "/catalog/corporate-apparel",
               img: "/promos/corporate-apparel.jpg",
               alt: "Corporate apparel — branded caps and kitchen aprons. Browse now.",
             },
             {
-              href: "/catalog?category=promotional-items",
+              href: "/catalog/promotional-items",
               img: "/promos/promotional-items.jpg",
               alt: "Promotional items — branded mugs, t-shirts and tote bags. Browse now.",
             },
             {
-              href: "/catalog?category=banners",
+              href: "/catalog/banners",
               img: "/promos/banners.jpg",
               alt: "Banners — X-banners and hanging banners for your brand. Browse now.",
             },

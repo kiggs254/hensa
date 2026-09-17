@@ -84,7 +84,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "Which areas in Kenya do you serve?",
-        a: "We are based in Nairobi and deliver countrywide — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret and every county in between — as well as clients across East Africa. Payment is convenient via M-Pesa.",
+        a: "We are based in Nairobi and deliver countrywide — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret and every county in between — as well as clients across East Africa and around the world. Payment is convenient via M-Pesa.",
       },
       {
         q: "Do you brand merchandise for institutions like hospitals, hotels and schools?",

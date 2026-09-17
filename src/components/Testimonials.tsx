@@ -56,7 +56,7 @@ export default function Testimonials() {
               <span className="text-sm font-bold">
                 Trusted by {clientLogos.length}+ brands
                 <span className="block text-xs font-normal text-ink-soft">
-                  across Kenya &amp; East Africa
+                  across Kenya, East Africa &amp; beyond
                 </span>
               </span>
             </div>

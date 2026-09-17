@@ -67,7 +67,7 @@ export default async function ProductPage({
   const breadcrumb = breadcrumbNode([
     { name: "Home", path: "/" },
     { name: "Catalog", path: "/catalog" },
-    ...(cat ? [{ name: cat.name, path: `/catalog?category=${cat.slug}` }] : []),
+    ...(cat ? [{ name: cat.name, path: `/catalog/${cat.slug}` }] : []),
     { name: product.name, path: `/product/${product.slug}` },
   ]);
 
@@ -84,7 +84,7 @@ export default async function ProductPage({
         {cat && (
           <>
             <span>/</span>
-            <Link href={`/catalog?category=${cat.slug}`} className="hover:text-orange">
+            <Link href={`/catalog/${cat.slug}`} className="hover:text-orange">
               {cat.name}
             </Link>
           </>

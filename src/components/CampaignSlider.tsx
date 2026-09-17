@@ -77,7 +77,7 @@ export default function CampaignSlider() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3.5">
               <Link
-                href="/catalog?category=campaign"
+                href="/catalog/campaign"
                 className="group flex items-center gap-2 rounded-full bg-orange px-7 py-3.5 font-display font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-orange-deep"
               >
                 Browse campaign gear
@@ -96,7 +96,7 @@ export default function CampaignSlider() {
             {/* stat strip */}
             <dl className="mt-9 flex flex-wrap gap-x-8 gap-y-3 border-t border-cream/12 pt-6">
               {[
-                { v: "56+", k: "Campaign products" },
+                { v: "Full range", k: "Campaign merch" },
                 { v: "All parties", k: "Non-partisan printing" },
                 { v: "Countrywide", k: "Bulk delivery" },
               ].map((s) => (

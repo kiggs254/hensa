@@ -113,6 +113,28 @@ export function breadcrumbNode(crumbs: Crumb[]) {
   };
 }
 
+/** ItemList for a category/subcategory page (helps rich results + AI systems
+ *  understand the collection). Capped to keep the HTML lean. */
+export function catalogItemListNode(opts: {
+  name: string;
+  path: string;
+  items: { name: string; slug: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: opts.name,
+    url: `${site.url}${opts.path}`,
+    numberOfItems: opts.items.length,
+    itemListElement: opts.items.slice(0, 60).map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: p.name,
+      url: `${site.url}/product/${p.slug}`,
+    })),
+  };
+}
+
 export function faqNode(faqs: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

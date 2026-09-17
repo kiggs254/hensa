@@ -50,6 +50,18 @@ export interface SubCategory {
   name: string;
   image: string;
   count: number;
+  description?: string;
+}
+
+/** A browseable catalogue node — a top-level category or a subcategory — with
+ *  everything the /catalog/[category] route needs for SEO + the heading. */
+export interface CatalogNode {
+  slug: string;
+  name: string;
+  blurb: string;
+  image: string;
+  isSub: boolean;
+  parent?: { slug: string; name: string };
 }
 
 /** Curated top-level copy + local fallback art (the images also live in the API). */
@@ -83,6 +95,7 @@ export async function getCategories(): Promise<Category[]> {
           name: c.name,
           image: c.image || "",
           count: counts.get(c.slug) ?? 0,
+          description: c.description || "",
         }))
         .filter((c) => c.count > 0)
         .sort((a, b) => a.name.localeCompare(b.name));
@@ -102,6 +115,41 @@ export async function getCategories(): Promise<Category[]> {
 
 export async function categoryBySlug(slug: string): Promise<Category | undefined> {
   return (await getCategories()).find((c) => c.slug === slug);
+}
+
+/** Resolve any catalogue slug — top-level category OR subcategory — to a node
+ *  with a blurb + parent, for the /catalog/[category] page + its metadata. */
+export async function getCatalogNode(slug: string): Promise<CatalogNode | undefined> {
+  const cats = await getCategories();
+  for (const c of cats) {
+    if (c.slug === slug)
+      return { slug: c.slug, name: c.name, blurb: c.blurb, image: c.image, isSub: false };
+    for (const s of c.children ?? []) {
+      if (s.slug === slug)
+        return {
+          slug: s.slug,
+          name: s.name,
+          blurb:
+            s.description ||
+            `${s.name} — part of our ${c.name.toLowerCase()} range, branded to order.`,
+          image: s.image,
+          isSub: true,
+          parent: { slug: c.slug, name: c.name },
+        };
+    }
+  }
+  return undefined;
+}
+
+/** Every browseable catalogue slug (top-level + subcategories) for static params. */
+export async function getAllCategorySlugs(): Promise<string[]> {
+  const cats = await getCategories();
+  const out: string[] = [];
+  for (const c of cats) {
+    out.push(c.slug);
+    for (const s of c.children ?? []) out.push(s.slug);
+  }
+  return out;
 }
 
 export async function getProductBySlug(slug: string): Promise<Product | undefined> {

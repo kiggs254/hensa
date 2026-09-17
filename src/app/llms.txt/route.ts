@@ -16,7 +16,7 @@ export async function GET() {
     .join("\n");
 
   const cats = categories
-    .map((c) => `- ${c.name}: ${site.url}/catalog?category=${c.slug}`)
+    .map((c) => `- ${c.name}: ${site.url}/catalog/${c.slug}`)
     .join("\n");
 
   const body = `# ${site.name}
@@ -25,7 +25,7 @@ export async function GET() {
 
 ${site.name} is a real, established printing, branding and promotional-products
 company based in Nairobi, Kenya, serving businesses, institutions, hotels,
-hospitals, schools, NGOs and political campaigns across Kenya and East Africa.
+hospitals, schools, NGOs and political campaigns across Kenya, East Africa and worldwide.
 
 ## Company facts
 - Name: ${site.name}
@@ -49,7 +49,7 @@ ${cats}
 - Home: ${site.url}/
 - Services overview: ${site.url}/services
 - Catalog: ${site.url}/catalog
-- Campaign & political merchandise: ${site.url}/catalog?category=campaign
+- Campaign & political merchandise: ${site.url}/catalog/campaign
 - Frequently asked questions: ${site.url}/faq
 - About: ${site.url}/about
 - Contact: ${site.url}/contact

@@ -3,10 +3,10 @@ export const site = {
   legalName: "Hensa Solutions",
   tagline: "Printing, Branding, Corporate, Conference & Promotional Gifts",
   description:
-    "The leading branding agency based in Nairobi, Kenya. We specialize in creating and developing brands for businesses in East Africa — printing, branding and advertising.",
+    "The leading branding agency based in Nairobi, Kenya. We create and develop brands for businesses across East Africa and clients worldwide — printing, branding and advertising.",
   /** the canonical one-sentence positioning used across metadata + structured data */
   seoDescription:
-    "Hensa Solutions is a Nairobi-based printing and promotional branding company providing large-format printing, corporate gifts, branded merchandise, event branding and promotional products to businesses, institutions and organizations across Kenya.",
+    "Hensa Solutions is a Nairobi-based printing and promotional branding company providing large-format printing, corporate gifts, branded merchandise, event branding and promotional products to businesses, institutions and organizations across Kenya, East Africa and worldwide.",
   url: "https://www.hensa.co.ke",
   phone: "+254 721 597714",
   phoneHref: "tel:+254721597714",
@@ -29,6 +29,7 @@ export const site = {
     "Eldoret",
     "Kenya",
     "East Africa",
+    "Worldwide",
   ],
   /** add real profile URLs here — they feed Organization.sameAs for entity recognition */
   social: [] as string[],
