@@ -128,6 +128,47 @@ export async function apiGetProductBySlug(slug: string): Promise<Product | undef
   return p ? mapProduct(p, childToRoot, bySlug) : undefined;
 }
 
+export type SocialPlatform =
+  | "facebook" | "instagram" | "x" | "tiktok" | "youtube" | "linkedin" | "pinterest" | "threads" | "whatsapp";
+export interface SocialLink { platform: SocialPlatform; label: string; url: string }
+
+const SOCIAL_KEYS: Array<{ key: string; platform: SocialPlatform; label: string }> = [
+  { key: "social_facebook", platform: "facebook", label: "Facebook" },
+  { key: "social_instagram", platform: "instagram", label: "Instagram" },
+  { key: "social_twitter", platform: "x", label: "X" },
+  { key: "social_tiktok", platform: "tiktok", label: "TikTok" },
+  { key: "social_youtube", platform: "youtube", label: "YouTube" },
+  { key: "social_linkedin", platform: "linkedin", label: "LinkedIn" },
+  { key: "social_pinterest", platform: "pinterest", label: "Pinterest" },
+  { key: "social_threads", platform: "threads", label: "Threads" },
+  { key: "social_whatsapp", platform: "whatsapp", label: "WhatsApp" },
+];
+
+function socialUrl(raw: string, platform: SocialPlatform): string {
+  const v = raw.trim();
+  if (/^https?:\/\//i.test(v)) return v;
+  if (platform === "whatsapp") {
+    const digits = v.replace(/[^\d]/g, "");
+    return digits ? `https://wa.me/${digits}` : v;
+  }
+  return `https://${v.replace(/^\/+/, "")}`;
+}
+
+/** Social links configured in the admin (Settings). Only the ones actually set
+ *  come back, in a stable display order. */
+export async function apiGetSocialLinks(): Promise<SocialLink[]> {
+  const data = await sf<{ settings: Record<string, unknown> }>("/settings");
+  const s = data?.settings ?? {};
+  const out: SocialLink[] = [];
+  for (const { key, platform, label } of SOCIAL_KEYS) {
+    const raw = s[key];
+    if (typeof raw === "string" && raw.trim()) {
+      out.push({ platform, label, url: socialUrl(raw, platform) });
+    }
+  }
+  return out;
+}
+
 export async function apiGetProductsInCategory(slug: string): Promise<Product[]> {
   const [{ childToRoot, bySlug }, data] = await Promise.all([
     categoryIndex(),

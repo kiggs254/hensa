@@ -8,8 +8,15 @@ import {
   apiGetAllProducts,
   apiGetProductBySlug,
   apiGetProductsInCategory,
+  apiGetSocialLinks,
   categoryIndex,
 } from "@/lib/api";
+
+export type { SocialLink } from "@/lib/api";
+
+export async function getSocialLinks() {
+  return apiGetSocialLinks();
+}
 
 export interface Product {
   id: number;

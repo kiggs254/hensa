@@ -7,7 +7,23 @@ import EnquireButton from "@/components/EnquireButton";
 import SavedDetailsLink from "@/components/SavedDetailsLink";
 import OpenStatus from "@/components/OpenStatus";
 import BackToTop from "@/components/BackToTop";
-import { WhatsAppIcon, PhoneIcon, MailIcon, PinIcon, ArrowIcon } from "@/components/icons";
+import {
+  WhatsAppIcon, PhoneIcon, MailIcon, PinIcon, ArrowIcon,
+  FacebookIcon, InstagramIcon, XIcon, TikTokIcon, YouTubeIcon, LinkedInIcon, PinterestIcon, ThreadsIcon,
+} from "@/components/icons";
+import type { SocialLink, SocialPlatform } from "@/lib/api";
+
+const SOCIAL_ICON: Record<SocialPlatform, (p: { className?: string }) => React.ReactElement> = {
+  facebook: FacebookIcon,
+  instagram: InstagramIcon,
+  x: XIcon,
+  tiktok: TikTokIcon,
+  youtube: YouTubeIcon,
+  linkedin: LinkedInIcon,
+  pinterest: PinterestIcon,
+  threads: ThreadsIcon,
+  whatsapp: WhatsAppIcon,
+};
 
 const jobSpec = (productCount: number) => [
   { k: "Studio", v: "Nairobi, KE" },
@@ -19,9 +35,11 @@ const jobSpec = (productCount: number) => [
 export default function Footer({
   categories,
   productCount,
+  socials,
 }: {
   categories: Category[];
   productCount: number;
+  socials: SocialLink[];
 }) {
   return (
     <footer className="relative overflow-hidden bg-ink text-cream">
@@ -96,6 +114,26 @@ export default function Footer({
             <div className="mt-5">
               <OpenStatus />
             </div>
+            {socials.length > 0 && (
+              <div className="mt-6 flex flex-wrap items-center gap-2.5">
+                {socials.map((s) => {
+                  const Icon = SOCIAL_ICON[s.platform];
+                  return (
+                    <a
+                      key={s.platform}
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      title={s.label}
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-orange/40 text-orange transition-all hover:-translate-y-0.5 hover:border-orange hover:bg-orange hover:text-white"
+                    >
+                      <Icon className="h-4 w-4" />
+                    </a>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {/* shop */}
