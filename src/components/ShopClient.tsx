@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import Link, { useLinkStatus } from "next/link";
 import Image from "next/image";
 import { type Product, type Category, type SubCategory } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
@@ -10,26 +11,51 @@ const PAGE_SIZE = 24;
 
 type Sort = "featured" | "name";
 
-/** One category avatar in the strip. */
+/** Shows a spinner over a strip link while its navigation is in flight — so a
+ *  tap gives immediate feedback even on a slow connection. Must render inside
+ *  a <Link> (that's how useLinkStatus knows which navigation to track). */
+function PendingSpinner() {
+  const { pending } = useLinkStatus();
+  if (!pending) return null;
+  return (
+    <span className="absolute inset-0 z-10 flex items-center justify-center rounded-full bg-white/75">
+      <span className="h-6 w-6 animate-spin rounded-full border-2 border-orange/30 border-t-orange" />
+    </span>
+  );
+}
+
+/** Small inline spinner for text links (e.g. the "All categories" back pill). */
+function InlinePending() {
+  const { pending } = useLinkStatus();
+  if (!pending) return null;
+  return (
+    <span className="ml-0.5 h-3.5 w-3.5 animate-spin rounded-full border-2 border-orange/40 border-t-orange" />
+  );
+}
+
+/** One category avatar in the strip — a real link, so it's tappable on touch
+ *  and works even before the client bundle hydrates. */
 function Circle({
+  href,
   image,
   iconMode = false,
   label,
   selected,
   hasChildren = false,
-  onClick,
 }: {
+  href: string;
   image?: string;
   iconMode?: boolean;
   label: string;
   selected: boolean;
   hasChildren?: boolean;
-  onClick: () => void;
 }) {
   return (
-    <button
-      onClick={onClick}
-      aria-pressed={selected}
+    <Link
+      href={href}
+      scroll={false}
+      prefetch={false}
+      aria-current={selected ? "page" : undefined}
       className="group flex w-20 flex-none flex-col items-center gap-2.5 text-center sm:w-24"
     >
       <span
@@ -50,6 +76,7 @@ function Circle({
             }`}
           />
         ) : null}
+        <PendingSpinner />
       </span>
       <span
         className={`flex items-center gap-1 text-xs font-semibold leading-tight transition-colors ${
@@ -70,7 +97,7 @@ function Circle({
           </svg>
         )}
       </span>
-    </button>
+    </Link>
   );
 }
 
@@ -139,11 +166,6 @@ export default function ShopClient({
     return list;
   }, [activeCategory, query, sort, products]);
 
-  const setCategory = (slug: string) => {
-    router.push(slug ? `/catalog/${slug}` : "/catalog", { scroll: false });
-  };
-  const onBack = () => router.push("/catalog", { scroll: false });
-
   const parent = drillParent ? catBySlug.get(drillParent) : null;
 
   return (
@@ -152,8 +174,10 @@ export default function ShopClient({
       {parent ? (
         <div key={parent.slug} className="strip-in">
           <div className="mb-4 flex flex-wrap items-center gap-3">
-            <button
-              onClick={onBack}
+            <Link
+              href="/catalog"
+              scroll={false}
+              prefetch={false}
               className="group inline-flex items-center gap-1.5 rounded-full border border-ink/15 bg-cream px-3.5 py-1.5 text-sm font-semibold text-ink transition-colors hover:border-orange hover:text-orange"
             >
               <svg
@@ -171,25 +195,26 @@ export default function ShopClient({
                 />
               </svg>
               All categories
-            </button>
+              <InlinePending />
+            </Link>
             <span className="font-display text-lg font-extrabold tracking-tight text-ink">
               {parent.name}
             </span>
           </div>
           <div className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2">
             <Circle
+              href={`/catalog/${parent.slug}`}
               image={parent.image}
               label={`All ${parent.name}`}
               selected={activeCategory === parent.slug}
-              onClick={() => setCategory(parent.slug)}
             />
             {parent.children!.map((s: SubCategory) => (
               <Circle
                 key={s.slug}
+                href={`/catalog/${s.slug}`}
                 image={s.image}
                 label={s.name}
                 selected={activeCategory === s.slug}
-                onClick={() => setCategory(s.slug)}
               />
             ))}
           </div>
@@ -200,20 +225,20 @@ export default function ShopClient({
           className="strip-in scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2 lg:justify-between"
         >
           <Circle
+            href="/catalog"
             iconMode
             image="/icon.png"
             label="All Products"
             selected={!activeCategory}
-            onClick={() => setCategory("")}
           />
           {categories.map((c) => (
             <Circle
               key={c.slug}
+              href={`/catalog/${c.slug}`}
               image={c.image}
               label={c.name}
               hasChildren={!!c.children?.length}
               selected={activeCategory === c.slug}
-              onClick={() => setCategory(c.slug)}
             />
           ))}
         </div>
