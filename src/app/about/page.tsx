@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import { getCategories, getProducts } from "@/lib/catalog";
+import { getCategories } from "@/lib/catalog";
 
 export const revalidate = 300;
 import EnquireButton from "@/components/EnquireButton";
@@ -38,7 +38,7 @@ const METHOD = [
 ];
 
 export default async function AboutPage() {
-  const [categories, products] = await Promise.all([getCategories(), getProducts()]);
+  const categories = await getCategories();
   return (
     <>
       <section className="grain relative overflow-hidden border-b border-ink/10">
@@ -62,7 +62,7 @@ export default async function AboutPage() {
           {/* stats */}
           <div className="mt-12 grid max-w-2xl grid-cols-3 gap-px overflow-hidden border border-ink/10 bg-ink/10">
             {[
-              { v: `${products.length}+`, l: "Products in catalogue" },
+              { v: "100%", l: "Custom branded" },
               { v: `${categories.length}`, l: "Product categories" },
               { v: "47", l: "Counties we deliver to" },
             ].map((s) => (

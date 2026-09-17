@@ -15,7 +15,6 @@ function Circle({
   image,
   iconMode = false,
   label,
-  count,
   selected,
   hasChildren = false,
   onClick,
@@ -23,7 +22,6 @@ function Circle({
   image?: string;
   iconMode?: boolean;
   label: string;
-  count?: number;
   selected: boolean;
   hasChildren?: boolean;
   onClick: () => void;
@@ -69,7 +67,6 @@ function Circle({
         }`}
       >
         {label}
-        {typeof count === "number" ? ` (${count})` : ""}
         {hasChildren && (
           <svg
             viewBox="0 0 24 24"
@@ -195,20 +192,14 @@ export default function ShopClient({
               </svg>
               All categories
             </button>
-            <span className="flex items-baseline gap-2">
-              <span className="font-display text-lg font-extrabold tracking-tight text-ink">
-                {parent.name}
-              </span>
-              <span className="spec text-ink-soft">
-                {parent.count} item{parent.count === 1 ? "" : "s"}
-              </span>
+            <span className="font-display text-lg font-extrabold tracking-tight text-ink">
+              {parent.name}
             </span>
           </div>
           <div className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2">
             <Circle
               image={parent.image}
               label={`All ${parent.name}`}
-              count={parent.count}
               selected={activeCategory === parent.slug}
               onClick={() => setCategory(parent.slug)}
             />
@@ -232,7 +223,6 @@ export default function ShopClient({
             iconMode
             image="/icon.png"
             label="All Products"
-            count={products.length}
             selected={!activeCategory}
             onClick={() => {
               setCategory("");
@@ -273,9 +263,6 @@ export default function ShopClient({
           )}
         </div>
         <div className="flex items-center gap-3">
-          <span className="spec text-ink-soft">
-            {filtered.length} item{filtered.length === 1 ? "" : "s"}
-          </span>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as Sort)}
@@ -312,7 +299,7 @@ export default function ShopClient({
                 onClick={() => setVisible((v) => v + PAGE_SIZE)}
                 className="rounded-full border-2 border-ink px-8 py-3 font-display font-bold transition-all hover:-translate-y-0.5 hover:border-orange hover:text-orange"
               >
-                Load more ({filtered.length - visible} remaining)
+                Load more
               </button>
             </div>
           )}

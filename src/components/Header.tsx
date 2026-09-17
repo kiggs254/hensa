@@ -262,7 +262,7 @@ export default function Header({ categories }: { categories: Category[] }) {
                 <input
                   ref={searchInput}
                   type="search"
-                  placeholder="Search 274 branded products…"
+                  placeholder="Search branded products…"
                   aria-label="Search products"
                   tabIndex={search ? 0 : -1}
                   className="w-full bg-transparent py-2 text-base outline-none placeholder:text-ink-soft/60"
@@ -326,9 +326,6 @@ export default function Header({ categories }: { categories: Category[] }) {
                     <span className="absolute inset-x-0 bottom-0 p-2.5">
                       <span className="block text-[13px] font-bold leading-tight text-cream">
                         {c.name}
-                      </span>
-                      <span className="spec mt-0.5 block text-[9px] text-cream/70">
-                        {c.count} products
                       </span>
                     </span>
                   </Link>

@@ -96,13 +96,13 @@ export default async function Home() {
     {
       kicker: "Nairobi's branding workshop",
       title: ["Everything your ", "logo", " belongs on."],
-      copy: `${products.length} branded products — from a single mug to a fleet of billboards — printed with utmost expertise and delivered countrywide.`,
+      copy: `Branded products — from a single mug to a fleet of billboards — printed with utmost expertise and delivered countrywide.`,
       cta: { label: "Browse the catalogue", href: "/catalog" },
       image: {
         src: img("executive-gift-sets-008", "/products/hoodies.jpg"),
         alt: "Executive branded gift set",
       },
-      sticker: { big: `${products.length}+`, small: "products to brand" },
+      sticker: { big: "Any scale", small: "mug to billboard" },
       theme: "cream",
     },
     {
@@ -202,7 +202,7 @@ export default async function Home() {
                       tabIndex={-1}
                       className="spec mt-1 block border-t border-dashed border-ink/15 px-3 pb-1 pt-2 text-left text-[9px] text-green-deep transition-colors hover:text-orange"
                     >
-                      All {c.count} products →
+                      All products →
                     </Link>
                   </div>
                 </div>
@@ -349,7 +349,7 @@ export default async function Home() {
               <div className="relative p-7 lg:p-9">
                 <p className="spec text-orange">The catalog</p>
                 <h3 className="font-display mt-2 text-3xl font-extrabold text-cream lg:text-4xl">
-                  {products.length} products, ready for your logo
+                  Everything, ready for your logo
                 </h3>
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-cream/75">
                   Banners, apparel, gifts, stationery, promo items and signage —

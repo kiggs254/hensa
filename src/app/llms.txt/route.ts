@@ -16,7 +16,7 @@ export async function GET() {
     .join("\n");
 
   const cats = categories
-    .map((c) => `- ${c.name} (${c.count} products): ${site.url}/catalog?category=${c.slug}`)
+    .map((c) => `- ${c.name}: ${site.url}/catalog?category=${c.slug}`)
     .join("\n");
 
   const body = `# ${site.name}

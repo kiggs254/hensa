@@ -25,20 +25,18 @@ const SOCIAL_ICON: Record<SocialPlatform, (p: { className?: string }) => React.R
   whatsapp: WhatsAppIcon,
 };
 
-const jobSpec = (productCount: number) => [
+const jobSpec = [
   { k: "Studio", v: "Nairobi, KE" },
-  { k: "Catalogue", v: `${productCount} products` },
+  { k: "Catalogue", v: "Fully brandable" },
   { k: "Delivery", v: "Countrywide" },
   { k: "Payment", v: "M-Pesa accepted" },
 ];
 
 export default function Footer({
   categories,
-  productCount,
   socials,
 }: {
   categories: Category[];
-  productCount: number;
   socials: SocialLink[];
 }) {
   return (
@@ -87,7 +85,7 @@ export default function Footer({
 
         {/* ---------- job spec strip ---------- */}
         <dl className="grid grid-cols-2 gap-px overflow-hidden border-b border-cream/10 bg-cream/10 sm:grid-cols-4">
-          {jobSpec(productCount).map((s) => (
+          {jobSpec.map((s) => (
             <div key={s.k} className="bg-ink px-4 py-5">
               <dt className="spec text-[9px] text-cream/40">{s.k}</dt>
               <dd className="font-display mt-1 text-sm font-bold">{s.v}</dd>
@@ -147,11 +145,8 @@ export default function Footer({
                 <li key={c.slug}>
                   <Link
                     href={`/catalog?category=${c.slug}`}
-                    className="group inline-flex items-baseline gap-2 text-cream/65 transition-colors hover:text-orange"
+                    className="inline-flex text-cream/65 transition-colors hover:text-orange"
                   >
-                    <span className="font-mono text-[10px] text-cream/25 transition-colors group-hover:text-orange/60">
-                      {String(c.count).padStart(2, "0")}
-                    </span>
                     {c.name}
                   </Link>
                 </li>

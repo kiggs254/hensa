@@ -8,7 +8,7 @@ export const revalidate = 300;
 export const metadata: Metadata = {
   title: "Catalog — Branded Products & Corporate Gifts",
   description:
-    "Browse 500+ branded products: banners, corporate apparel, gifts, stationery, promotional items, signage and trophies & awards. Enquire instantly on WhatsApp.",
+    "Browse branded products: banners, corporate apparel, gifts, stationery, promotional items, signage and trophies & awards. Enquire instantly on WhatsApp.",
   alternates: { canonical: "/catalog" },
 };
 
