@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link, { useLinkStatus } from "next/link";
 import Image from "next/image";
@@ -119,6 +119,7 @@ export default function ShopClient({
   const query = searchParams.get("q") ?? "";
   const [sort, setSort] = useState<Sort>("featured");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const stripRef = useRef<HTMLDivElement>(null);
 
   const catBySlug = useMemo(() => {
     const m = new Map<string, Category>();
@@ -144,6 +145,22 @@ export default function ShopClient({
   useEffect(() => {
     setVisible(PAGE_SIZE);
   }, [activeCategory, query, sort]);
+
+  // After navigating to a (sub)category, bring the selected circle into view —
+  // the horizontal strip otherwise always shows the first few. Only scrolls the
+  // strip itself (never the page), and leaves it alone if already visible.
+  useEffect(() => {
+    const strip = stripRef.current;
+    if (!strip) return;
+    const sel = strip.querySelector<HTMLElement>('[aria-current="page"]');
+    if (!sel) return;
+    const sRect = strip.getBoundingClientRect();
+    const eRect = sel.getBoundingClientRect();
+    if (eRect.left >= sRect.left && eRect.right <= sRect.right) return;
+    const center =
+      strip.scrollLeft + (eRect.left - sRect.left) + eRect.width / 2 - strip.clientWidth / 2;
+    strip.scrollTo({ left: Math.max(0, center), behavior: "auto" });
+  }, [activeCategory, drillParent]);
 
   const filtered = useMemo(() => {
     let list = products;
@@ -201,7 +218,10 @@ export default function ShopClient({
               {parent.name}
             </span>
           </div>
-          <div className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2">
+          <div
+            ref={stripRef}
+            className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2"
+          >
             <Circle
               href={`/catalog/${parent.slug}`}
               image={parent.image}
@@ -222,6 +242,7 @@ export default function ShopClient({
       ) : (
         <div
           key="root"
+          ref={stripRef}
           className="strip-in scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2 lg:justify-between"
         >
           <Circle
