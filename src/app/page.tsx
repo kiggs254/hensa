@@ -12,6 +12,7 @@ import Reveal from "@/components/Reveal";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 import Testimonials from "@/components/Testimonials";
 import CampaignSlider from "@/components/CampaignSlider";
+import CategoryStrip from "@/components/CategoryStrip";
 import {
   WhatsAppIcon,
   ArrowIcon,
@@ -161,25 +162,24 @@ export default async function Home() {
       </h1>
       <HeroSlider slides={slides} />
 
-      {/* ============ CATEGORY QUICK-NAV (auto-scrolling) ============ */}
+      {/* ============ CATEGORY QUICK-NAV ============ */}
       <nav
         aria-label="Browse by category"
-        className="marquee-pause relative z-30 mx-auto max-w-7xl px-4 pb-4 pt-8 sm:px-6 lg:pt-10"
+        className="relative z-30 mx-auto max-w-7xl px-4 pb-4 pt-8 sm:px-6 lg:pt-10"
       >
-        {/* The edge fade is painted by the two gradient overlays at the bottom
-            of this nav, NOT by a mask on this element. A mask applies to every
-            DESCENDANT, so the hover popover of whichever category was passing
-            under the fade got faded along with it, which is the bug this
-            replaces. overflow-x-clip stays: the marquee is far wider than the
-            page and would otherwise create a horizontal scrollbar. */}
-        <div className="pointer-events-none -mb-72 overflow-x-clip pb-72 pt-2">
-          <div className="pointer-events-auto animate-marquee-cats flex w-max gap-8 pr-8">
-            {[...categories, ...categories].map((c, i) => (
-              <div key={`${c.slug}-${i}`} className="group relative w-24 flex-none">
+        {/* The subcategory popover has to escape the strip downwards, but
+            overflow-x-auto makes the viewport a scroll container on BOTH axes.
+            So the popover is given room inside the padding box (pb-72) and that
+            space is pulled back with -mb-72: it is never clipped, and it never
+            produces a vertical scrollbar. */}
+        <CategoryStrip
+          ariaLabel="Browse by category"
+          viewportClassName="-mb-72 gap-5 px-2 pb-72 pt-2 xl:gap-6"
+        >
+            {categories.map((c) => (
+              <div key={c.slug} className="group relative w-24 flex-none">
                 <Link
                   href={`/catalog/${c.slug}`}
-                  tabIndex={i < categories.length ? 0 : -1}
-                  aria-hidden={i >= categories.length}
                   className="flex flex-col items-center gap-2.5 text-center"
                 >
                   <span className="relative block h-20 w-20 overflow-hidden rounded-full border border-ink/10 ring-2 ring-transparent ring-offset-2 ring-offset-paper transition-all duration-300 group-hover:ring-orange sm:h-[5.5rem] sm:w-[5.5rem]">
@@ -220,20 +220,7 @@ export default async function Home() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Edge fades: siblings of the strip, so they can never tint the
-            popovers. z-20 sits above the marquee but below the popover's z-40,
-            so a popover opened at the edge stays fully readable. */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-y-0 left-0 z-20 w-16 bg-gradient-to-r from-paper via-paper/80 to-transparent sm:w-24"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-y-0 right-0 z-20 w-16 bg-gradient-to-l from-paper via-paper/80 to-transparent sm:w-24"
-        />
+        </CategoryStrip>
       </nav>
 
       {/* ============ TRUST BAR ============ */}

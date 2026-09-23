@@ -148,12 +148,6 @@ body {
 .animate-marquee-slow {
   animation: marquee 70s linear infinite;
 }
-.animate-marquee-cats {
-  animation: marquee 45s linear infinite;
-}
-.marquee-pause:hover .animate-marquee-cats {
-  animation-play-state: paused;
-}
 .animate-marquee-slow-reverse {
   animation: marquee 70s linear infinite reverse;
 }
@@ -227,7 +221,6 @@ body {
   .animate-marquee,
   .animate-marquee-slow,
   .animate-marquee-slow-reverse,
-  .animate-marquee-cats,
   .animate-float,
   .animate-wa-pulse,
   .animate-hero-progress,

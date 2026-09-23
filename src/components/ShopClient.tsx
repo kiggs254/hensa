@@ -6,6 +6,7 @@ import Link, { useLinkStatus } from "next/link";
 import Image from "next/image";
 import { type Product, type Category, type SubCategory } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
+import CategoryStrip from "@/components/CategoryStrip";
 
 const PAGE_SIZE = 24;
 
@@ -218,9 +219,11 @@ export default function ShopClient({
               {parent.name}
             </span>
           </div>
-          <div
-            ref={stripRef}
-            className="scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2"
+          <CategoryStrip
+            ariaLabel={`${parent.name} subcategories`}
+            viewportRef={stripRef}
+            viewportClassName="gap-5 px-2 py-2"
+            fitAlign="justify-start"
           >
             <Circle
               href={`/catalog/${parent.slug}`}
@@ -237,13 +240,14 @@ export default function ShopClient({
                 selected={activeCategory === s.slug}
               />
             ))}
-          </div>
+          </CategoryStrip>
         </div>
       ) : (
-        <div
+        <CategoryStrip
           key="root"
-          ref={stripRef}
-          className="strip-in scrollbar-hide -mx-2 flex gap-5 overflow-x-auto px-2 py-2 lg:justify-between"
+          ariaLabel="Product categories"
+          viewportRef={stripRef}
+          viewportClassName="strip-in gap-5 px-2 py-2 xl:gap-3.5"
         >
           <Circle
             href="/catalog"
@@ -262,7 +266,7 @@ export default function ShopClient({
               selected={activeCategory === c.slug}
             />
           ))}
-        </div>
+        </CategoryStrip>
       )}
 
       {/* active search + sort */}
