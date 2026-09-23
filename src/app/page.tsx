@@ -82,6 +82,18 @@ export default async function Home() {
 
   const slides: HeroSlide[] = [
     {
+      kicker: "Customer Service Week · 5–9 October",
+      title: ["Thank you for your ", "trust", " & partnership."],
+      copy: "This Customer Service Week we're celebrating the clients who keep our presses running. Your success inspires our commitment — and we'd love to help you thank your own customers and team.",
+      cta: { label: "Browse appreciation gifts", href: "/catalog/corporate-gifts" },
+      image: {
+        src: "/promos/customer-service-week.jpg",
+        alt: "Hensa Solutions team celebrating Customer Service Week — thank you for your trust and partnership",
+      },
+      sticker: { big: "Thank you", small: "customer service week" },
+      theme: "green",
+    },
+    {
       kicker: "Campaign season · every party",
       title: ["Your party's ", "colours", ", printed."],
       copy: "Election-ready merchandise for every candidate — t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",
