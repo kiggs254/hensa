@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 // every page has a proper social preview without needing a design asset.
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = `${site.name} — Printing, Branding & Promotional Products in Nairobi, Kenya`;
+export const alt = `${site.name} | Printing, Branding & Promotional Products in Nairobi, Kenya`;
 
 export default function OpengraphImage() {
   return new ImageResponse(

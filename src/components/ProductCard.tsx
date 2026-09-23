@@ -13,7 +13,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-ink/10 bg-cream transition-all duration-300 hover:-translate-y-1.5 hover:border-transparent hover:shadow-[0_24px_50px_rgba(28,26,22,0.16)]">
       <Link href={`/product/${product.slug}`} className="block p-2.5">
-        {/* square frame: source photos are square, so nothing gets cropped —
+        {/* square frame: source photos are square, so nothing gets cropped.
             a landscape frame clips apparel (hoods, hems) badly */}
         <span className="relative block aspect-square overflow-hidden rounded-xl bg-white">
           <Image

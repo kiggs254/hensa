@@ -30,7 +30,7 @@ export function saveCustomer(c: Omit<Customer, "savedAt">): Customer {
   try {
     window.localStorage.setItem(KEY, JSON.stringify(record));
   } catch {
-    /* storage blocked — enquiry still proceeds, we just can't remember them */
+    /* storage blocked; enquiry still proceeds, we just can't remember them */
   }
   return record;
 }

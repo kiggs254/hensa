@@ -36,7 +36,7 @@ export default function ContactForm() {
     ``,
     message.trim() || "(I'd like to discuss a project with you.)",
     name.trim() || phone.trim() ? `` : null,
-    name.trim() || phone.trim() ? `———` : null,
+    name.trim() || phone.trim() ? `---` : null,
     name.trim() ? `Name: ${name.trim()}` : null,
     phone.trim() ? `Phone: ${phone.trim()}` : null,
   ]
@@ -127,7 +127,7 @@ export default function ContactForm() {
           Send via WhatsApp
         </a>
         <p className="text-center text-xs text-ink-soft">
-          Opens WhatsApp with your message pre-filled — nothing is sent until
+          Opens WhatsApp with your message pre-filled. Nothing is sent until
           you press send.
         </p>
       </div>

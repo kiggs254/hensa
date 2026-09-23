@@ -6,7 +6,7 @@ export interface Service {
   /** one-liner used on homepage tiles + index cards */
   short: string;
   kicker: string;
-  /** headline segments — middle one gets the accent colour */
+  /** headline segments; middle one gets the accent colour */
   title: [string, string, string];
   intro: string[];
   accent: "orange" | "green";
@@ -28,7 +28,7 @@ export const services: Service[] = [
     kicker: "The merch workhorse",
     title: ["Ink that ", "works", " as hard as you do."],
     intro: [
-      "Screen printing pushes ink through a fine mesh stencil, laying down thick, vibrant colour that survives sun, rain and a hundred washes. It's the workhorse of branded merchandise — and our presses run it every single day.",
+      "Screen printing pushes ink through a fine mesh stencil, laying down thick, vibrant colour that survives sun, rain and a hundred washes. It's the workhorse of branded merchandise, and our presses run it every day.",
       "From a fifty-piece polo order for your team to thousands of jute bags for a countrywide activation, screen printing delivers bold, opaque colour at a cost that keeps dropping as your quantities rise.",
     ],
     accent: "orange",
@@ -52,9 +52,9 @@ export const services: Service[] = [
       { t: "Print & cure", d: "Ink is laid down pass by pass, then heat-cured so it's in for keeps." },
     ],
     faqs: [
-      { q: "What artwork works best for screen printing?", a: "Clean, solid shapes and up to a handful of flat colours. Vector files (AI, EPS, PDF, SVG) give the sharpest result — but send what you have and our design team will redraw it if needed." },
-      { q: "How many colours can you print?", a: "Each colour is applied with its own screen, so simple one- and two-colour designs are the most economical. Multi-colour artwork is absolutely possible — we'll advise the best approach for your budget." },
-      { q: "Is screen printing good for small orders?", a: "It shines on bulk runs, where the per-piece cost drops sharply. For a handful of pieces we may recommend digital or sublimation printing instead — tell us your quantity on WhatsApp and we'll steer you right." },
+      { q: "What artwork works best for screen printing?", a: "Clean, solid shapes and up to a handful of flat colours. Vector files (AI, EPS, PDF, SVG) give the sharpest result, but send what you have and our design team will redraw it if needed." },
+      { q: "How many colours can you print?", a: "Each colour is applied with its own screen, so simple one- and two-colour designs are the most economical. Multi-colour artwork is possible too, and we'll advise the best approach for your budget." },
+      { q: "Is screen printing good for small orders?", a: "It shines on bulk runs, where the per-piece cost drops sharply. For a handful of pieces we may recommend digital or sublimation printing instead. Tell us your quantity on WhatsApp and we'll steer you right." },
     ],
     keywords: ["t-shirt", "tshirt", "polo", "jute", "bag", "apron", "reflector", "hoodie", "sweat", "mesh"],
     related: ["embroidery", "sublimation-printing", "large-format-printing"],
@@ -68,11 +68,11 @@ export const services: Service[] = [
   {
     slug: "digital-printing",
     name: "Digital Printing",
-    short: "Fast, vibrant short runs — ready when you are.",
+    short: "Fast, full-colour short runs, ready when you are.",
     kicker: "Speed meets full colour",
     title: ["Today's idea, ", "tomorrow's", " print."],
     intro: [
-      "Digital printing is the value-priced alternative to the traditional four-colour process. No plates, no long setup — your artwork goes straight from file to press in stunning full colour.",
+      "Digital printing is the value-priced alternative to the traditional four-colour process. No plates, no long setup. Your artwork goes straight from file to press in full colour.",
       "That makes it perfect for short runs and tight deadlines: a box of business cards before your morning meeting, event flyers for the weekend, or a proof of your company profile before committing to volume.",
     ],
     accent: "green",
@@ -91,13 +91,13 @@ export const services: Service[] = [
       "Company profiles",
     ],
     steps: [
-      { t: "Send your artwork", d: "Share your files on WhatsApp or email — or have our designers create them." },
+      { t: "Send your artwork", d: "Share your files on WhatsApp or email, or have our designers create them." },
       { t: "Proof & approve", d: "You sign off a digital (or printed) proof so there are no surprises." },
-      { t: "Print & finish", d: "Printed, trimmed, laminated or folded — packed and ready for delivery." },
+      { t: "Print & finish", d: "Printed, trimmed, laminated or folded, then packed for delivery." },
     ],
     faqs: [
-      { q: "How is digital different from offset printing?", a: "Digital skips the plate-making stage, so setup is instant and short runs stay affordable. Offset takes over on large volumes, where its per-copy price becomes unbeatable. We run both — so you always get the right press for the job." },
-      { q: "What files should I send?", a: "Print-ready PDFs are ideal, but we happily work from Word, PowerPoint, images or even a sketch — our creative team will lay it out professionally." },
+      { q: "How is digital different from offset printing?", a: "Digital skips the plate-making stage, so setup is instant and short runs stay affordable. Offset takes over on large volumes, where its per-copy price becomes unbeatable. We run both, so you always get the right press for the job." },
+      { q: "What files should I send?", a: "Print-ready PDFs are ideal, but we happily work from Word, PowerPoint, images or even a sketch. Our creative team will lay it out properly." },
       { q: "Can you print same-day?", a: "Short digital runs are the fastest work we do. Message us on WhatsApp with your deadline and we'll tell you honestly what's possible." },
     ],
     keywords: ["business card", "flyer", "brochure", "sticker", "poster", "certificate", "bookmark", "envelope"],
@@ -117,7 +117,7 @@ export const services: Service[] = [
     kicker: "Built for bulk",
     title: ["Serious ", "volume", ", immaculate colour."],
     intro: [
-      "Offset lithography is how the world's best print gets made at scale. Ink is transferred — offset — from plate to rubber blanket to paper, producing consistently sharp, rich results across thousands of copies.",
+      "Offset lithography is how the world's best print gets made at scale. Ink is transferred (offset) from plate to rubber blanket to paper, producing consistently sharp, rich results across thousands of copies.",
       "When your calendars, company profiles, books or letterheads need to look identical from the first copy to the ten-thousandth, offset is the press we fire up. The bigger the run, the harder the economics work in your favour.",
     ],
     accent: "orange",
@@ -138,11 +138,11 @@ export const services: Service[] = [
     steps: [
       { t: "Plan & proof", d: "We agree stocks, finishes and quantities, then you approve a contract proof." },
       { t: "Plates & press", d: "Your artwork is imaged onto plates and the press is inked to match." },
-      { t: "Finish & bind", d: "Cutting, folding, binding, numbering — everything finished in-house." },
+      { t: "Finish & bind", d: "Cutting, folding, binding and numbering, all finished in-house." },
     ],
     faqs: [
-      { q: "When does offset beat digital?", a: "Roughly speaking: the moment quantities get serious. Setup costs more, but every extra copy costs less — so long runs come out far cheaper per piece, with unbeatable colour consistency." },
-      { q: "Can you print branded receipt and invoice books?", a: "Yes — numbered, carbonised NCR books with your branding are a staple of our offset work." },
+      { q: "When does offset beat digital?", a: "Roughly speaking: the moment quantities get serious. Setup costs more, but every extra copy costs less, so long runs come out far cheaper per piece and the colour stays consistent throughout." },
+      { q: "Can you print branded receipt and invoice books?", a: "Yes. Numbered, carbonised NCR books with your branding are a staple of our offset work." },
       { q: "What about special finishes?", a: "Lamination, spot varnish, foiling, debossing and more. Tell us the look you're after and we'll recommend a finish that fits the budget." },
     ],
     keywords: ["calendar", "diary", "letterhead", "envelope", "receipt", "publication", "folder", "voucher", "notebook"],
@@ -162,14 +162,14 @@ export const services: Service[] = [
     kicker: "Colour that becomes the product",
     title: ["Photo-real colour, ", "baked", " in."],
     intro: [
-      "Sublimation turns solid dye straight into gas, bonding it into polyester fabric or specially-coated surfaces. The print doesn't sit on the product — it becomes part of it. No cracking, no peeling, no texture.",
-      "It's the technique behind photo mugs that survive years of dishwashing, all-over jersey prints, and sequin pillows that reveal a loved one's photo — anywhere you need edge-to-edge, photographic colour.",
+      "Sublimation turns solid dye straight into gas, bonding it into polyester fabric or specially-coated surfaces. The print doesn't sit on the product, it becomes part of it. Nothing to crack or peel, and no texture under your fingers.",
+      "It's the technique behind photo mugs that survive years of dishwashing, all-over jersey prints, and sequin pillows that reveal a loved one's photo. Use it anywhere you need edge-to-edge, photographic colour.",
     ],
     accent: "green",
     specs: [
       { k: "Best for", v: "Photos & gradients" },
       { k: "Surfaces", v: "Polyester & coated items" },
-      { k: "Feel", v: "Zero texture — dyed in" },
+      { k: "Feel", v: "Zero texture, dyed in" },
       { k: "Coverage", v: "Edge to edge, all over" },
     ],
     perfectFor: [
@@ -181,13 +181,13 @@ export const services: Service[] = [
       "Mousepads & coasters",
     ],
     steps: [
-      { t: "Design at full bleed", d: "Photos, gradients, patterns — sublimation loves detail, so go bold." },
+      { t: "Design at full bleed", d: "Photos, gradients and patterns all hold up at this size, so go bold." },
       { t: "Transfer print", d: "Your design is printed in reverse onto transfer paper with sublimation inks." },
       { t: "Heat & bond", d: "Heat and pressure turn the dye to gas, locking it permanently into the surface." },
     ],
     faqs: [
-      { q: "Will the print fade or peel?", a: "No — the dye is inside the material, not on top of it. Mugs stay dishwasher-friendly and fabrics keep their colour wash after wash." },
-      { q: "Can you sublimate cotton t-shirts?", a: "Sublimation needs polyester or a coated surface. For cotton we'll recommend screen printing or DTF instead — same bold result, right chemistry." },
+      { q: "Will the print fade or peel?", a: "No. The dye is inside the material, not on top of it. Mugs stay dishwasher-friendly and fabrics keep their colour wash after wash." },
+      { q: "Can you sublimate cotton t-shirts?", a: "Sublimation needs polyester or a coated surface. For cotton we'll recommend screen printing or DTF instead, which gets the same bold result on the right chemistry." },
       { q: "Is one piece possible?", a: "Absolutely. Sublimation has no setup plates, so a single personalised mug or pillow is as easy as a hundred." },
     ],
     keywords: ["mug", "water bottle", "pillow", "sequin", "photo", "frame", "coaster", "tumbler"],
@@ -201,7 +201,7 @@ export const services: Service[] = [
     kicker: "Impossible to ignore",
     title: ["Your brand at ", "billboard", " scale."],
     intro: [
-      "Some messages need to be read from across the street. Our large-format printers roll out banners, backdrops and billboard skins in vivid, weather-proof colour — metres wide and pin-sharp.",
+      "Some messages need to be read from across the street. Our large-format printers roll out banners, backdrops and billboard skins in weather-proof colour, metres wide and still pin-sharp.",
       "Pair the print with the right hardware and you have a portable brand presence: pop-up banners for the reception, X-banners for the expo stand, teardrops for the roadside and full gazebos for the field activation.",
     ],
     accent: "orange",
@@ -221,12 +221,12 @@ export const services: Service[] = [
     ],
     steps: [
       { t: "Size & site", d: "We confirm dimensions, viewing distance and where the piece will live." },
-      { t: "Design for distance", d: "Artwork built to be read in seconds — bold type, strong colour." },
+      { t: "Design for distance", d: "Artwork built to be read in seconds, with bold type and strong colour." },
       { t: "Print, finish, rig", d: "Printed, hemmed and eyeleted, supplied with stands and hardware." },
     ],
     faqs: [
-      { q: "Will my banner survive outdoors?", a: "Yes — we print on UV-stable, weather-resistant media designed for Kenyan sun and rain. For windy sites we recommend mesh banners that let air through." },
-      { q: "Do you supply the stands too?", a: "We supply the complete kit — pop-up frames, X-stands, teardrop bases, gazebo frames — plus carry bags so your team can travel with them." },
+      { q: "Will my banner survive outdoors?", a: "Yes. We print on UV-stable, weather-resistant media built for Kenyan sun and rain. For windy sites we recommend mesh banners that let air through." },
+      { q: "Do you supply the stands too?", a: "We supply the complete kit: pop-up frames, X-stands, teardrop bases and gazebo frames, plus carry bags so your team can travel with them." },
       { q: "How do I make artwork this big?", a: "Send us your logo and message; our designers build the artwork at scale with the right resolution so it stays sharp at full size." },
     ],
     keywords: ["banner", "backdrop", "billboard", "gazebo", "teardrop", "telescopic", "signage", "x-banner"],
@@ -247,7 +247,7 @@ export const services: Service[] = [
     kicker: "The executive finish",
     title: ["Permanent, precise, ", "premium", "."],
     intro: [
-      "A focused laser beam removes material from the surface with photographic precision, while debossing presses your mark deep into leather and card. Both leave a finish you can feel — subtle, tactile and permanent.",
+      "A focused laser beam removes material from the surface with photographic precision, while debossing presses your mark deep into leather and card. Both leave a mark you can feel with a thumb, and it never wears off.",
       "It's the difference between a gift and an heirloom: crystal awards with razor-sharp lettering, executive pens carrying a name, leather notebooks pressed with your logo. No ink to fade, nothing to peel.",
     ],
     accent: "green",
@@ -255,7 +255,7 @@ export const services: Service[] = [
       { k: "Best for", v: "Awards & executive gifts" },
       { k: "Materials", v: "Wood · metal · glass · leather" },
       { k: "Detail", v: "Photographic precision" },
-      { k: "Lifespan", v: "Permanent — no ink" },
+      { k: "Lifespan", v: "Permanent, no ink" },
     ],
     perfectFor: [
       "Wooden & crystal awards",
@@ -266,14 +266,14 @@ export const services: Service[] = [
       "Key holders & plaques",
     ],
     steps: [
-      { t: "Choose the piece", d: "Pick from our awards, pens, notebooks and gift sets — or bring your own items." },
+      { t: "Choose the piece", d: "Pick from our awards, pens, notebooks and gift sets, or bring your own items." },
       { t: "Layout & preview", d: "We fit your logo, names or message to the piece and share a preview." },
-      { t: "Engrave & present", d: "Laser-cut or debossed, polished and boxed — ready for the ceremony." },
+      { t: "Engrave & present", d: "Laser-cut or debossed, polished and boxed in time for the ceremony." },
     ],
     faqs: [
-      { q: "Can you personalise each piece differently?", a: "Yes — individual names, titles and dates are exactly what laser engraving is for. Send us your list and every award or pen comes out personalised." },
-      { q: "What's the difference between engraving and debossing?", a: "Engraving removes material with a laser — ideal for wood, glass, metal and coated surfaces. Debossing presses the design into soft materials like leather and card for a classic, tactile impression." },
-      { q: "Can you engrave items I already own?", a: "Usually, yes — message us a photo of the item on WhatsApp and we'll confirm it's laser-safe before you bring it in." },
+      { q: "Can you personalise each piece differently?", a: "Yes. Individual names, titles and dates are exactly what laser engraving is for. Send us your list and every award or pen comes out personalised." },
+      { q: "What's the difference between engraving and debossing?", a: "Engraving removes material with a laser, which suits wood, glass, metal and coated surfaces. Debossing presses the design into soft materials like leather and card for a classic, tactile impression." },
+      { q: "Can you engrave items I already own?", a: "Usually, yes. Message us a photo of the item on WhatsApp and we'll confirm it's laser-safe before you bring it in." },
     ],
     keywords: ["award", "crystal", "engrav", "pen", "flash", "gift set", "wooden", "organizer", "key holder"],
     related: ["offset-printing", "sublimation-printing", "embroidery"],
@@ -286,7 +286,7 @@ export const services: Service[] = [
     kicker: "Thread-level quality",
     title: ["Stitched in, ", "never", " washed out."],
     intro: [
-      "Embroidery converts your logo into thousands of tight stitches, sewn directly into the garment. The result has depth, texture and a quiet confidence that printed logos can't match — and it simply doesn't wash out.",
+      "Embroidery converts your logo into thousands of tight stitches, sewn directly into the garment. It gives the logo depth and texture that a print can't, and it doesn't wash out.",
       "It's the standard for corporate wear that has to look sharp every day: polos and shirts, caps, chef jackets, overalls and beanies. If your team wears it, we can stitch it.",
     ],
     accent: "orange",
@@ -305,14 +305,14 @@ export const services: Service[] = [
       "Fleece & jackets",
     ],
     steps: [
-      { t: "Digitise the logo", d: "Your artwork is converted into a stitch file — mapping every thread." },
+      { t: "Digitise the logo", d: "Your artwork is converted into a stitch file that maps every thread." },
       { t: "Sample stitch-out", d: "We sew a sample so you approve the exact colours and detail." },
       { t: "Production run", d: "Multi-head machines stitch the full order with identical precision." },
     ],
     faqs: [
-      { q: "Does embroidery work for small text?", a: "Very small lettering can lose definition in thread. We'll advise the minimum size that stays crisp — or suggest a print for ultra-fine detail." },
-      { q: "Can you embroider garments we already have?", a: "In most cases yes — bring them in or message us photos first, and we'll confirm the fabric suits embroidery." },
-      { q: "How do you match my brand colours?", a: "We match your logo against standard thread charts and show you the sample stitch-out before the run — so the colour on the cap is the colour on your brand guide." },
+      { q: "Does embroidery work for small text?", a: "Very small lettering can lose definition in thread. We'll advise the minimum size that stays crisp, or suggest a print for ultra-fine detail." },
+      { q: "Can you embroider garments we already have?", a: "In most cases yes. Bring them in or message us photos first, and we'll confirm the fabric suits embroidery." },
+      { q: "How do you match my brand colours?", a: "We match your logo against standard thread charts and show you the sample stitch-out before the run, so the colour on the cap is the colour on your brand guide." },
     ],
     keywords: ["polo", "cap", "chef", "beanie", "overall", "shirt", "hat", "apparel"],
     related: ["screen-printing", "laser-engraving-debossing", "sublimation-printing"],
@@ -331,12 +331,12 @@ export const services: Service[] = [
     kicker: "Your brand, everywhere",
     title: ["Design that ", "speaks", " your brand."],
     intro: [
-      "Our creative team lives where marketing, advertising and graphic design meet. Logos and brand identities, campaign artwork, company profiles — and bespoke, fully-responsive websites that turn visitors into customers.",
-      "Because the same team designs your print and your pixels, everything matches: the business card in your hand, the banner at your event and the website on your customer's phone all speak with one voice.",
+      "The same team handles marketing, advertising and graphic design. Logos and brand identities, campaign artwork, company profiles, and responsive websites built to bring in enquiries.",
+      "Because one team designs your print and your web, everything matches. The business card, the banner at your event and the site on a customer's phone all look like the same company.",
     ],
     accent: "green",
     specs: [
-      { k: "Best for", v: "Brands that want polish" },
+      { k: "Best for", v: "Getting your look consistent" },
       { k: "Web", v: "Responsive, modern, fast" },
       { k: "Design", v: "Logo → campaign → layout" },
       { k: "Consistency", v: "Print & digital, one voice" },
@@ -351,12 +351,12 @@ export const services: Service[] = [
     ],
     steps: [
       { t: "Discover", d: "We dig into your goals, audience and competitors before designing a thing." },
-      { t: "Design & iterate", d: "Concepts, feedback, refinement — until it looks unmistakably you." },
+      { t: "Design & iterate", d: "Concepts, feedback and refinement, until it looks unmistakably you." },
       { t: "Launch & roll out", d: "Website live, brand files delivered, artwork ready for every press we run." },
     ],
     faqs: [
-      { q: "Do you design logos from scratch?", a: "Yes — full identity work from a blank page: logo, colours, typography and the brand files you'll use everywhere from letterheads to billboards." },
-      { q: "What kind of websites do you build?", a: "Bespoke, fully-responsive and aesthetically clean business websites that present your company professionally and make it easy for customers to reach you." },
+      { q: "Do you design logos from scratch?", a: "Yes. Full identity work from a blank page: logo, colours, typography and the brand files you'll use everywhere from letterheads to billboards." },
+      { q: "What kind of websites do you build?", a: "Business websites built from scratch, fast on a phone, with your products laid out clearly and your contact details never more than a tap away." },
       { q: "Can you refresh artwork I already have?", a: "Happily. We can redraw low-quality logos, modernise old layouts and prepare print-ready files from whatever you currently have." },
     ],
     keywords: ["business card", "letterhead", "brochure", "company", "logo", "staff id"],

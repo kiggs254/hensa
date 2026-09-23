@@ -1,5 +1,5 @@
 /**
- * Renders a JSON-LD <script> for structured data. Server component — the graph
+ * Renders a JSON-LD <script> for structured data. Server component, so the graph
  * is serialised into the initial HTML so crawlers and AI systems read it without
  * running JavaScript.
  */

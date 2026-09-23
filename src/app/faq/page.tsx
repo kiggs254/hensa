@@ -9,9 +9,9 @@ import { site } from "@/lib/site";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "FAQ — Printing, Branding & Promotional Products in Kenya",
+  title: "FAQ | Printing, Branding & Promotional Products in Kenya",
   description:
-    "Answers to common questions about printing, banners, corporate gifts, promotional products and branding in Nairobi and across Kenya — suppliers, pricing, materials and turnaround, from Hensa Solutions.",
+    "Answers to common questions about printing, banners, corporate gifts, promotional products and branding in Nairobi and across Kenya: suppliers, pricing, materials and turnaround, from Hensa Solutions.",
   alternates: { canonical: "/faq" },
 };
 
@@ -49,7 +49,7 @@ export default function FaqPage() {
           </nav>
           <p className="spec mt-6 text-orange">Answers</p>
           <h1 className="font-display mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
-            Printing, branding &amp; promotional products in Kenya —{" "}
+            Printing, branding &amp; promotional products in Kenya,{" "}
             <span className="text-green-deep">answered.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
@@ -118,7 +118,7 @@ export default function FaqPage() {
                 Still have a question?
               </h2>
               <p className="mx-auto mt-3 max-w-md text-cream/70">
-                Ask our team directly — we reply on WhatsApp with options and a
+                Ask our team directly. We reply on WhatsApp with options and a
                 quote for your job.
               </p>
               <div className="mt-7 flex flex-wrap items-center justify-center gap-4">

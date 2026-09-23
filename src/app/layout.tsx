@@ -32,7 +32,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Printing, Branding & Promotional Products in Nairobi, Kenya`,
+    default: `${site.name} | Printing, Branding & Promotional Products in Nairobi, Kenya`,
     template: `%s | ${site.name}`,
   },
   description: site.seoDescription,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     siteName: site.name,
-    title: `${site.name} — Printing, Branding & Promotional Products in Nairobi`,
+    title: `${site.name} | Printing, Branding & Promotional Products in Nairobi`,
     description: site.seoDescription,
     url: site.url,
     locale: "en_KE",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Printing & Branding in Nairobi, Kenya`,
+    title: `${site.name} | Printing & Branding in Nairobi, Kenya`,
     description: site.seoDescription,
   },
 };

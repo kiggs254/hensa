@@ -47,19 +47,19 @@ const SUBCATS: Record<string, string[]> = {
 const TRUST = [
   {
     title: "Countrywide Delivery",
-    body: "We deliver across Kenya — Nairobi to the counties, right to your door.",
+    body: "We deliver across Kenya, from Nairobi out to the counties, right to your door.",
     accent: "orange" as const,
     icon: <TruckIcon className="h-5 w-5" />,
   },
   {
     title: "M-Pesa Accepted",
-    body: "Comfortable payments the Kenyan way. Lipa na M-Pesa, sorted.",
+    body: "Lipa na M-Pesa on any order, the way you already pay for everything else.",
     accent: "green" as const,
     icon: <MpesaIcon className="h-5 w-5" />,
   },
   {
     title: "Only Best Brands",
-    body: "Quality materials and finishes that hold your logo with pride.",
+    body: "We use blanks and inks that survive real use, so your logo still looks right months later.",
     accent: "orange" as const,
     icon: <ShieldCheckIcon className="h-5 w-5" />,
   },
@@ -84,11 +84,11 @@ export default async function Home() {
     {
       kicker: "Customer Service Week · 5–9 October",
       title: ["Thank you for your ", "trust", " & partnership."],
-      copy: "This Customer Service Week we're celebrating the clients who keep our presses running. Your success inspires our commitment — and we'd love to help you thank your own customers and team.",
+      copy: "This Customer Service Week we're celebrating the clients who keep our presses running. Your success inspires our commitment. If you're thanking your own customers or team this week, we can print that too.",
       cta: { label: "Browse appreciation gifts", href: "/catalog/corporate-gifts" },
       image: {
         src: "/promos/customer-service-week.jpg",
-        alt: "Hensa Solutions team celebrating Customer Service Week — thank you for your trust and partnership",
+        alt: "Hensa Solutions staff at a client event, thanking clients for Customer Service Week",
       },
       sticker: { big: "Thank you", small: "customer service week" },
       theme: "green",
@@ -96,7 +96,7 @@ export default async function Home() {
     {
       kicker: "Campaign season · every party",
       title: ["Your party's ", "colours", ", printed."],
-      copy: "Election-ready merchandise for every candidate — t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",
+      copy: "Election-ready merchandise for every candidate: t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",
       cta: { label: "Browse campaign gear", href: "/catalog/campaign" },
       image: {
         src: "/campaign/campaign-tshirts.jpg",
@@ -108,7 +108,7 @@ export default async function Home() {
     {
       kicker: "Nairobi's branding workshop",
       title: ["Everything your ", "logo", " belongs on."],
-      copy: `Branded products — from a single mug to a fleet of billboards — printed with utmost expertise and delivered countrywide.`,
+      copy: `Branded products, from a single mug to a fleet of billboards, printed in-house and delivered countrywide.`,
       cta: { label: "Browse the catalogue", href: "/catalog" },
       image: {
         src: img("executive-gift-sets-008", "/products/hoodies.jpg"),
@@ -120,7 +120,7 @@ export default async function Home() {
     {
       kicker: "Promotional apparel",
       title: ["Merch your team will ", "actually", " wear."],
-      copy: "Hoodies, polos, tees, caps and reflectors — screen-printed or embroidered with your brand, in sizes S to XXXL.",
+      copy: "Hoodies, polos, tees, caps and reflectors, screen-printed or embroidered with your brand, in sizes S to XXXL.",
       cta: { label: "Browse apparel", href: "/catalog/promotional-items" },
       image: { src: img("hoodies", "/products/hoodies.jpg"), alt: "Custom printed hoodie" },
       sticker: { big: "S – XXXL", small: "all sizes available" },
@@ -141,7 +141,7 @@ export default async function Home() {
     {
       kicker: "Corporate gifts & stationery",
       title: ["Gifts that ", "mean", " business."],
-      copy: "Executive gift sets, notebooks, pens and awards — thoughtful, branded and boardroom-ready for clients and staff.",
+      copy: "Executive gift sets, notebooks, pens and awards for clients and staff, branded and ready for the boardroom.",
       cta: { label: "Browse gifts", href: "/catalog/corporate-gifts" },
       image: {
         src: img("executive-notebooks-005", "/categories/corporate-gifts.jpg"),
@@ -156,7 +156,7 @@ export default async function Home() {
     <>
       {/* ============ HERO SLIDER ============ */}
       <h1 className="sr-only">
-        Hensa Solutions — printing, branding, corporate & promotional gifts in
+        Hensa Solutions: printing, branding, corporate & promotional gifts in
         Nairobi, Kenya
       </h1>
       <HeroSlider slides={slides} />
@@ -169,7 +169,7 @@ export default async function Home() {
         {/* The edge fade is painted by the two gradient overlays at the bottom
             of this nav, NOT by a mask on this element. A mask applies to every
             DESCENDANT, so the hover popover of whichever category was passing
-            under the fade got faded along with it — which is the bug this
+            under the fade got faded along with it, which is the bug this
             replaces. overflow-x-clip stays: the marquee is far wider than the
             page and would otherwise create a horizontal scrollbar. */}
         <div className="pointer-events-none -mb-72 overflow-x-clip pb-72 pt-2">
@@ -223,7 +223,7 @@ export default async function Home() {
           </div>
         </div>
 
-        {/* Edge fades — siblings of the strip, so they can never tint the
+        {/* Edge fades: siblings of the strip, so they can never tint the
             popovers. z-20 sits above the marquee but below the popover's z-40,
             so a popover opened at the edge stays fully readable. */}
         <div
@@ -282,17 +282,17 @@ export default async function Home() {
             {
               href: "/catalog/corporate-apparel",
               img: "/promos/corporate-apparel.jpg",
-              alt: "Corporate apparel — branded caps and kitchen aprons. Browse now.",
+              alt: "Corporate apparel: branded caps and kitchen aprons. Browse now.",
             },
             {
               href: "/catalog/promotional-items",
               img: "/promos/promotional-items.jpg",
-              alt: "Promotional items — branded mugs, t-shirts and tote bags. Browse now.",
+              alt: "Promotional items: branded mugs, t-shirts and tote bags. Browse now.",
             },
             {
               href: "/catalog/banners",
               img: "/promos/banners.jpg",
-              alt: "Banners — X-banners and hanging banners for your brand. Browse now.",
+              alt: "Banners: X-banners and hanging banners for your brand. Browse now.",
             },
           ].map((p, i) => (
             <Reveal
@@ -344,7 +344,7 @@ export default async function Home() {
         </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-          {/* the catalog — featured tile */}
+          {/* the catalog: featured tile */}
           <Reveal className="sm:col-span-2 lg:row-span-2">
             <Link
               href="/catalog"
@@ -364,8 +364,8 @@ export default async function Home() {
                   Everything, ready for your logo
                 </h3>
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-cream/75">
-                  Banners, apparel, gifts, stationery, promo items and signage —
-                  every single one branded to order and delivered countrywide.
+                  Banners, apparel, gifts, stationery, promo items and signage,
+                  all branded to order and delivered countrywide.
                 </p>
                 <span className="mt-6 inline-flex items-center gap-2 rounded-full bg-cream px-6 py-3 font-display text-sm font-bold text-ink transition-colors group-hover:bg-orange group-hover:text-white">
                   Browse the catalogue
@@ -452,7 +452,7 @@ export default async function Home() {
       {/* ============ HOW WE WORK ============ */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <Reveal>
-          <p className="spec text-orange">Our methodology</p>
+          <p className="spec text-orange">How we work</p>
           <h2 className="font-display mt-2 max-w-2xl text-4xl font-extrabold tracking-tight sm:text-5xl">
             From idea to ink, in four passes
           </h2>
@@ -462,23 +462,23 @@ export default async function Home() {
           {[
             {
               n: "01",
-              t: "Discovery",
-              d: "We take time to holistically understand your strategies, goals, challenges and opportunities to facilitate impactful results.",
+              t: "Brief",
+              d: "You tell us the quantity, the deadline and what the job is for. We tell you what it costs and what we would print it on.",
             },
             {
               n: "02",
-              t: "Concept",
-              d: "Strategy mapping, user-experience design and technology integration — harmonised with your business processes.",
+              t: "Artwork",
+              d: "Send your logo, or let our designers draw it. We set it up for the press and show you exactly where it sits.",
             },
             {
               n: "03",
-              t: "Integration",
-              d: "Ideas become tangible, functional solutions — pressed, stitched, engraved and quality-checked before anything ships.",
+              t: "Proof",
+              d: "You see a proof before anything runs. Colours, spelling, placement. Nothing goes to press until you sign it off.",
             },
             {
               n: "04",
-              t: "Launch",
-              d: "We actualise the solution with the right expertise and a well-conceptualised strategy, then deliver countrywide.",
+              t: "Press",
+              d: "We print, stitch or engrave it, check it, pack it, and deliver anywhere in Kenya.",
             },
           ].map((s, i) => (
             <Reveal key={s.n} delay={i * 90}>
@@ -505,11 +505,11 @@ export default async function Home() {
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
             <p className="spec text-orange">Our clients</p>
             <h2 className="font-display mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
-              The best partners you can think of
+              Who we print for
             </h2>
             <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink-soft">
-              From government and NGOs to schools, hospitals and startups —
-              {" "}{clientLogos.length}+ brands trust Hensa with their name.
+              Government, NGOs, schools, hospitals and startups.{" "}
+              {clientLogos.length}+ brands trust Hensa with their name.
             </p>
           </div>
         </Reveal>
@@ -562,8 +562,8 @@ export default async function Home() {
               <span className="text-green">everything.</span>
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-cream/70">
-              Tell us what you need — quantities, colours, deadlines — and our
-              team will reply on WhatsApp with options and a quote. Fast.
+              Tell us the quantities, the colours and the deadline. Our team
+              replies on WhatsApp with options and a quote.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
               <EnquireButton className="flex items-center gap-2.5 rounded-full bg-green px-8 py-4 font-display font-bold text-white shadow-[0_10px_30px_rgba(51,160,44,0.4)] transition-all hover:-translate-y-0.5 hover:bg-green-deep">

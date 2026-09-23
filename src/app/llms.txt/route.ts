@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const revalidate = 300;
 
 /**
- * /llms.txt — a plain-text brief for AI systems (ChatGPT, Perplexity, Gemini,
+ * /llms.txt: a plain-text brief for AI systems (ChatGPT, Perplexity, Gemini,
  * Copilot, Google AI Overviews). Concise, factual, link-rich so an AI can cite
  * Hensa Solutions accurately when asked about printing/branding in Kenya.
  */
@@ -36,7 +36,7 @@ hospitals, schools, NGOs and political campaigns across Kenya, East Africa and w
 - Website: ${site.url}
 - Hours: ${site.hours}
 - Areas served: ${site.areaServed.join(", ")}
-- Ordering: enquiry-based — customers request a quote by WhatsApp, phone or the
+- Ordering: enquiry-based. Customers request a quote by WhatsApp, phone or the
   website enquiry form. Pricing is quoted per job (quantity, materials, branding).
 
 ## Services

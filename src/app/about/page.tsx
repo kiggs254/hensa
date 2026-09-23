@@ -8,32 +8,32 @@ import EnquireButton from "@/components/EnquireButton";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "About Hensa — Nairobi's Leading Branding Agency",
+  title: "About Hensa | Nairobi's Leading Branding Agency",
   description:
-    "Hensa Solutions is the leading branding agency based in Nairobi, Kenya — creating and developing brands for businesses across East Africa and clients worldwide through printing, branding and advertising.",
+    "Hensa Solutions is the leading branding agency based in Nairobi, Kenya, creating and developing brands for businesses across East Africa and clients worldwide through printing, branding and advertising.",
   alternates: { canonical: "/about" },
 };
 
 const METHOD = [
   {
     n: "01",
-    t: "Discovery",
-    d: "We take time to holistically understand your key strategies, goals, challenges and opportunities so as to facilitate impactful results.",
+    t: "Brief",
+    d: "You tell us the quantity, the deadline and what the job is for. We tell you what it costs and what we would print it on.",
   },
   {
     n: "02",
-    t: "Concept",
-    d: "Strategy mapping, user-experience design and technology integration — harmonised with your business processes.",
+    t: "Artwork",
+    d: "Send your logo, or let our designers draw it. We set it up for the press and show you exactly where it sits.",
   },
   {
     n: "03",
-    t: "Integration",
-    d: "We convert ideas into tangible, functional solutions, with quality-assurance testing at every step.",
+    t: "Proof",
+    d: "You see a proof before anything runs. Colours, spelling, placement. Nothing goes to press until you sign it off.",
   },
   {
     n: "04",
-    t: "Launching",
-    d: "We actualise solutions through relevant expertise and a well-conceptualised strategy.",
+    t: "Press",
+    d: "We print, stitch or engrave it, check it, pack it, and deliver anywhere in Kenya.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default async function AboutPage() {
           <p className="spec text-green-deep">About Hensa</p>
           <h1 className="font-display mt-3 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-6xl">
             We put brands{" "}
-            <span className="text-orange">on the map</span> — and on mugs,
+            <span className="text-orange">on the map</span>. And on mugs,
             shirts, banners &amp; billboards.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft">
@@ -84,12 +84,12 @@ export default async function AboutPage() {
           {[
             {
               t: "Who we are",
-              d: "A full-service branding house: strategists, designers, printers and finishers working as one team, one roof, one standard of quality.",
+              d: "A full-service branding house. Strategists, designers, printers and finishers, all in the same building and answerable to each other.",
               accent: "text-orange",
             },
             {
               t: "How we do it",
-              d: "We offer a wide range of services — brand strategy, design, printing, advertising and digital marketing — helping clients reach their audiences through creativity and innovation.",
+              d: "Brand strategy, design, printing, advertising and digital marketing, used together to get your name in front of the people you are trying to reach.",
               accent: "text-green-deep",
             },
             {
@@ -114,9 +114,9 @@ export default async function AboutPage() {
       <section className="border-y border-ink/10 bg-paper-warm py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
-            <p className="spec text-orange">Our methodology</p>
+            <p className="spec text-orange">How we work</p>
             <h2 className="font-display mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Four phases. Zero guesswork.
+              Four passes, from brief to delivery.
             </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

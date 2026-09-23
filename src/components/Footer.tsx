@@ -105,7 +105,7 @@ export default function Footer({
               className="h-12 w-auto rounded-lg bg-cream p-1.5"
             />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
-              The leading branding agency in Nairobi, Kenya — creating and
+              The leading branding agency in Nairobi, Kenya, creating and
               developing brands across East Africa and for clients worldwide
               through printing, branding and advertising.
             </p>

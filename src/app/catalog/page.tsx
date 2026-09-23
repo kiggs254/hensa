@@ -7,7 +7,7 @@ import { getProducts, getCategories } from "@/lib/catalog";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Catalog — Branded Products & Corporate Gifts",
+  title: "Catalog | Branded Products & Corporate Gifts",
   description:
     "Browse branded products: banners, corporate apparel, gifts, stationery, promotional items, signage and trophies & awards. Enquire instantly on WhatsApp.",
   alternates: { canonical: "/catalog" },
@@ -18,7 +18,7 @@ export default async function CatalogPage({
 }: {
   searchParams: Promise<{ category?: string; q?: string }>;
 }) {
-  // Legacy ?category= links now live at /catalog/<slug> — send them there.
+  // Legacy ?category= links now live at /catalog/<slug>, so send them there.
   const { category } = await searchParams;
   if (category) permanentRedirect(`/catalog/${category}`);
 
@@ -33,7 +33,7 @@ export default async function CatalogPage({
         <p className="mt-3 max-w-2xl text-ink-soft">
           Every item can be branded with your logo. Pick a product, hit{" "}
           <strong className="text-green-deep">Enquire</strong>, and we&apos;ll
-          take it from there on WhatsApp — no checkout needed.
+          take it from there on WhatsApp. No checkout needed.
         </p>
       </div>
       <Suspense>

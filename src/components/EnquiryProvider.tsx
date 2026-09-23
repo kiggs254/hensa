@@ -20,7 +20,7 @@ import {
 import { WhatsAppIcon } from "@/components/icons";
 
 export interface EnquiryPayload {
-  /** product name — omit for a general enquiry */
+  /** product name; omit for a general enquiry */
   productName?: string;
   productUrl?: string;
   quantity?: number;
@@ -46,9 +46,9 @@ export function useEnquiry(): Ctx {
 }
 
 /**
- * `collect` — first visit, we need their details
- * `compose` — details known, just offer an optional message
- * `edit`    — managing saved details, no enquiry attached
+ * `collect`: first visit, we need their details
+ * `compose`: details known, just offer an optional message
+ * `edit`:    managing saved details, no enquiry attached
  */
 type Mode = "collect" | "compose" | "edit";
 
@@ -71,12 +71,12 @@ function buildMessage(
 
   // the product widget's note and the modal message are both "their words"
   const notes = [payload.note?.trim(), extra.trim()].filter(Boolean);
-  if (notes.length) lines.push(`Note: ${notes.join(" — ")}`);
+  if (notes.length) lines.push(`Note: ${notes.join("; ")}`);
 
   if (payload.productUrl) lines.push("", payload.productUrl);
 
   if (c) {
-    lines.push("", "———", `Name: ${c.name}`, `Phone: ${c.phone}`);
+    lines.push("", "---", `Name: ${c.name}`, `Phone: ${c.phone}`);
     if (c.email?.trim()) lines.push(`Email: ${c.email.trim()}`);
   }
 
@@ -187,7 +187,7 @@ export default function EnquiryProvider({
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // returning customer — nothing to validate, just send
+    // returning customer, nothing to validate, just send
     if (mode === "compose") {
       const payload = pending;
       const extra = message;
@@ -234,13 +234,13 @@ export default function EnquiryProvider({
 
   const copy = {
     collect: {
-      title: "Before we chat —",
+      title: "Before we chat",
       body: "Quick intro so our team can prepare your quote. We'll remember it, so you only do this once.",
       cta: "Continue to WhatsApp",
     },
     compose: {
       title: "Anything to add?",
-      body: "Tell us quantities, colours, sizes or deadlines — or just hit send and we'll take it from there.",
+      body: "Tell us quantities, colours, sizes or deadlines, or just hit send and we'll take it from there.",
       cta: "Send on WhatsApp",
     },
     edit: {
@@ -298,7 +298,7 @@ export default function EnquiryProvider({
 
               <form onSubmit={submit} className="mt-6 space-y-4" noValidate>
                 {mode === "compose" ? (
-                  /* returning customer — identity chip instead of the form */
+                  /* returning customer: identity chip instead of the form */
                   <div className="flex items-center justify-between gap-3 rounded-xl border border-ink/10 bg-paper-warm px-4 py-3">
                     <span className="min-w-0">
                       <span className="spec block text-[9px] text-ink-soft">
@@ -409,7 +409,7 @@ export default function EnquiryProvider({
                   </>
                 )}
 
-                {/* optional message — sent with the enquiry */}
+                {/* optional message, sent with the enquiry */}
                 {mode !== "edit" && (
                   <div>
                     <label
@@ -427,7 +427,7 @@ export default function EnquiryProvider({
                       rows={3}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="e.g. 50 pieces, navy blue, logo on the chest — needed by Friday"
+                      placeholder="e.g. 50 pieces, navy blue, logo on the chest, needed by Friday"
                       className="mt-1.5 w-full resize-none rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm outline-none transition-colors placeholder:text-ink-soft/50 focus:border-green"
                     />
                   </div>

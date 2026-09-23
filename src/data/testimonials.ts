@@ -1,12 +1,12 @@
 /**
- * ⚠️  PLACEHOLDER CONTENT — REPLACE BEFORE GOING LIVE  ⚠️
+ * ⚠️  PLACEHOLDER CONTENT: REPLACE BEFORE GOING LIVE  ⚠️
  *
  * These are SAMPLE quotes written to demonstrate the layout. They are NOT real
  * client feedback and must be swapped for genuine testimonials (with the
  * client's permission) before this site is published.
  *
  * To update: edit the entries below. `featured: true` renders in the large dark
- * card — keep exactly one. Everything else flows into the grid.
+ * card; keep exactly one. Everything else flows into the grid.
  */
 
 export interface Testimonial {
@@ -22,7 +22,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "We needed 400 branded polos and notebooks for a countrywide staff rollout, with three weeks' notice. Hensa handled artwork, sizing and delivery to every branch — and the embroidery still looks sharp a year later.",
+      "We needed 400 branded polos and notebooks for a countrywide staff rollout, with three weeks' notice. Hensa handled artwork, sizing and delivery to every branch, and the embroidery still looks sharp a year later.",
     name: "Sample Client",
     role: "Head of Operations · Financial services",
     rating: 5,
@@ -51,7 +51,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Reliable on the boring stuff too — receipt books, letterheads, staff IDs. Same quality every reorder, no chasing.",
+      "Reliable on the boring stuff too: receipt books, letterheads, staff IDs. Same quality every reorder, no chasing.",
     name: "Sample Client",
     role: "Administrator · Healthcare",
     rating: 5,

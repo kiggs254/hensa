@@ -3,7 +3,7 @@
  *
  * Server-side only (fetches from BACKEND_ORIGIN with Next's fetch cache +
  * revalidation, so pages stay fast and refresh every few minutes). The static
- * catalog.json is gone — `catalog.ts` now maps these responses into the same
+ * catalog.json is gone; `catalog.ts` now maps these responses into the same
  * Product/Category shapes the components already use.
  */
 import type { Product } from "@/lib/catalog";

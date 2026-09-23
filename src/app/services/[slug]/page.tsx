@@ -394,8 +394,8 @@ export default async function ServicePage({
               Ready to put {service.name.toLowerCase()} to work?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-cream/70">
-              Describe your project on WhatsApp — quantities, deadline, ideas —
-              and our team replies with options and a quote.
+              Describe your project on WhatsApp, including quantities, deadline
+              and any ideas. Our team replies with options and a quote.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <EnquireButton

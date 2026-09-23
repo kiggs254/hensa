@@ -35,7 +35,7 @@ export default function OpenStatus() {
     return () => clearInterval(id);
   }, []);
 
-  // render nothing until mounted — avoids a server/client clock mismatch
+  // render nothing until mounted, which avoids a server/client clock mismatch
   if (!now) {
     return <span className="block h-[18px]" aria-hidden="true" />;
   }

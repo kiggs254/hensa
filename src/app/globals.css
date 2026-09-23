@@ -260,7 +260,7 @@ body {
   text-wrap: balance;
 }
 
-/* spec label — like a printer's spec sheet */
+/* spec label, like a printer's spec sheet */
 .spec {
   font-family: var(--font-plex-mono), monospace;
   font-size: 0.6875rem;

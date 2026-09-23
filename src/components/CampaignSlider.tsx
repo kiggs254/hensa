@@ -70,7 +70,7 @@ export default function CampaignSlider() {
               <span className="text-orange">every</span> side.
             </h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-cream/70">
-              From MCA to State House — t-shirts, caps, lessos, teardrop
+              From MCA to State House: t-shirts, caps, lessos, teardrop
               banners, reflectors and full regalia, branded in your party&apos;s
               colours. Any party, any candidate, any county.
             </p>
@@ -141,7 +141,7 @@ export default function CampaignSlider() {
                 >
                   <Image
                     src={s.img}
-                    alt={`Campaign ${s.label} — branded for every party`}
+                    alt={`Campaign ${s.label} branded for every party`}
                     fill
                     sizes="(max-width: 1024px) 90vw, 40vw"
                     className="object-cover"

@@ -7,9 +7,9 @@ import { services } from "@/data/services";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Our Services — Printing, Branding, Design & More",
+  title: "Our Services | Printing, Branding, Design & More",
   description:
-    "Brand strategy, creative design, screen/digital/offset/sublimation/large-format printing, laser engraving, embroidery, marketing and web design — all under one roof in Nairobi.",
+    "Brand strategy, creative design, screen/digital/offset/sublimation/large-format printing, laser engraving, embroidery, marketing and web design, all under one roof in Nairobi.",
   alternates: { canonical: "/services" },
 };
 
@@ -45,17 +45,17 @@ const PILLARS = [
   {
     n: "01",
     t: "Research",
-    d: "We evaluate your targets, needs and challenges before a single drop of ink is committed.",
+    d: "We ask who the job is for and what it has to do before a drop of ink is committed.",
   },
   {
     n: "02",
     t: "Creativity",
-    d: "An expert team focused on delivery — ideas that stand out and stand up.",
+    d: "Designers who know what survives a press run and what only looks good on screen.",
   },
   {
     n: "03",
     t: "Production",
-    d: "In-house presses and finishing that make your advertising genuinely effective.",
+    d: "Our own presses and finishing, so no part of your job waits on a third party.",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function ServicesPage() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
               Brand strategy, design, printing, advertising and digital
-              marketing — from a single mug to a countrywide campaign, our
+              marketing. From a single mug to a countrywide campaign, our
               in-house presses handle it end to end.
             </p>
 
@@ -151,7 +151,7 @@ export default function ServicesPage() {
               </h2>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-ink-soft">
-              Tap any service for the full story — process, applications and
+              Tap any service for the full story: process, applications and
               the products we brand with it.
             </p>
           </div>
@@ -238,7 +238,7 @@ export default function ServicesPage() {
           <Reveal>
             <p className="spec text-orange">How we work</p>
             <h2 className="font-display mt-2 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Research, creativity, production — in that order.
+              Research, then creativity, then production.
             </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -273,9 +273,8 @@ export default function ServicesPage() {
                 Not sure which service fits? Just describe it.
               </h2>
               <p className="mx-auto mt-4 max-w-md text-cream/70">
-                Tell us what you need on WhatsApp — quantities, colours,
-                deadlines — and our team replies with the right approach and a
-                quote.
+                Tell us the quantities, the colours and the deadline on
+                WhatsApp. Our team replies with the right approach and a quote.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <EnquireButton className="flex items-center gap-2.5 rounded-full bg-green px-8 py-4 font-display font-bold text-white shadow-[0_10px_30px_rgba(51,160,44,0.4)] transition-all hover:-translate-y-0.5 hover:bg-green-deep">

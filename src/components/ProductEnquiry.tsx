@@ -23,7 +23,7 @@ export default function ProductEnquiry({ product }: { product: Product }) {
     <div className="cropmarks border border-ink/15 bg-cream p-6">
       <p className="spec text-ink-soft">WhatsApp Enquiry</p>
       <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-        No checkout, no fuss — tell us what you need and our team replies on
+        No checkout, no fuss. Tell us what you need and our team replies on
         WhatsApp with availability, branding options and a quote.
       </p>
 
@@ -61,7 +61,7 @@ export default function ProductEnquiry({ product }: { product: Product }) {
         value={note}
         onChange={(e) => setNote(e.target.value)}
         rows={2}
-        placeholder="Optional note — colours, sizes, branding, deadline…"
+        placeholder="Optional note: colours, sizes, branding, deadline…"
         className="mt-4 w-full resize-none rounded-lg border border-ink/20 bg-white/70 px-4 py-3 text-sm outline-none transition-colors placeholder:text-ink-soft/60 focus:border-green"
       />
 

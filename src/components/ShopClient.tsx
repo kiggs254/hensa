@@ -11,7 +11,7 @@ const PAGE_SIZE = 24;
 
 type Sort = "featured" | "name";
 
-/** Shows a spinner over a strip link while its navigation is in flight — so a
+/** Shows a spinner over a strip link while its navigation is in flight, so a
  *  tap gives immediate feedback even on a slow connection. Must render inside
  *  a <Link> (that's how useLinkStatus knows which navigation to track). */
 function PendingSpinner() {
@@ -33,7 +33,7 @@ function InlinePending() {
   );
 }
 
-/** One category avatar in the strip — a real link, so it's tappable on touch
+/** One category avatar in the strip. A real link, so it's tappable on touch
  *  and works even before the client bundle hydrates. */
 function Circle({
   href,
@@ -146,7 +146,7 @@ export default function ShopClient({
     setVisible(PAGE_SIZE);
   }, [activeCategory, query, sort]);
 
-  // After navigating to a (sub)category, bring the selected circle into view —
+  // After navigating to a (sub)category, bring the selected circle into view.
   // the horizontal strip otherwise always shows the first few. Only scrolls the
   // strip itself (never the page), and leaves it alone if already visible.
   useEffect(() => {
@@ -187,7 +187,7 @@ export default function ShopClient({
 
   return (
     <div>
-      {/* category strip — top-level, or a parent's subcategories */}
+      {/* category strip: top-level, or a parent's subcategories */}
       {parent ? (
         <div key={parent.slug} className="strip-in">
           <div className="mb-4 flex flex-wrap items-center gap-3">
@@ -298,7 +298,7 @@ export default function ShopClient({
             Nothing matched “{query}”
           </p>
           <p className="mt-2 text-sm text-ink-soft">
-            Try a different keyword, or ask us directly on WhatsApp — we
+            Try a different keyword, or ask us directly on WhatsApp. We
             probably make it.
           </p>
         </div>

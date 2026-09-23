@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 import { PhoneIcon, MailIcon, PinIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Talk to Hensa Solutions",
+  title: "Contact Us | Talk to Hensa Solutions",
   description:
     "Reach Hensa Solutions on WhatsApp, phone (+254 721 597714) or email. Visit us on Mfangano Street, Nairobi. Countrywide delivery across Kenya.",
   alternates: { canonical: "/contact" },
@@ -21,7 +21,7 @@ export default function ContactPage() {
             Let&apos;s talk <span className="text-green-deep">ink.</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-ink-soft">
-            Fastest reply is WhatsApp — but we&apos;re just as happy on the
+            Fastest reply is WhatsApp, but we&apos;re just as happy on the
             phone, by email, or in person at the workshop.
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
 
             <div className="overflow-hidden border border-ink/10">
               <iframe
-                title="Hensa Solutions location — Mfangano Street, Nairobi"
+                title="Hensa Solutions location, Mfangano Street, Nairobi"
                 src="https://maps.google.com/maps?q=Mfangano%20Street%2C%20Nairobi%2C%20Kenya&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 className="h-72 w-full"
                 loading="lazy"

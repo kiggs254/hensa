@@ -1,5 +1,5 @@
 /**
- * Hensa catalogue — now sourced live from the E-biz storefront API (see api.ts)
+ * Hensa catalogue, now sourced live from the E-biz storefront API (see api.ts)
  * instead of a static JSON export. The Product / Category shapes are unchanged
  * so components keep working; the accessors are async (server components await
  * them, and client components receive the data as props).
@@ -53,7 +53,7 @@ export interface SubCategory {
   description?: string;
 }
 
-/** A browseable catalogue node — a top-level category or a subcategory — with
+/** A browseable catalogue node (a top-level category or a subcategory) with
  *  everything the /catalog/[category] route needs for SEO + the heading. */
 export interface CatalogNode {
   slug: string;
@@ -64,18 +64,18 @@ export interface CatalogNode {
   parent?: { slug: string; name: string };
 }
 
-/** Curated top-level copy + local fallback art (the images also live in the API). */
+/** Hand-written top-level copy + local fallback art (the images also live in the API). */
 const CATEGORY_META: Record<string, { blurb: string; image: string; order: number }> = {
   banners: { order: 0, blurb: "Pop-up, teardrop, backdrop, X-banners, billboards & gazebos for events and promotions.", image: "/categories/banners.jpg" },
   "corporate-apparel": { order: 1, blurb: "Gents' and ladies' corporate shirts, chef jackets and tailored workwear.", image: "/categories/corporate-apparel.jpg" },
   "corporate-gifts": { order: 2, blurb: "Executive gift sets, flash disks, desk organisers and card holders.", image: "/categories/corporate-gifts.jpg" },
-  "trophies-awards": { order: 2.5, blurb: "Trophies, medals, plaques, shields and crystal, glass, wood & resin awards — engraved and branded to order.", image: "/categories/corporate-gifts.jpg" },
+  "trophies-awards": { order: 2.5, blurb: "Trophies, medals, plaques, shields and crystal, glass, wood & resin awards, engraved and branded to order.", image: "/categories/corporate-gifts.jpg" },
   "corporate-stationery": { order: 3, blurb: "Notebooks, pens, business cards, letterheads, calendars, diaries and more.", image: "/categories/corporate-stationery.jpg" },
   "individual-gifts": { order: 4, blurb: "Photo books, framed photos, throw pillows, cards and personalised keepsakes.", image: "/categories/individual-gifts.jpg" },
   "promotional-items": { order: 5, blurb: "T-shirts, hoodies, caps, mugs, water bottles, bags and giveaways that carry your brand.", image: "/categories/promotional-items.jpg" },
-  signages: { order: 6, blurb: "2D & 3D signage, glass and directional signs that make your space speak.", image: "/categories/signages.jpg" },
+  signages: { order: 6, blurb: "2D & 3D signage, glass and directional signs, cut and fitted to your space.", image: "/categories/signages.jpg" },
   "printing-accessories": { order: 7, blurb: "Screen-printing meshes and professional consumables for print work.", image: "/products/screen-printing-mesh-55t-high-quality.jpg" },
-  campaign: { order: 8, blurb: "Election-ready merchandise for every party — t-shirts, caps, banners, lessos, flags and more, in your colours.", image: "/categories/campaign.jpg" },
+  campaign: { order: 8, blurb: "Election-ready merchandise for every party: t-shirts, caps, banners, lessos, flags and more, in your colours.", image: "/categories/campaign.jpg" },
 };
 
 export async function getProducts(): Promise<Product[]> {
@@ -117,7 +117,7 @@ export async function categoryBySlug(slug: string): Promise<Category | undefined
   return (await getCategories()).find((c) => c.slug === slug);
 }
 
-/** Resolve any catalogue slug — top-level category OR subcategory — to a node
+/** Resolve any catalogue slug (top-level category OR subcategory) to a node
  *  with a blurb + parent, for the /catalog/[category] page + its metadata. */
 export async function getCatalogNode(slug: string): Promise<CatalogNode | undefined> {
   const cats = await getCategories();
@@ -131,7 +131,7 @@ export async function getCatalogNode(slug: string): Promise<CatalogNode | undefi
           name: s.name,
           blurb:
             s.description ||
-            `${s.name} — part of our ${c.name.toLowerCase()} range, branded to order.`,
+            `${s.name}, part of our ${c.name.toLowerCase()} range, branded to order.`,
           image: s.image,
           isSub: true,
           parent: { slug: c.slug, name: c.name },

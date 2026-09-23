@@ -139,7 +139,7 @@ export default function Header({ categories }: { categories: Category[] }) {
         }}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
-          <Link href="/" className="shrink-0" aria-label="Hensa Solutions — home">
+          <Link href="/" className="shrink-0" aria-label="Hensa Solutions home">
             <Image
               src="/logo.png"
               alt="Hensa Solutions"
@@ -382,7 +382,7 @@ export default function Header({ categories }: { categories: Category[] }) {
                   Can&apos;t find it? We&apos;ll source &amp; brand it.
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-cream/65">
-                  Tell us what you need on WhatsApp — our team replies with
+                  Tell us what you need on WhatsApp. Our team replies with
                   options and a quote.
                 </p>
                 <button

@@ -30,7 +30,7 @@ export async function generateMetadata({
   if (!node) return {};
   const description = (
     node.blurb ||
-    `Browse ${node.name} at ${site.name} — branded to order and delivered countrywide. Enquire on WhatsApp.`
+    `Browse ${node.name} at ${site.name}: branded to order and delivered countrywide. Enquire on WhatsApp.`
   )
     .replace(/\s+/g, " ")
     .slice(0, 160);
