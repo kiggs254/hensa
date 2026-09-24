@@ -79,7 +79,6 @@ export default async function Home() {
         src: "/promos/customer-service-week.jpg",
         alt: "Hensa Solutions staff at a client event, thanking clients for Customer Service Week",
       },
-      sticker: { big: "Thank you", small: "customer service week" },
       theme: "green",
     },
     {

@@ -13,7 +13,8 @@ export interface HeroSlide {
   copy: string;
   cta: { label: string; href: string };
   image: { src: string; alt: string };
-  sticker: { big: string; small: string };
+  /** Optional tag card pinned to the image's top-right corner. */
+  sticker?: { big: string; small: string };
   theme: "cream" | "green" | "dark" | "orange";
 }
 
@@ -197,14 +198,16 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                       />
                     </Link>
                     {/* price sticker */}
-                    <div className="absolute -right-4 -top-5 rotate-6 rounded-2xl border border-ink/10 bg-cream px-4 py-2.5 shadow-[0_12px_30px_rgba(28,26,22,0.2)] sm:-right-8">
-                      <p className="font-mono text-base font-bold leading-none text-orange sm:text-lg">
-                        {s.sticker.big}
-                      </p>
-                      <p className="spec mt-1 text-[9px] text-ink-soft">
-                        {s.sticker.small}
-                      </p>
-                    </div>
+                    {s.sticker && (
+                      <div className="absolute -right-4 -top-5 rotate-6 rounded-2xl border border-ink/10 bg-cream px-4 py-2.5 shadow-[0_12px_30px_rgba(28,26,22,0.2)] sm:-right-8">
+                        <p className="font-mono text-base font-bold leading-none text-orange sm:text-lg">
+                          {s.sticker.big}
+                        </p>
+                        <p className="spec mt-1 text-[9px] text-ink-soft">
+                          {s.sticker.small}
+                        </p>
+                      </div>
+                    )}
                     {/* registration cross */}
                     <svg
                       viewBox="0 0 40 40"
