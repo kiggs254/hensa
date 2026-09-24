@@ -163,7 +163,7 @@ export default async function Home() {
           ariaLabel="Browse by category"
           viewportClassName="-mb-72 gap-5 px-2 pb-72 pt-2 xl:gap-6"
         >
-            {categories.map((c) => (
+            {categories.map((c, i) => (
               <div key={c.slug} className="group relative w-24 flex-none">
                 <Link
                   href={`/catalog/${c.slug}`}
@@ -183,8 +183,20 @@ export default async function Home() {
                   </span>
                 </Link>
 
-                {/* sub-categories popover (desktop) */}
-                <div className="invisible absolute left-1/2 top-full z-40 hidden w-56 -translate-x-1/2 translate-y-2 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 lg:block">
+                {/* sub-categories popover (desktop). The popover is wider than
+                    the circle, so centring it would push the first one past
+                    the strip's left edge (and the last past its right), where
+                    the scrolling strip clips it: those two are anchored to
+                    their circle's outer edge instead. */}
+                <div
+                  className={`invisible absolute top-full z-40 hidden w-56 translate-y-2 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 lg:block ${
+                    i === 0
+                      ? "left-0"
+                      : i === categories.length - 1
+                        ? "right-0"
+                        : "left-1/2 -translate-x-1/2"
+                  }`}
+                >
                   <div className="overflow-hidden rounded-2xl border border-ink/10 bg-cream p-2 shadow-[0_24px_50px_rgba(28,26,22,0.18)]">
                     {/* The category's subcategories as set up in the admin (only
                         those with products), linking to their catalogue pages.
