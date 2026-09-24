@@ -33,18 +33,6 @@ const FEATURED_SLUGS = [
   "double-wall-water-bottles",
 ];
 
-/* sub-categories shown in the hover popover of each category circle */
-const SUBCATS: Record<string, string[]> = {
-  banners: ["Pop Up Banners", "X-Banners", "Teardrop", "Backdrop", "Telescopic", "Gazebos"],
-  "corporate-apparel": ["Gents Shirts", "Ladies Shirts", "Chef Jackets", "Beanies"],
-  "corporate-gifts": ["Gift Sets", "Awards", "Flash Drives", "Card Holders", "Desk Organisers"],
-  "corporate-stationery": ["Notebooks", "Pens", "Business Cards", "Calendars", "Diaries", "Letterheads"],
-  "individual-gifts": ["Photo Books", "Frames", "Throw Pillows", "Cards", "Wallets"],
-  "promotional-items": ["T-Shirts", "Hoodies", "Caps", "Mugs", "Water Bottles", "Bags"],
-  signages: ["3D Signage", "2D Signage", "Glass Signage", "Directional"],
-  "printing-accessories": ["Screen Meshes"],
-};
-
 const TRUST = [
   {
     title: "Countrywide Delivery",
@@ -199,20 +187,31 @@ export default async function Home() {
                 {/* sub-categories popover (desktop) */}
                 <div className="invisible absolute left-1/2 top-full z-40 hidden w-56 -translate-x-1/2 translate-y-2 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 lg:block">
                   <div className="overflow-hidden rounded-2xl border border-ink/10 bg-cream p-2 shadow-[0_24px_50px_rgba(28,26,22,0.18)]">
-                    {(SUBCATS[c.slug] ?? []).map((s) => (
-                      <Link
-                        key={s}
-                        href={`/catalog?q=${encodeURIComponent(s)}`}
-                        tabIndex={-1}
-                        className="block rounded-lg px-3 py-1.5 text-left text-xs font-semibold text-ink-soft transition-colors hover:bg-orange/10 hover:text-orange"
-                      >
-                        {s}
-                      </Link>
-                    ))}
+                    {/* The category's subcategories as set up in the admin (only
+                        those with products), linking to their catalogue pages.
+                        Capped in height so a long list (Trophies & Awards has
+                        17) scrolls inside the popover instead of outgrowing
+                        the room the strip reserves for it. */}
+                    {(c.children?.length ?? 0) > 0 && (
+                      <div className="max-h-52 overflow-y-auto overscroll-contain">
+                        {c.children!.map((s) => (
+                          <Link
+                            key={s.slug}
+                            href={`/catalog/${s.slug}`}
+                            tabIndex={-1}
+                            className="block rounded-lg px-3 py-1.5 text-left text-xs font-semibold text-ink-soft transition-colors hover:bg-orange/10 hover:text-orange"
+                          >
+                            {s.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                     <Link
                       href={`/catalog/${c.slug}`}
                       tabIndex={-1}
-                      className="spec mt-1 block border-t border-dashed border-ink/15 px-3 pb-1 pt-2 text-left text-[9px] text-green-deep transition-colors hover:text-orange"
+                      className={`spec block px-3 pb-1 pt-2 text-left text-[9px] text-green-deep transition-colors hover:text-orange ${
+                        c.children?.length ? "mt-1 border-t border-dashed border-ink/15" : ""
+                      }`}
                     >
                       All products →
                     </Link>
