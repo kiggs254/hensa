@@ -13,7 +13,8 @@ import Reveal from "@/components/Reveal";
 import { WhatsAppIcon, ArrowIcon, PhoneIcon } from "@/components/icons";
 
 export function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }));
+  // standalone services have their own route under app/services/<slug>
+  return services.filter((s) => !s.standalone).map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({

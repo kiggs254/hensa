@@ -18,6 +18,14 @@ export interface Service {
   keywords: string[];
   related: string[];
   icon: ReactNode;
+  /**
+   * Has its own route at app/services/<slug>/page.tsx instead of the shared
+   * [slug] template. It still appears in every listing (index, homepage,
+   * footer, sitemap, llms.txt), which all read this array.
+   */
+  standalone?: boolean;
+  /** listing photo for cards and banners; services/page.tsx's per-slug map wins when set */
+  image?: string;
 }
 
 export const services: Service[] = [
@@ -368,6 +376,59 @@ export const services: Service[] = [
         <path d="M12 3a13.5 13.5 0 0 1 0 18a13.5 13.5 0 0 1 0-18Z" />
       </>
     ),
+  },
+  {
+    slug: "event-branding-entertainment",
+    name: "Event Branding & Entertainment",
+    short: "Branded venues, delegate kits and gifts, plus the performers who fill the stage.",
+    kicker: "Events, concept to execution",
+    title: ["Branded from the ", "entrance", " to the encore."],
+    intro: [
+      "Event branding for conferences, gala dinners, product launches, weddings, exhibitions and private celebrations: backdrops, signage, stage and podium branding, delegate kits, stationery and corporate gifts, all produced in-house.",
+      "Live entertainment to go with it: traditional Kenyan dancers, acrobats, magicians, fire performers, live bands, MCs and more, matched to the theme, audience and atmosphere of your event.",
+    ],
+    accent: "orange",
+    specs: [
+      { k: "Best for", v: "Conferences & launches" },
+      { k: "Branding", v: "Venue, stage, delegates" },
+      { k: "Entertainment", v: "13 kinds of act" },
+      { k: "Scope", v: "Concept to execution" },
+    ],
+    perfectFor: [
+      "Corporate Events",
+      "Product Launches",
+      "Conferences",
+      "Summits",
+      "Gala Dinners",
+      "Weddings",
+      "Festivals",
+      "Award Ceremonies",
+      "Private Parties",
+      "Brand Activations",
+    ],
+    steps: [
+      { t: "Share the brief", d: "Tell us the event, the date, the venue, how many guests and the feel you are after." },
+      { t: "Concept & proofs", d: "We put forward the branding pieces and the entertainment, and you approve every artwork proof before it is printed." },
+      { t: "Produce & perform", d: "We produce the branding in-house, deliver it for the event and coordinate the performers on the day." },
+    ],
+    faqs: [
+      { q: "Can you handle both the branding and the entertainment for one event?", a: "Yes. We can brand the venue, supply the delegate materials and gifts, and book the performers, so a single team works to one brief and one schedule." },
+      { q: "What kinds of events do you brand and entertain?", a: "Corporate events, product launches, conferences, summits, gala dinners, weddings, festivals, award ceremonies, private parties and brand activations." },
+      { q: "What entertainment can you provide?", a: "Traditional and cultural performances, acrobatic shows, magic and illusion, fire performances, live bands and musicians, MCs and event hosts, dancers, saxophonists and other instrumentalists, comedy, celebrity and guest appearances, kids entertainment, photo booths and 360° video booths, and interactive games." },
+      { q: "Can the entertainment be matched to our theme?", a: "Yes. Performances are chosen to suit the theme, audience and atmosphere of your event, whether you want to celebrate Kenyan culture or keep a formal corporate evening." },
+      { q: "Do you supply conference kits and delegate bags?", a: "Yes. Delegate bags, conference kits, registration materials, branded notebooks and pens, lanyards, name tags, speaker and VIP gifts, exhibitor materials and presentation folders." },
+    ],
+    keywords: ["conference bag", "notebook", "backdrop", "pop up", "flag", "gift set", "mug", "bottle", "umbrella", "folder", "flash", "tote"],
+    related: ["large-format-printing", "screen-printing", "laser-engraving-debossing"],
+    icon: (
+      <>
+        <path d="M12 3v4M12 17v4M3 12h4M17 12h4" />
+        <path d="m5.6 5.6 2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" />
+        <circle cx="12" cy="12" r="1.6" />
+      </>
+    ),
+    standalone: true,
+    image: "/events/hero.jpg",
   },
 ];
 

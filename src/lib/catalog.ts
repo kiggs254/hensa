@@ -165,3 +165,37 @@ export async function getRelatedProducts(product: Product, n = 4): Promise<Produ
   const pool = (await apiGetProductsInCategory(root)).filter((p) => p.id !== product.id);
   return pool.slice(0, n);
 }
+
+/**
+ * One product per keyword, in the order given, for curated showcase grids.
+ * Each keyword takes the first product whose name or tags contain it and that
+ * hasn't already been picked, skipping excluded top-level categories (so an
+ * event page doesn't fill up with political "Campaign …" merch just because
+ * those names contain "mug" or "bottle").
+ */
+export async function pickProducts(
+  keywords: string[],
+  n: number,
+  { excludeCategories = [] }: { excludeCategories?: string[] } = {}
+): Promise<Product[]> {
+  const products = await getProducts();
+  const picked: Product[] = [];
+  const seen = new Set<number>();
+  for (const kw of keywords) {
+    if (picked.length >= n) break;
+    const k = kw.toLowerCase();
+    const hit = products.find(
+      (p) =>
+        !seen.has(p.id) &&
+        !excludeCategories.some(
+          (c) => p.categorySlug === c || p.categories.includes(c)
+        ) &&
+        `${p.name} ${p.tags.join(" ")}`.toLowerCase().includes(k)
+    );
+    if (hit) {
+      picked.push(hit);
+      seen.add(hit.id);
+    }
+  }
+  return picked;
+}

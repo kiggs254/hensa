@@ -373,7 +373,7 @@ export default async function Home() {
           </Reveal>
 
           {/* services */}
-          {services.map((s, i) => (
+          {services.filter((s) => !s.standalone).map((s, i) => (
             <Reveal key={s.slug} delay={(i % 4) * 70}>
               <Link
                 href={`/services/${s.slug}`}
@@ -412,6 +412,41 @@ export default async function Home() {
               </Link>
             </Reveal>
           ))}
+
+          {/* standalone services get a full-width banner, which also keeps the
+              4-column grid free of an orphaned ninth tile */}
+          {services
+            .filter((s) => s.standalone)
+            .map((s) => (
+              <Reveal key={s.slug} className="sm:col-span-2 lg:col-span-4">
+                <Link
+                  href={`/services/${s.slug}`}
+                  className="group relative isolate flex min-h-[17rem] flex-col justify-end overflow-hidden rounded-3xl border border-ink/10 bg-ink sm:min-h-[15rem] lg:min-h-[16rem]"
+                >
+                  {s.image && (
+                    <Image
+                      src={s.image}
+                      alt=""
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 1232px"
+                      className="-z-20 object-cover object-[70%_center] transition-transform duration-700 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/80 to-ink/10" />
+                  <div className="max-w-xl p-7 lg:p-9">
+                    <p className="spec text-orange">{s.kicker}</p>
+                    <h3 className="font-display mt-2 text-2xl font-extrabold text-cream sm:text-3xl">
+                      {s.name}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-cream/75">{s.short}</p>
+                    <span className="mt-5 inline-flex items-center gap-2 rounded-full bg-cream px-5 py-2.5 font-display text-sm font-bold text-ink transition-colors group-hover:bg-orange group-hover:text-white">
+                      Explore {s.name.toLowerCase()}
+                      <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
         </div>
       </section>
 

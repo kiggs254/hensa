@@ -9,7 +9,7 @@ import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Our Services | Printing, Branding, Design & More",
   description:
-    "Brand strategy, creative design, screen/digital/offset/sublimation/large-format printing, laser engraving, embroidery, marketing and web design, all under one roof in Nairobi.",
+    "Brand strategy, creative design, screen/digital/offset/sublimation/large-format printing, laser engraving, embroidery, web design, and event branding with live entertainment, all under one roof in Nairobi.",
   alternates: { canonical: "/services" },
 };
 
@@ -159,7 +159,7 @@ export default function ServicesPage() {
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => {
-            const img = SERVICE_IMAGE[s.slug];
+            const img = SERVICE_IMAGE[s.slug] ?? s.image;
             const accentBadge =
               s.accent === "orange"
                 ? "bg-orange text-white"

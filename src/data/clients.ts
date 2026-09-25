@@ -45,5 +45,7 @@ export const clientLogos: string[] = [
   "/clients/client-44.png",
   "/clients/client-45.png",
   "/clients/client-46.png",
-  "/clients/client-47.png"
+  "/clients/client-47.png",
+  "/clients/client-48.png", // Muthokinju Paints & Cement
+  "/clients/client-49.png", // Wialon
 ];
