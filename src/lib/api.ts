@@ -8,15 +8,27 @@
  */
 import type { Product } from "@/lib/catalog";
 
-const RAW = (process.env.BACKEND_ORIGIN || "https://api-ca1f6.e-biz.co.ke").replace(/\/+$/, "");
+// Set BACKEND_ORIGIN explicitly on every deployment: an instance's API host
+// moves (Hensa's went from api-ca1f6.e-biz.co.ke to api.hensa.co.ke), and a
+// stale fallback fails quietly as an empty catalog.
+const RAW = (process.env.BACKEND_ORIGIN || "https://api.hensa.co.ke").replace(/\/+$/, "");
 const SF = `${RAW}/api/v1/storefront`;
 const REVALIDATE = 300; // seconds
+
+// Every call here is server-side, so all of them reach the API from this
+// server's one IP. The shared INTERNAL_API_TOKEN lets the API tell its own
+// storefront apart from abuse and skip the per-IP rate limit (see the
+// backend's isTrustedInternalCaller). Server-only env: never in the browser.
+const INTERNAL_TOKEN = process.env.INTERNAL_API_TOKEN || "";
 
 async function sf<T>(path: string): Promise<T | null> {
   try {
     const res = await fetch(`${SF}${path}`, {
       next: { revalidate: REVALIDATE },
-      headers: { Accept: "application/json" },
+      headers: {
+        Accept: "application/json",
+        ...(INTERNAL_TOKEN ? { "X-Internal-Token": INTERNAL_TOKEN } : {}),
+      },
     });
     if (!res.ok) return null;
     const json = await res.json();
