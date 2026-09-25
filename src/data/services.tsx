@@ -385,13 +385,13 @@ export const services: Service[] = [
     title: ["Branded from the ", "entrance", " to the encore."],
     intro: [
       "Event branding for conferences, gala dinners, product launches, weddings, exhibitions and private celebrations: backdrops, signage, stage and podium branding, delegate kits, stationery and corporate gifts, all produced in-house.",
-      "Live entertainment to go with it: traditional Kenyan dancers, acrobats, magicians, fire performers, live bands, MCs and more, matched to the theme, audience and atmosphere of your event.",
+      "Live entertainment to go with it: traditional Kenyan dancers, acrobats, magicians, fire performers, live bands, caricature artists and more, matched to the theme, audience and atmosphere of your event.",
     ],
     accent: "orange",
     specs: [
       { k: "Best for", v: "Conferences & launches" },
       { k: "Branding", v: "Venue, stage, delegates" },
-      { k: "Entertainment", v: "13 kinds of act" },
+      { k: "Entertainment", v: "10 kinds of act" },
       { k: "Scope", v: "Concept to execution" },
     ],
     perfectFor: [
@@ -414,7 +414,7 @@ export const services: Service[] = [
     faqs: [
       { q: "Can you handle both the branding and the entertainment for one event?", a: "Yes. We can brand the venue, supply the delegate materials and gifts, and book the performers, so a single team works to one brief and one schedule." },
       { q: "What kinds of events do you brand and entertain?", a: "Corporate events, product launches, conferences, summits, gala dinners, weddings, festivals, award ceremonies, private parties and brand activations." },
-      { q: "What entertainment can you provide?", a: "Traditional and cultural performances, acrobatic shows, magic and illusion, fire performances, live bands and musicians, MCs and event hosts, dancers, saxophonists and other instrumentalists, comedy, celebrity and guest appearances, kids entertainment, photo booths and 360° video booths, and interactive games." },
+      { q: "What entertainment can you provide?", a: "Traditional and cultural performances, acrobatic shows, magic and illusion, fire performances, live bands and musicians, dancers and dance shows, kids entertainment, photo booths and 360° video booths, interactive games and caricature artists." },
       { q: "Can the entertainment be matched to our theme?", a: "Yes. Performances are chosen to suit the theme, audience and atmosphere of your event, whether you want to celebrate Kenyan culture or keep a formal corporate evening." },
       { q: "Do you supply conference kits and delegate bags?", a: "Yes. Delegate bags, conference kits, registration materials, branded notebooks and pens, lanyards, name tags, speaker and VIP gifts, exhibitor materials and presentation folders." },
     ],

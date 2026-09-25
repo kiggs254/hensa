@@ -21,6 +21,8 @@ export interface Act {
   title: string;
   body: string;
   image: { src: string; alt: string };
+  /** object-position for the wide crop when the act is featured (portrait photos) */
+  focus?: string;
 }
 
 export const EVENT_SERVICE_SLUG = "event-branding-entertainment";
@@ -30,7 +32,7 @@ export const hero = {
     src: "/events/hero.jpg",
     alt: "Acrobats forming a three-person human tower on a stage lit green and orange at a corporate gala dinner",
   },
-  lead: "Event branding and live entertainment from one Nairobi team: backdrops, signage, delegate kits and corporate gifts, plus the dancers, acrobats, musicians and hosts who fill the stage.",
+  lead: "Event branding and live entertainment from One Trusted Partner: backdrops, signage, delegate kits and corporate gifts, plus dancers, acrobats, musicians and hosts who fill the stage.",
 };
 
 export const branding = {
@@ -136,7 +138,7 @@ export const branding = {
 export const entertainment = {
   heading: "Live Entertainment & Performances",
   intro: [
-    "Bring the energy of Kenya to your event with live entertainment. We provide a wide range of professional performers and experiences that get your guests on their feet and give them something to remember.",
+    "Bring the energy of Africa to your event with live entertainment. We provide a wide range of professional performers and experiences that get your guests on their feet and give them something to remember.",
     "From traditional Kenyan dancers and acrobats to magicians and fire performers, our entertainment is tailored to suit the theme, audience and atmosphere of your event.",
   ],
   image: {
@@ -147,11 +149,12 @@ export const entertainment = {
     {
       id: "traditional",
       title: "Traditional & Cultural Performances",
-      body: "Celebrate Kenya's heritage with traditional dances, cultural showcases, drummers, storytellers and authentic musical performances.",
+      body: "Celebrate African heritage with traditional dances, cultural showcases, drummers, storytellers and authentic musical performances.",
       image: {
         src: "/events/opt-traditional.jpg",
         alt: "Drummers and dancers in beaded collars and sisal skirts performing a Kenyan cultural dance",
       },
+      focus: "50% 30%",
     },
     {
       id: "acrobatics",
@@ -161,6 +164,8 @@ export const entertainment = {
         src: "/events/opt-acrobatics.jpg",
         alt: "An acrobat holding a handstand on another acrobat's raised hands under green stage light",
       },
+      // keep the handstand in frame; the default centre crop cuts it off
+      focus: "50% 6%",
     },
     {
       id: "magic",
@@ -190,48 +195,12 @@ export const entertainment = {
       },
     },
     {
-      id: "mc",
-      title: "MC & Event Hosts",
-      body: "Professional MCs and event hosts who keep your programme flowing and your audience engaged from start to finish.",
-      image: {
-        src: "/events/opt-mc.jpg",
-        alt: "An event host in a green blazer speaking into a microphone on a gala stage",
-      },
-    },
-    {
       id: "dancers",
       title: "Dancers & Dance Shows",
       body: "From contemporary and Afro-fusion to cultural and choreographed performances, our dancers add movement and excitement to your event.",
       image: {
         src: "/events/opt-dancers.jpg",
         alt: "An Afro-fusion dance troupe mid-move on stage in flowing orange and green costumes",
-      },
-    },
-    {
-      id: "sax",
-      title: "Saxophonists & Instrumentalists",
-      body: "Add an elegant touch with live saxophone, violin, guitar, percussion and other instrumental performances.",
-      image: {
-        src: "/events/opt-sax.jpg",
-        alt: "A saxophonist playing at an evening cocktail reception under warm string lights",
-      },
-    },
-    {
-      id: "comedy",
-      title: "Comedy & Stand-Up",
-      body: "Give your guests something to laugh about with professional comedians and comedy acts.",
-      image: {
-        src: "/events/opt-comedy.jpg",
-        alt: "A stand-up comedian mid-joke on a small stage with the audience laughing",
-      },
-    },
-    {
-      id: "celebrity",
-      title: "Celebrity & Guest Appearances",
-      body: "Carefully selected personalities, performers and special guests to headline your event.",
-      image: {
-        src: "/events/opt-celebrity.jpg",
-        alt: "A guest of honour arriving on a red carpet as photographers take pictures",
       },
     },
     {
@@ -259,6 +228,15 @@ export const entertainment = {
       image: {
         src: "/events/opt-interactive.jpg",
         alt: "Colleagues in a dance-off surrounded by cheering guests and falling confetti",
+      },
+    },
+    {
+      id: "caricature",
+      title: "Caricature Artists",
+      body: "Caricature artists who sketch your guests live at the event, so everyone takes home a drawing of themselves.",
+      image: {
+        src: "/events/opt-caricature.jpg",
+        alt: "A caricature artist sketching a laughing guest on an easel while other guests look on",
       },
     },
   ] satisfies Act[],

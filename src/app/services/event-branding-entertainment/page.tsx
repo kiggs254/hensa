@@ -24,7 +24,7 @@ export const revalidate = 300;
 const PATH = `/services/${EVENT_SERVICE_SLUG}`;
 const TITLE = "Event Branding & Entertainment in Nairobi, Kenya";
 const DESCRIPTION =
-  "Event branding and entertainment in Nairobi: backdrops, signage, delegate kits and gifts, plus traditional dancers, acrobats, fire performers, bands and MCs.";
+  "Event branding and entertainment in Nairobi: backdrops, signage, delegate kits and gifts, plus traditional dancers, acrobats, fire performers and live bands.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -81,6 +81,11 @@ export default async function EventBrandingEntertainmentPage() {
     .map((r) => serviceBySlug(r))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
   const acts = entertainment.acts;
+  // Featured acts span 2x2 in the 4-column grid (full width at 2 columns).
+  // Feature as many as it takes for the rows to come out even, so adding or
+  // removing an act never leaves an orphan tile: 13 acts -> 1, 10 acts -> 2.
+  const featuredCount =
+    [1, 2, 3, 0].find((f) => (3 * f + acts.length) % 4 === 0) ?? 1;
 
   return (
     <>
@@ -402,7 +407,7 @@ export default async function EventBrandingEntertainmentPage() {
 
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
             {acts.map((act, i) => {
-              const featured = i === 0;
+              const featured = i < featuredCount;
               const n = String(i + 1).padStart(2, "0");
               return (
                 <li
@@ -427,9 +432,8 @@ export default async function EventBrandingEntertainmentPage() {
                               ? "(max-width: 640px) 100vw, 50vw"
                               : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                           }
-                          className={`object-cover transition-transform duration-700 group-hover:scale-105 ${
-                            featured ? "object-[center_30%]" : ""
-                          }`}
+                          style={featured && act.focus ? { objectPosition: act.focus } : undefined}
+                          className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent" />
                         <span className="spec absolute left-4 top-4 rounded-full bg-ink/65 px-2.5 py-1 text-[10px] text-cream backdrop-blur">
