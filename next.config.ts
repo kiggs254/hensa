@@ -80,7 +80,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     // "Shop" was renamed to "Catalog"; keep old links + bookmarks working.
     // Query strings (?category=, ?q=) are forwarded automatically.
-    return [{ source: "/shop", destination: "/catalog", permanent: true }];
+    return [
+      { source: "/shop", destination: "/catalog", permanent: true },
+      // One canonical host: the bare domain sends visitors (and link
+      // equity) to www, whatever the proxy in front does.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "hensa.co.ke" }],
+        destination: "https://www.hensa.co.ke/:path*",
+        permanent: true,
+      },
+    ];
   },
 };
 
