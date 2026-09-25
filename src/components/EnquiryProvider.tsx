@@ -83,6 +83,37 @@ function buildMessage(
   return lines.join("\n");
 }
 
+/**
+ * Send the enquiry to the admin as an order (see app/api/enquiry). Fire and
+ * forget: `keepalive` lets it finish even if the WhatsApp tab takes focus or
+ * the page is left, and a failure never gets in the customer's way.
+ */
+function recordEnquiry(payload: EnquiryPayload, c: Customer | null, extra: string) {
+  try {
+    const key =
+      typeof crypto !== "undefined" && "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`;
+    void fetch("/api/enquiry", {
+      method: "POST",
+      keepalive: true,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        key,
+        customer: c ? { name: c.name, phone: c.phone, email: c.email ?? "" } : null,
+        productName: payload.productName ?? "",
+        productUrl: payload.productUrl ?? "",
+        quantity: payload.quantity ?? 1,
+        service: payload.service ?? "",
+        note: payload.note ?? "",
+        message: extra,
+      }),
+    }).catch(() => {});
+  } catch {
+    /* never block the WhatsApp hand-off */
+  }
+}
+
 export default function EnquiryProvider({
   children,
 }: {
@@ -115,11 +146,14 @@ export default function EnquiryProvider({
 
   const go = useCallback(
     (payload: EnquiryPayload, c: Customer | null, extra: string) => {
+      // Open the chat first, synchronously in the click, so no popup blocker
+      // steps in; the admin copy is recorded in the background.
       window.open(
         waLink(buildMessage(payload, c, extra)),
         "_blank",
         "noopener,noreferrer"
       );
+      recordEnquiry(payload, c, extra);
     },
     []
   );
