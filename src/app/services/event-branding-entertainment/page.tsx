@@ -24,7 +24,7 @@ export const revalidate = 300;
 const PATH = `/services/${EVENT_SERVICE_SLUG}`;
 const TITLE = "Event Branding & Entertainment in Nairobi, Kenya";
 const DESCRIPTION =
-  "Event branding and entertainment in Nairobi: backdrops, signage, delegate kits and gifts, plus traditional dancers, acrobats, fire performers and live bands.";
+  "Event branding in Nairobi (backdrops, signage, delegate kits, gifts) plus live entertainment from traditional dancers, acrobats, fire performers and bands.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -400,7 +400,7 @@ export default async function EventBrandingEntertainmentPage() {
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-cream/60">
                 {acts.length} kinds of act, mixed and matched to your event.
-                Ask about any of them and we reply on WhatsApp.
+                Ask about any of them and we&apos;ll reply on WhatsApp.
               </p>
             </div>
           </Reveal>

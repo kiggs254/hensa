@@ -47,7 +47,7 @@ const TRUST = [
     icon: <MpesaIcon className="h-5 w-5" />,
   },
   {
-    title: "Only Best Brands",
+    title: "Only the Best Brands",
     body: "We use blanks and inks that survive real use, so your logo still looks right months later.",
     accent: "orange" as const,
     icon: <ShieldCheckIcon className="h-5 w-5" />,
@@ -129,7 +129,7 @@ export default async function Home() {
     {
       kicker: "Corporate gifts & stationery",
       title: ["Gifts that ", "mean", " business."],
-      copy: "Executive gift sets, notebooks, pens and awards for clients and staff, branded and ready for the boardroom.",
+      copy: "Executive gift sets, notebooks, pens and awards, branded for your clients and staff.",
       cta: { label: "Browse gifts", href: "/catalog/corporate-gifts" },
       image: {
         src: img("executive-notebooks-005", "/categories/corporate-gifts.jpg"),
@@ -510,7 +510,7 @@ export default async function Home() {
             {
               n: "04",
               t: "Press",
-              d: "We print, stitch or engrave it, check it, pack it, and deliver anywhere in Kenya.",
+              d: "We print, stitch or engrave it, then check it, pack it and deliver it anywhere in Kenya.",
             },
           ].map((s, i) => (
             <Reveal key={s.n} delay={i * 90}>

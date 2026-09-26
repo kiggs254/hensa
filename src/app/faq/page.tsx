@@ -11,7 +11,7 @@ import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "FAQ | Printing, Branding & Promotional Products in Kenya",
   description:
-    "Answers to common questions about printing, banners, corporate gifts, promotional products and branding in Nairobi and across Kenya: suppliers, pricing, materials and turnaround, from Hensa Solutions.",
+    "Answers to common questions about printing, banners, corporate gifts and promotional products in Nairobi and across Kenya: suppliers, pricing, materials, turnaround.",
   alternates: { canonical: "/faq" },
 };
 
@@ -53,9 +53,9 @@ export default function FaqPage() {
             <span className="text-green-deep">answered.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            The questions customers most often ask Hensa Solutions about banner
+            The questions customers ask Hensa Solutions most often about banner
             printing, corporate gifts, promotional products, materials, pricing
-            and delivery across Nairobi and Kenya.
+            and delivery across Kenya.
           </p>
         </div>
       </section>

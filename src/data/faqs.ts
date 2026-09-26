@@ -25,7 +25,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "Where can I get banner printing in Kenya?",
-        a: "Hensa Solutions offers large-format banner printing in Nairobi and throughout Kenya: pop-up banners, roll-up (X-banner) stands, teardrop flags, backdrops, eyelet and PVC banners, and gazebos. We print, finish and supply the hardware, with countrywide delivery. Contact us on +254 721 597714 or info@hensa.co.ke.",
+        a: "Hensa Solutions offers large-format banner printing in Nairobi and throughout Kenya: pop-up banners, roll-up (X-banner) stands, teardrop flags, backdrops, eyelet banners, PVC banners and gazebos. We print, finish and supply the hardware, with countrywide delivery. Contact us on +254 721 597714 or info@hensa.co.ke.",
       },
       {
         q: "Where can companies order promotional products in Kenya?",
@@ -33,7 +33,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "Where can I get branded umbrellas in Kenya?",
-        a: "Hensa Solutions produces branded and custom-printed umbrellas in Nairobi, Kenya: golf, straight and foldable umbrellas printed in your brand colours and logo, ideal for corporate giveaways, events and campaigns. Minimum order quantities apply for custom branding. Message us on +254 721 597714 for options and a quote.",
+        a: "Hensa Solutions produces custom-printed umbrellas in Nairobi, Kenya: golf, straight and foldable umbrellas in your brand colours with your logo, ideal for corporate giveaways, events and campaigns. Minimum order quantities apply for custom branding. Message us on +254 721 597714 for options and a quote.",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const faqGroups: FaqGroup[] = [
     faqs: [
       {
         q: "How much does banner printing cost in Kenya?",
-        a: "Banner printing is quoted per job because the price depends on the banner type (pop-up, roll-up, teardrop, PVC, mesh), the size, the material and finishing, and the quantity, with bulk orders costing less per unit. Rather than a fixed list price, Hensa Solutions gives you an exact quote once we know these details. Send your size, quantity and artwork to +254 721 597714 on WhatsApp and we reply with a price and turnaround.",
+        a: "Banner printing is quoted per job because the price depends on the banner type (pop-up, roll-up, teardrop, PVC, mesh), size, material, finishing and quantity. Bulk orders cost less per unit. Rather than a fixed list price, Hensa Solutions gives you an exact quote once we know these details. WhatsApp your size, quantity and artwork to +254 721 597714. We'll reply with a price and turnaround.",
       },
       {
         q: "How do I get a quote from Hensa Solutions?",
@@ -50,7 +50,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "Do you offer discounts for bulk or corporate orders?",
-        a: "Yes. Promotional products and printing are cheaper per unit at higher quantities, and loyal and corporate clients receive preferential pricing and occasional free gifts on bulk orders. Share your quantity when you enquire and we will quote the best rate.",
+        a: "Yes. Promotional products and printing cost less per unit at higher quantities. Loyal and corporate clients also receive preferential pricing, with occasional free gifts on bulk orders. Share your quantity when you enquire and we'll quote the best rate.",
       },
     ],
   },
@@ -63,15 +63,15 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "How long does large-format printing take?",
-        a: "Turnaround for large-format printing depends on the item, quantity and finishing, but many banners and signage jobs are ready within a few working days once artwork is approved, and rush jobs can often be accommodated. Tell us your deadline when you enquire and we will confirm honestly what is possible.",
+        a: "Turnaround for large-format printing depends on the item, quantity and finishing. Many banner and signage jobs are ready within a few working days once artwork is approved, and rush jobs can often be accommodated. Tell us your deadline when you enquire and we will confirm honestly what is possible.",
       },
       {
         q: "Can you print in my exact brand colours?",
-        a: "Yes. Our design team matches your logo and brand colours and shares a proof (digital or, for embroidery, a stitch-out) before production, so the colour on your merchandise matches your brand guidelines.",
+        a: "Yes. Our design team matches your logo and brand colours, then shares a proof (digital or, for embroidery, a stitch-out) before production, so the colour on your merchandise matches your brand guidelines.",
       },
       {
         q: "Do I need to provide artwork, or can you design it?",
-        a: "Both. Send print-ready files if you have them, or just your logo and a brief, and our in-house creative team will design or redraw the artwork before printing.",
+        a: "Both. Send print-ready files if you have them, or just your logo and a brief. Our in-house creative team will design or redraw the artwork before printing.",
       },
     ],
   },
@@ -80,15 +80,15 @@ export const faqGroups: FaqGroup[] = [
     faqs: [
       {
         q: "What services does Hensa Solutions offer?",
-        a: "Hensa Solutions offers large-format printing, banner and signage printing, screen printing, digital and offset printing, sublimation, laser engraving, embroidery, corporate branding, corporate gifts, promotional products, event and conference branding, and election/campaign printing, end to end from one Nairobi workshop.",
+        a: "Hensa Solutions offers large-format, banner, signage, screen, digital and offset printing, plus sublimation, laser engraving and embroidery. We also handle corporate branding, corporate gifts, promotional products, event and conference branding, and election campaign printing, all from one Nairobi workshop.",
       },
       {
         q: "Which areas in Kenya do you serve?",
-        a: "We are based in Nairobi and deliver countrywide: Nairobi, Mombasa, Kisumu, Nakuru, Eldoret and every county in between, as well as clients across East Africa and around the world. Payment is convenient via M-Pesa.",
+        a: "We are based in Nairobi and deliver countrywide, from Nairobi, Mombasa, Kisumu, Nakuru and Eldoret to every county in between. We also serve clients across East Africa and around the world. Payment is convenient via M-Pesa.",
       },
       {
         q: "Do you brand merchandise for institutions like hospitals, hotels and schools?",
-        a: "Yes. Hensa Solutions supplies institutional and corporate branding for hospitals, hotels, schools, NGOs, banks and government bodies: uniforms and workwear, signage, stationery, gifts, apparel and event materials, all consistently branded.",
+        a: "Yes. Hensa Solutions brands hospitals, hotels, schools, NGOs, banks and government bodies with uniforms, workwear, signage, stationery, gifts, apparel and event materials, all in one consistent look.",
       },
       {
         q: "Do you print campaign and political merchandise?",

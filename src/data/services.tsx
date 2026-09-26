@@ -170,7 +170,7 @@ export const services: Service[] = [
     kicker: "Colour that becomes the product",
     title: ["Photo-real colour, ", "baked", " in."],
     intro: [
-      "Sublimation turns solid dye straight into gas, bonding it into polyester fabric or specially-coated surfaces. The print doesn't sit on the product, it becomes part of it. Nothing to crack or peel, and no texture under your fingers.",
+      "Sublimation turns solid dye straight into gas, bonding it into polyester fabric or specially-coated surfaces. The print doesn't sit on the product; it becomes part of it. Nothing to crack or peel, and no texture under your fingers.",
       "It's the technique behind photo mugs that survive years of dishwashing, all-over jersey prints, and sequin pillows that reveal a loved one's photo. Use it anywhere you need edge-to-edge, photographic colour.",
     ],
     accent: "green",
@@ -189,13 +189,13 @@ export const services: Service[] = [
       "Mousepads & coasters",
     ],
     steps: [
-      { t: "Design at full bleed", d: "Photos, gradients and patterns all hold up at this size, so go bold." },
+      { t: "Design at full bleed", d: "Photos, gradients and patterns all print sharply, so go bold." },
       { t: "Transfer print", d: "Your design is printed in reverse onto transfer paper with sublimation inks." },
       { t: "Heat & bond", d: "Heat and pressure turn the dye to gas, locking it permanently into the surface." },
     ],
     faqs: [
       { q: "Will the print fade or peel?", a: "No. The dye is inside the material, not on top of it. Mugs stay dishwasher-friendly and fabrics keep their colour wash after wash." },
-      { q: "Can you sublimate cotton t-shirts?", a: "Sublimation needs polyester or a coated surface. For cotton we'll recommend screen printing or DTF instead, which gets the same bold result on the right chemistry." },
+      { q: "Can you sublimate cotton t-shirts?", a: "Sublimation needs polyester or a coated surface. For cotton we'll recommend screen printing or DTF instead, which gives an equally bold result on cotton." },
       { q: "Is one piece possible?", a: "Absolutely. Sublimation has no setup plates, so a single personalised mug or pillow is as easy as a hundred." },
     ],
     keywords: ["mug", "water bottle", "pillow", "sequin", "photo", "frame", "coaster", "tumbler"],
@@ -339,7 +339,7 @@ export const services: Service[] = [
     kicker: "Your brand, everywhere",
     title: ["Design that ", "speaks", " your brand."],
     intro: [
-      "The same team handles marketing, advertising and graphic design. Logos and brand identities, campaign artwork, company profiles, and responsive websites built to bring in enquiries.",
+      "The same team handles marketing, advertising and graphic design. We create logos and brand identities, campaign artwork, company profiles and responsive websites built to bring in enquiries.",
       "Because one team designs your print and your web, everything matches. The business card, the banner at your event and the site on a customer's phone all look like the same company.",
     ],
     accent: "green",
@@ -384,7 +384,7 @@ export const services: Service[] = [
     kicker: "Events, concept to execution",
     title: ["Branded from the ", "entrance", " to the encore."],
     intro: [
-      "Event branding for conferences, gala dinners, product launches, weddings, exhibitions and private celebrations: backdrops, signage, stage and podium branding, delegate kits, stationery and corporate gifts, all produced in-house.",
+      "Event branding for conferences, gala dinners, product launches, weddings, exhibitions and private celebrations: backdrops, signage, stage branding, delegate kits, stationery and corporate gifts, all produced in-house.",
       "Live entertainment to go with it: traditional Kenyan dancers, acrobats, magicians, fire performers, live bands, caricature artists and more, matched to the theme, audience and atmosphere of your event.",
     ],
     accent: "orange",
@@ -412,11 +412,11 @@ export const services: Service[] = [
       { t: "Produce & perform", d: "We produce the branding in-house, deliver it for the event and coordinate the performers on the day." },
     ],
     faqs: [
-      { q: "Can you handle both the branding and the entertainment for one event?", a: "Yes. We can brand the venue, supply the delegate materials and gifts, and book the performers, so a single team works to one brief and one schedule." },
+      { q: "Can you handle both the branding and the entertainment for one event?", a: "Yes. We can brand the venue, supply the delegate materials and gifts, and book the performers. One team works to a single brief and schedule." },
       { q: "What kinds of events do you brand and entertain?", a: "Corporate events, product launches, conferences, summits, gala dinners, weddings, festivals, award ceremonies, private parties and brand activations." },
-      { q: "What entertainment can you provide?", a: "Traditional and cultural performances, acrobatic shows, magic and illusion, fire performances, live bands and musicians, dancers and dance shows, kids entertainment, photo booths and 360° video booths, interactive games and caricature artists." },
+      { q: "What entertainment can you provide?", a: "Traditional and cultural performances, acrobatic shows, magic shows, fire performances, live bands, dance shows, kids entertainment, photo booths (including 360° video booths), interactive games and caricature artists." },
       { q: "Can the entertainment be matched to our theme?", a: "Yes. Performances are chosen to suit the theme, audience and atmosphere of your event, whether you want to celebrate Kenyan culture or keep a formal corporate evening." },
-      { q: "Do you supply conference kits and delegate bags?", a: "Yes. Delegate bags, conference kits, registration materials, branded notebooks and pens, lanyards, name tags, speaker and VIP gifts, exhibitor materials and presentation folders." },
+      { q: "Do you supply conference kits and delegate bags?", a: "Yes: delegate bags, conference kits, registration materials, branded notebooks, pens, lanyards, name tags, speaker gifts, VIP gifts, exhibitor materials and presentation folders." },
     ],
     keywords: ["conference bag", "notebook", "backdrop", "pop up", "flag", "gift set", "mug", "bottle", "umbrella", "folder", "flash", "tote"],
     related: ["large-format-printing", "screen-printing", "laser-engraving-debossing"],

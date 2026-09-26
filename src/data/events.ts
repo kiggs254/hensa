@@ -39,7 +39,7 @@ export const branding = {
   heading: "Event Branding Solutions",
   intro: [
     "An event only looks professional when every piece of branding matches. Our event branding is built around your needs, whether you are hosting a corporate conference, gala dinner, product launch, wedding, exhibition or private celebration.",
-    "From creative concepts and branded décor to signage, backdrops and promotional displays, we provide the complete range of event branding and corporate promotional items, designed together so the whole event looks like one brand.",
+    "We provide the complete range of event branding and corporate promotional items: creative concepts, branded décor, signage, backdrops and promotional displays, all designed together so the whole event looks like one brand.",
   ],
   image: {
     src: "/events/branding-stationery.jpg",

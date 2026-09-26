@@ -38,6 +38,30 @@ async function sf<T>(path: string): Promise<T | null> {
   }
 }
 
+/**
+ * Some catalogue text came in from a WooCommerce import still HTML-encoded
+ * ("Rubber Stamps &#038; Company Seal"). React escapes it again, so visitors
+ * saw the raw code. Decode entities once, here at the API boundary.
+ */
+const NAMED_ENTITIES: Record<string, string> = {
+  amp: "&", quot: '"', apos: "'", lt: "<", gt: ">", nbsp: "\u00a0",
+  ndash: "\u2013", mdash: "\u2014", hellip: "\u2026",
+  lsquo: "\u2018", rsquo: "\u2019", ldquo: "\u201c", rdquo: "\u201d",
+};
+export function decodeEntities(s: string): string;
+export function decodeEntities(s: string | null | undefined): string | null | undefined;
+export function decodeEntities(s: string | null | undefined) {
+  if (!s || !s.includes("&")) return s;
+  return s.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e: string) => {
+    if (e[0] === "#") {
+      const hex = e[1] === "x" || e[1] === "X";
+      const code = parseInt(e.slice(hex ? 2 : 1), hex ? 16 : 10);
+      return Number.isFinite(code) && code > 0 && code <= 0x10ffff ? String.fromCodePoint(code) : m;
+    }
+    return NAMED_ENTITIES[e.toLowerCase()] ?? m;
+  });
+}
+
 export interface ApiCategoryNode {
   id: number;
   name: string;
@@ -74,6 +98,8 @@ export async function categoryIndex(): Promise<{
   const childToRoot = new Map<string, string>();
   const bySlug = new Map<string, ApiCategoryNode>();
   const walk = (node: ApiCategoryNode, root: string) => {
+    node.name = decodeEntities(node.name);
+    node.description = decodeEntities(node.description);
     bySlug.set(node.slug, node);
     childToRoot.set(node.slug, root);
     for (const c of node.children ?? []) walk(c, root);
@@ -108,14 +134,16 @@ function mapProduct(
   const img = p.images?.[0]?.url || "";
   return {
     id: p.id,
-    name: p.name,
+    name: decodeEntities(p.name),
     slug: p.slug,
     price,
     priceMax: null,
     onSale,
-    description: p.description || p.short_description || "",
+    description: decodeEntities(p.description || p.short_description || ""),
     categories: [...slugs],
-    tags: (p.tags ?? []).map((t) => (typeof t === "string" ? t : t.name)).filter(Boolean),
+    tags: (p.tags ?? [])
+      .map((t) => decodeEntities(typeof t === "string" ? t : t.name))
+      .filter(Boolean),
     image: img,
     localImage: img,
     categoryName: rootSlug ? bySlug.get(rootSlug)?.name : undefined,

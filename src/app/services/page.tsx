@@ -76,9 +76,9 @@ export default function ServicesPage() {
               <span className="text-green-deep">under one roof.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Brand strategy, design, printing, advertising and digital
-              marketing. From a single mug to a countrywide campaign, our
-              in-house presses handle it end to end.
+              We cover brand strategy, design, printing, advertising and
+              digital marketing. From a single mug to a countrywide campaign,
+              our in-house presses handle it end to end.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3.5">

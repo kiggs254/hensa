@@ -21,8 +21,8 @@ export default function ContactPage() {
             Let&apos;s talk <span className="text-green-deep">ink.</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-ink-soft">
-            Fastest reply is WhatsApp, but we&apos;re just as happy on the
-            phone, by email, or in person at the workshop.
+            The fastest reply is on WhatsApp, but we&apos;re just as happy to
+            talk by phone, by email or in person at the workshop.
           </p>
         </div>
       </section>
