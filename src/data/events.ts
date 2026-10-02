@@ -242,6 +242,34 @@ export const entertainment = {
   ] satisfies Act[],
 };
 
+/** Our own troupe: photos from Hensa's events, strongest first. */
+export const dancers = {
+  heading: "Our Dancers",
+  intro:
+    "Hensa's own dance troupe: Maasai, traditional and contemporary African dancers who have performed at corporate launches, store openings, school events and gala nights across Nairobi.",
+  photos: [
+    { src: "/events/dancers/dancer-01.jpg", width: 1242, height: 846, alt: "Hensa dancers performing on stage under warm stage lights, arms outstretched" },
+    { src: "/events/dancers/dancer-02.jpg", width: 1280, height: 960, alt: "Hensa's Maasai dance troupe lined up on a lawn in red shukas and beaded collars" },
+    { src: "/events/dancers/dancer-03.jpg", width: 1280, height: 960, alt: "Hensa dancers in matching costumes posing in a pyramid at an outdoor event" },
+    { src: "/events/dancers/dancer-04.jpg", width: 960, height: 1280, alt: "Hensa dancers in feathered headdresses and grass skirts posing at a corporate event" },
+    { src: "/events/dancers/dancer-05.jpg", width: 867, height: 1154, alt: "A Hensa dancer mid-performance on stage under green stage lights" },
+    { src: "/events/dancers/dancer-06.jpg", width: 535, height: 800, alt: "A Hensa dancer in a traditional skirt performing in front of a sunset stage backdrop" },
+    { src: "/events/dancers/dancer-07.jpg", width: 1242, height: 869, alt: "Hensa dancers performing a routine on a dimly lit stage" },
+    { src: "/events/dancers/dancer-08.jpg", width: 960, height: 1280, alt: "Two Hensa Maasai dancers in beaded collars and red shukas" },
+    { src: "/events/dancers/dancer-09.jpg", width: 1280, height: 1280, alt: "A Hensa dancer in a grass skirt kneeling on stage, arms raised" },
+    { src: "/events/dancers/dancer-10.jpg", width: 750, height: 934, alt: "A Hensa dancer's feathered headdress, in black and white" },
+    { src: "/events/dancers/dancer-11.jpg", width: 960, height: 1280, alt: "Hensa dancers posing around a yellow armchair at an event" },
+    { src: "/events/dancers/dancer-12.jpg", width: 960, height: 1280, alt: "Hensa dancers in feathered headdresses performing at an outdoor event" },
+    { src: "/events/dancers/dancer-13.jpg", width: 960, height: 1280, alt: "Three Hensa dancers in feathered headdresses mid-routine" },
+    { src: "/events/dancers/dancer-14.jpg", width: 720, height: 1280, alt: "Hensa dancers stacked in a human-pyramid pose on a garden path" },
+    { src: "/events/dancers/dancer-15.jpg", width: 960, height: 1280, alt: "Two Hensa Maasai dancers welcoming guests at a corporate stand" },
+    { src: "/events/dancers/dancer-16.jpg", width: 960, height: 1280, alt: "Hensa dancers performing at a store anniversary celebration" },
+    { src: "/events/dancers/dancer-17.jpg", width: 843, height: 1280, alt: "Two Hensa Maasai dancers in a shopping mall" },
+    { src: "/events/dancers/dancer-18.jpg", width: 720, height: 1280, alt: "Two Hensa dancers in grass skirts and beads at an outdoor event" },
+    { src: "/events/dancers/dancer-19.jpg", width: 960, height: 1280, alt: "Hensa dancers performing in front of an event banner" },
+  ] as { src: string; width: number; height: number; alt: string }[],
+};
+
 export const closing = {
   heading: ["Let's make your event ", "unforgettable"] as const,
   body: "Whether you want to celebrate Kenyan culture, create a polished corporate atmosphere or simply entertain your guests, we bring together the right performers, creative concepts and event experiences for your occasion.",

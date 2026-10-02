@@ -8,6 +8,7 @@ import {
   hero,
   branding,
   entertainment,
+  dancers,
   closing,
 } from "@/data/events";
 import { pickProducts } from "@/lib/catalog";
@@ -482,6 +483,55 @@ export default async function EventBrandingEntertainmentPage() {
                 </li>
               );
             })}
+          </ul>
+        </div>
+      </section>
+
+      {/* ============ OUR DANCERS ============ */}
+      <section id="dancers" className="relative scroll-mt-24 overflow-hidden bg-ink text-cream">
+        <Glow className="-right-40 -top-32 h-[30rem] w-[30rem] bg-orange/15" />
+        <div className="relative mx-auto max-w-7xl border-t border-cream/10 px-4 py-16 sm:px-6 lg:py-24">
+          <Reveal>
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <div>
+                <p className="spec flex items-center gap-3 text-orange">
+                  <span className="h-px w-8 bg-orange/50" />
+                  Meet the troupe
+                </p>
+                <h2 className="font-display mt-2 text-3xl font-extrabold tracking-tight sm:text-5xl">
+                  {dancers.heading}
+                </h2>
+                <p className="mt-4 max-w-2xl text-lg leading-relaxed text-cream/70">{dancers.intro}</p>
+              </div>
+              <EnquireButton
+                payload={{ service: "Hensa dancers (live entertainment)" }}
+                ariaLabel="Book our dancers on WhatsApp"
+                className="flex w-fit items-center gap-2 rounded-full bg-orange-deep px-5 py-2.5 font-display text-sm font-bold text-white transition-colors hover:bg-cream hover:text-ink"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                Book our dancers
+              </EnquireButton>
+            </div>
+          </Reveal>
+
+          {/* masonry: photos keep their own shape, portrait and landscape mixed */}
+          <ul className="mt-10 columns-2 gap-3 sm:gap-4 lg:columns-3 [&>li]:mb-3 sm:[&>li]:mb-4">
+            {dancers.photos.map((photo, i) => (
+              <li key={photo.src} className="break-inside-avoid">
+                <Reveal delay={(i % 3) * 70}>
+                  <figure className="group overflow-hidden rounded-2xl border border-cream/10 bg-cream/[0.03]">
+                    <Image
+                      src={photo.src}
+                      alt={photo.alt}
+                      width={photo.width}
+                      height={photo.height}
+                      sizes="(max-width: 1024px) 50vw, 33vw"
+                      className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.03]"
+                    />
+                  </figure>
+                </Reveal>
+              </li>
+            ))}
           </ul>
         </div>
       </section>

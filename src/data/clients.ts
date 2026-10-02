@@ -9,7 +9,9 @@ export const clientLogos: string[] = [
   "/clients/client-08.jpg",
   "/clients/client-09.jpg",
   "/clients/client-10.jpg",
-  "/clients/client-11.jpg",
+  "/clients/client-11.jpg", // Lalashe
+  "/clients/client-50.png", // Samaka Mara Safari
+  "/clients/client-51.png", // Akilanga DMC
   "/clients/client-12.jpg",
   "/clients/client-13.jpg",
   "/clients/client-14.jpg",
