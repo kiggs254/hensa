@@ -33,6 +33,7 @@ function Avatar({ t, dark = false }: { t: Testimonial; dark?: boolean }) {
 }
 
 export default function Testimonials() {
+  if (testimonials.length === 0) return null;
   const featured = testimonials.find((t) => t.featured) ?? testimonials[0];
   const rest = testimonials.filter((t) => t !== featured).slice(0, 4);
 
