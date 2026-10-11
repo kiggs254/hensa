@@ -119,7 +119,15 @@ export default async function ProductPage({
             {product.name}
           </h1>
           <div className="regline my-6 h-px" />
-          <p className="leading-relaxed text-ink-soft">{product.description}</p>
+          {product.descriptionHtml ? (
+            <div
+              className="space-y-3 leading-relaxed text-ink-soft [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-ink [&_h4]:font-bold [&_h4]:text-ink [&_li]:pl-1 [&_ol]:list-decimal [&_ol]:space-y-1 [&_ol]:pl-5 [&_strong]:font-semibold [&_strong]:text-ink [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_ul]:marker:text-orange"
+              // sanitised in lib/richText.ts: allowlisted tags only, no attributes
+              dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
+            />
+          ) : (
+            <p className="leading-relaxed text-ink-soft">{product.description}</p>
+          )}
 
           {product.tags.length > 0 && (
             <div className="mt-6 flex flex-wrap gap-2">

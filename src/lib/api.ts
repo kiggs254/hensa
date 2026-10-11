@@ -7,6 +7,7 @@
  * Product/Category shapes the components already use.
  */
 import type { Product } from "@/lib/catalog";
+import { looksLikeHtml, sanitizeRichText, toPlainText } from "@/lib/richText";
 
 // Set BACKEND_ORIGIN explicitly on every deployment: an instance's API host
 // moves (Hensa's went from api-ca1f6.e-biz.co.ke to api.hensa.co.ke), and a
@@ -139,7 +140,10 @@ function mapProduct(
     price,
     priceMax: null,
     onSale,
-    description: decodeEntities(p.description || p.short_description || ""),
+    // Plain text everywhere (cards, search, meta, JSON-LD); the formatted
+    // version only when the admin wrote HTML, for the product page.
+    description: toPlainText(p.description || p.short_description || ""),
+    ...(looksLikeHtml(p.description || "") ? { descriptionHtml: sanitizeRichText(p.description!) } : {}),
     categories: [...slugs],
     tags: (p.tags ?? [])
       .map((t) => decodeEntities(typeof t === "string" ? t : t.name))

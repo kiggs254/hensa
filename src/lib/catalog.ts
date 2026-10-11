@@ -25,7 +25,10 @@ export interface Product {
   price: number;
   priceMax: number | null;
   onSale: boolean;
+  /** Plain text (HTML stripped) — safe for cards, search, meta tags. */
   description: string;
+  /** Sanitised formatting (p/ul/li/strong…) when the admin wrote HTML. */
+  descriptionHtml?: string;
   categories: string[];
   tags: string[];
   image: string;
