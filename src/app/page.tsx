@@ -11,6 +11,7 @@ import ProductCard from "@/components/ProductCard";
 import Reveal from "@/components/Reveal";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 import Testimonials from "@/components/Testimonials";
+import VideoTestimonials from "@/components/VideoTestimonials";
 import CampaignSlider from "@/components/CampaignSlider";
 import CategoryStrip from "@/components/CategoryStrip";
 import {
@@ -70,17 +71,6 @@ export default async function Home() {
     products.find((p) => p.slug === slug)?.localImage ?? fallback;
 
   const slides: HeroSlide[] = [
-    {
-      kicker: "Customer Service Week · 5–9 October",
-      title: ["Thank you for your ", "trust", " & partnership."],
-      copy: "This Customer Service Week we're celebrating the clients who keep our presses running. Your success inspires our commitment. If you're thanking your own customers or team this week, we can print that too.",
-      cta: { label: "Browse appreciation gifts", href: "/catalog/corporate-gifts" },
-      image: {
-        src: "/promos/customer-service-week.jpg",
-        alt: "Hensa Solutions staff at a client event, thanking clients for Customer Service Week",
-      },
-      theme: "green",
-    },
     {
       kicker: "Campaign season · every party",
       title: ["Your party's ", "colours", ", printed."],
@@ -530,6 +520,9 @@ export default async function Home() {
 
       {/* ============ TESTIMONIALS ============ */}
       <Testimonials />
+
+      {/* ============ VIDEO TESTIMONIALS ============ */}
+      <VideoTestimonials />
 
       {/* ============ OUR CLIENTS ============ */}
       <section className="overflow-hidden border-y border-ink/10 bg-white py-16">

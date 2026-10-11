@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
     // Query strings (?category=, ?q=) are forwarded automatically.
     return [
       { source: "/shop", destination: "/catalog", permanent: true },
+      // "Notebooks & Diaries" was split into Notebooks + Diaries (2026-10-11).
+      {
+        source: "/catalog/corporate-stationery-notebooks-diaries",
+        destination: "/catalog/corporate-stationery-notebooks",
+        permanent: true,
+      },
       // One canonical host: the bare domain sends visitors (and link
       // equity) to www, whatever the proxy in front does.
       {
