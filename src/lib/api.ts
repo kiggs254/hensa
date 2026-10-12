@@ -70,6 +70,9 @@ export interface ApiCategoryNode {
   parent_id: number | null;
   image?: string | null;
   description?: string | null;
+  seo_title?: string | null;
+  seo_description?: string | null;
+  updatedAt?: string | null;
   children?: ApiCategoryNode[];
 }
 
@@ -84,7 +87,11 @@ interface ApiProduct {
   category?: { id: number; name: string; slug: string } | null;
   categories?: Array<{ slug: string }> | null;
   tags?: Array<{ name: string } | string> | null;
-  images?: Array<{ url: string }> | null;
+  images?: Array<{ url: string; alt?: string | null; order?: number | null }> | null;
+  sku?: string | null;
+  seo_title?: string | null;
+  seo_description?: string | null;
+  updatedAt?: string | null;
 }
 
 /** Category tree + a descendant→root lookup so a product in a subcategory still
@@ -101,6 +108,8 @@ export async function categoryIndex(): Promise<{
   const walk = (node: ApiCategoryNode, root: string) => {
     node.name = decodeEntities(node.name);
     node.description = decodeEntities(node.description);
+    node.seo_title = decodeEntities(node.seo_title);
+    node.seo_description = decodeEntities(node.seo_description);
     bySlug.set(node.slug, node);
     childToRoot.set(node.slug, root);
     for (const c of node.children ?? []) walk(c, root);
@@ -150,6 +159,14 @@ function mapProduct(
       .filter(Boolean),
     image: img,
     localImage: img,
+    images: [...(p.images ?? [])]
+      .filter((i) => i?.url)
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+      .map((i) => ({ url: i.url, alt: (decodeEntities(i.alt) || "").replace(/\s+—\s+image \d+ of \d+$/i, "") })),
+    sku: p.sku || undefined,
+    seoTitle: decodeEntities(p.seo_title) || undefined,
+    seoDescription: decodeEntities(p.seo_description) || undefined,
+    updatedAt: p.updatedAt || undefined,
     categoryName: rootSlug ? bySlug.get(rootSlug)?.name : undefined,
     categorySlug: rootSlug || undefined,
   };

@@ -11,6 +11,7 @@ import {
   apiGetSocialLinks,
   categoryIndex,
 } from "@/lib/api";
+import { looksLikeHtml, sanitizeRichText, toPlainText } from "@/lib/richText";
 
 export type { SocialLink } from "@/lib/api";
 
@@ -33,6 +34,13 @@ export interface Product {
   tags: string[];
   image: string;
   localImage: string;
+  /** Every photo, in admin order (alt from the admin, auto-suffix stripped). */
+  images: { url: string; alt: string }[];
+  sku?: string;
+  /** Admin SEO fields (Product → SEO); fall back to name/description when empty. */
+  seoTitle?: string;
+  seoDescription?: string;
+  updatedAt?: string;
   /** Top-level category label/slug, resolved from the product's (sub)category. */
   categoryName?: string;
   categorySlug?: string;
@@ -62,6 +70,10 @@ export interface CatalogNode {
   slug: string;
   name: string;
   blurb: string;
+  /** Admin category description (HTML allowed), sanitised for the page intro. */
+  descriptionHtml?: string;
+  seoTitle?: string;
+  seoDescription?: string;
   image: string;
   isSub: boolean;
   parent?: { slug: string; name: string };
@@ -98,14 +110,14 @@ export async function getCategories(): Promise<Category[]> {
           name: c.name,
           image: c.image || "",
           count: counts.get(c.slug) ?? 0,
-          description: c.description || "",
+          description: c.description ? toPlainText(c.description) : "",
         }))
         .filter((c) => c.count > 0)
         .sort((a, b) => a.name.localeCompare(b.name));
       return {
         slug: r.slug,
         name: r.name,
-        blurb: meta?.blurb ?? r.description ?? "",
+        blurb: meta?.blurb ?? (r.description ? toPlainText(r.description) : ""),
         image: r.image || meta?.image || "",
         count: counts.get(r.slug) ?? 0,
         children,
@@ -123,26 +135,37 @@ export async function categoryBySlug(slug: string): Promise<Category | undefined
 /** Resolve any catalogue slug (top-level category OR subcategory) to a node
  *  with a blurb + parent, for the /catalog/[category] page + its metadata. */
 export async function getCatalogNode(slug: string): Promise<CatalogNode | undefined> {
-  const cats = await getCategories();
+  const [cats, { bySlug }] = await Promise.all([getCategories(), categoryIndex()]);
+  const raw = bySlug.get(slug);
+  const rich = (fallbackBlurb: string) => {
+    const desc = raw?.description || "";
+    return {
+      // plain one-liner (meta fallback, cards) and the full admin intro (page)
+      blurb: desc ? toPlainText(desc) : fallbackBlurb,
+      ...(desc ? { descriptionHtml: looksLikeHtml(desc) ? sanitizeRichText(desc) : `<p>${escapeHtml(desc)}</p>` } : {}),
+      seoTitle: raw?.seo_title || undefined,
+      seoDescription: raw?.seo_description || undefined,
+    };
+  };
   for (const c of cats) {
     if (c.slug === slug)
-      return { slug: c.slug, name: c.name, blurb: c.blurb, image: c.image, isSub: false };
+      return { slug: c.slug, name: c.name, image: c.image, isSub: false, ...rich(c.blurb) };
     for (const s of c.children ?? []) {
       if (s.slug === slug)
         return {
           slug: s.slug,
           name: s.name,
-          blurb:
-            s.description ||
-            `${s.name}, part of our ${c.name.toLowerCase()} range, branded to order.`,
           image: s.image,
           isSub: true,
           parent: { slug: c.slug, name: c.name },
+          ...rich(`${s.name}, part of our ${c.name.toLowerCase()} range, branded to order.`),
         };
     }
   }
   return undefined;
 }
+
+const escapeHtml = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 /** Every browseable catalogue slug (top-level + subcategories) for static params. */
 export async function getAllCategorySlugs(): Promise<string[]> {

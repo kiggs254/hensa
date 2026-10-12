@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import {
   getProducts,
   getProductBySlug,
@@ -13,6 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbNode } from "@/lib/structured-data";
 import ProductEnquiry from "@/components/ProductEnquiry";
 import ProductCard from "@/components/ProductCard";
+import ProductGallery from "@/components/ProductGallery";
 
 export const revalidate = 300;
 export const dynamicParams = true;
@@ -29,15 +29,32 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = await getProductBySlug(slug);
   if (!product) return {};
+  const description = metaDescription(product);
+  const images = product.images.length ? product.images : [{ url: product.localImage, alt: product.name }];
   return {
-    title: product.name,
-    description: `${product.description} Enquire on WhatsApp for a quote. Countrywide delivery across Kenya.`,
+    // Admin SEO title already ends in "| Hensa"; otherwise the layout template adds the brand.
+    title: product.seoTitle ? { absolute: product.seoTitle } : product.name,
+    description,
     alternates: { canonical: `/product/${product.slug}` },
     openGraph: {
-      title: product.name,
-      images: [{ url: product.localImage }],
+      type: "website",
+      title: product.seoTitle || product.name,
+      description,
+      url: `/product/${product.slug}`,
+      images: images.slice(0, 4).map((i) => ({ url: i.url, alt: i.alt || product.name })),
     },
+    twitter: { card: "summary_large_image", title: product.seoTitle || product.name, description, images: [images[0].url] },
   };
+}
+
+/** ≤160 chars: the admin SEO description, else the product text + a short CTA. */
+function metaDescription(p: { seoDescription?: string; description: string; name: string }): string {
+  if (p.seoDescription) return p.seoDescription;
+  const cta = " Get a quote on WhatsApp.";
+  const base = p.description || `${p.name}, branded with your logo by Hensa Solutions, Nairobi.`;
+  if (base.length + cta.length <= 160) return base + cta;
+  const cut = base.slice(0, 157);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,.;:]$/, "") + "…";
 }
 
 export default async function ProductPage({
@@ -52,12 +69,17 @@ export default async function ProductPage({
   const cat = await categoryBySlug(product.categorySlug || product.categories[0]);
   const related = await getRelatedProducts(product);
 
+  const abs = (u: string) => (/^https?:\/\//.test(u) ? u : `${site.url}${u}`);
+  const photos = product.images.length ? product.images : [{ url: product.localImage, alt: product.name }];
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `${site.url}/product/${product.slug}#product`,
     name: product.name,
-    image: `${site.url}${product.localImage}`,
+    url: `${site.url}/product/${product.slug}`,
+    image: photos.map((i) => abs(i.url)),
     description: product.description,
+    ...(product.sku ? { sku: product.sku } : {}),
     category: cat?.name,
     brand: { "@type": "Brand", name: site.name },
     manufacturer: { "@id": `${site.url}/#organization` },
@@ -94,24 +116,8 @@ export default async function ProductPage({
       </nav>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-2">
-        {/* image */}
-        <div className="cropmarks relative border border-ink/10 bg-white p-3">
-          <div className="relative aspect-square overflow-hidden">
-            <Image
-              src={product.localImage}
-              alt={product.name}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-              priority
-            />
-          </div>
-          {cat && (
-            <span className="spec absolute left-6 top-6 bg-ink/85 px-2.5 py-1.5 text-cream backdrop-blur">
-              {cat.name}
-            </span>
-          )}
-        </div>
+        {/* photos */}
+        <ProductGallery images={photos} name={product.name} badge={cat?.name} />
 
         {/* info */}
         <div>

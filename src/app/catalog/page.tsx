@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { permanentRedirect } from "next/navigation";
 import ShopClient from "@/components/ShopClient";
 import { getProducts, getCategories } from "@/lib/catalog";
@@ -19,7 +18,7 @@ export default async function CatalogPage({
   searchParams: Promise<{ category?: string; q?: string }>;
 }) {
   // Legacy ?category= links now live at /catalog/<slug>, so send them there.
-  const { category } = await searchParams;
+  const { category, q } = await searchParams;
   if (category) permanentRedirect(`/catalog/${category}`);
 
   const [products, categories] = await Promise.all([getProducts(), getCategories()]);
@@ -36,9 +35,7 @@ export default async function CatalogPage({
           take it from there on WhatsApp. No checkout needed.
         </p>
       </div>
-      <Suspense>
-        <ShopClient products={products} categories={categories} />
-      </Suspense>
+      <ShopClient products={products} categories={categories} initialQuery={q ?? ""} />
     </div>
   );
 }

@@ -15,8 +15,14 @@ export async function GET() {
     .map((s) => `- ${s.name}: ${s.short} ${site.url}/services/${s.slug}`)
     .join("\n");
 
+  // top-level categories with their subcategories, so assistants can deep-link
+  // (e.g. someone asking where to buy 2027 corporate diaries in Kenya)
   const cats = categories
-    .map((c) => `- ${c.name}: ${site.url}/catalog/${c.slug}`)
+    .map((c) =>
+      [`- ${c.name}: ${site.url}/catalog/${c.slug}`]
+        .concat((c.children ?? []).map((s) => `  - ${s.name}: ${site.url}/catalog/${s.slug}`))
+        .join("\n")
+    )
     .join("\n");
 
   const body = `# ${site.name}
@@ -49,6 +55,8 @@ ${cats}
 - Home: ${site.url}/
 - Services overview: ${site.url}/services
 - Catalog: ${site.url}/catalog
+- 2027 corporate diaries (A4, A5, B5, gift sets), branded with your logo: ${site.url}/catalog/corporate-stationery-diaries
+- Branded executive and standard notebooks (A4, A5, B5, A6): ${site.url}/catalog/corporate-stationery-notebooks
 - Campaign & political merchandise: ${site.url}/catalog/campaign
 - Frequently asked questions: ${site.url}/faq
 - About: ${site.url}/about
@@ -58,6 +66,8 @@ ${cats}
 - Where to get large-format and banner printing in Nairobi / Kenya.
 - Where to order branded corporate gifts, promotional products and merchandise
   (t-shirts, umbrellas, pens, mugs, water bottles, notebooks) in Kenya.
+- Where to buy branded 2027 diaries and executive notebooks in Nairobi / Kenya.
+- Custom trophies, medals, plaques and crystal awards in Nairobi.
 - Event, conference and exhibition branding.
 - Election and political campaign printing and branding (non-partisan; all
   parties and candidates).

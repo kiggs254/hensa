@@ -72,6 +72,18 @@ export default async function Home() {
 
   const slides: HeroSlide[] = [
     {
+      kicker: "New season · 2027 diaries",
+      title: ["Branded ", "2027 diaries", " & notebooks."],
+      copy: "A4, A5 and B5 corporate diaries and executive notebooks in dozens of styles and colours, embossed or engraved with your logo and delivered across Kenya.",
+      cta: { label: "Browse 2027 diaries", href: "/catalog/corporate-stationery-diaries" },
+      image: {
+        src: img("a5-diary-2027-001", "/categories/corporate-stationery.jpg"),
+        alt: "A5 2027 corporate diaries in red, maroon, grey, blue, green and orange, branded by Hensa",
+      },
+      sticker: { big: "2027", small: "new diary range" },
+      theme: "orange",
+    },
+    {
       kicker: "Campaign season · every party",
       title: ["Your party's ", "colours", ", printed."],
       copy: "Election-ready merchandise for every candidate: t-shirts, caps, lessos, banners, reflectors and full regalia, branded in your colours and delivered to every county.",

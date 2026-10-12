@@ -7,6 +7,9 @@ export const site = {
   /** the canonical one-sentence positioning used across metadata + structured data */
   seoDescription:
     "Hensa Solutions is a Nairobi-based printing and branding company. We supply large-format printing, corporate gifts, branded merchandise, event branding and promotional products to organisations across Kenya, East Africa and worldwide.",
+  /** ≤160 chars for <meta name="description"> (seoDescription is longer, for schema/llms). */
+  metaDescription:
+    "Nairobi printing and branding company: 2027 diaries, notebooks, corporate gifts, banners, apparel and trophies branded with your logo. Quote on WhatsApp.",
   url: "https://www.hensa.co.ke",
   phone: "+254 721 597714",
   phoneHref: "tel:+254721597714",

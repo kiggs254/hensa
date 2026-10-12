@@ -10,7 +10,7 @@ const ORG_ID = `${site.url}/#organization`;
 const WEBSITE_ID = `${site.url}/#website`;
 const BUSINESS_ID = `${site.url}/#localbusiness`;
 
-export function organizationNode() {
+export function organizationNode(sameAs: string[] = []) {
   return {
     "@type": ["Organization", "LocalBusiness"],
     "@id": ORG_ID,
@@ -63,7 +63,8 @@ export function organizationNode() {
       "Screen printing",
       "Embroidery",
     ],
-    ...(site.social.length ? { sameAs: site.social } : {}),
+    // admin-configured social profiles (Settings) → entity links for Google
+    ...([...site.social, ...sameAs].length ? { sameAs: [...new Set([...site.social, ...sameAs])] } : {}),
   };
 }
 
@@ -88,10 +89,10 @@ export function websiteNode() {
 }
 
 /** Site-wide graph injected once in the root layout. */
-export function siteGraph() {
+export function siteGraph(sameAs: string[] = []) {
   return {
     "@context": "https://schema.org",
-    "@graph": [organizationNode(), websiteNode()],
+    "@graph": [organizationNode(sameAs), websiteNode()],
   };
 }
 

@@ -1,14 +1,16 @@
 "use client";
 
 import { useMemo, useState, useEffect, useRef } from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Link, { useLinkStatus } from "next/link";
 import Image from "next/image";
 import { type Product, type Category, type SubCategory } from "@/lib/catalog";
 import ProductCard from "@/components/ProductCard";
 import CategoryStrip from "@/components/CategoryStrip";
 
-const PAGE_SIZE = 24;
+// Large enough that a whole subcategory (diaries, notebooks…) ships in the
+// server HTML with real links; "Load more" only kicks in for big lists.
+const PAGE_SIZE = 60;
 
 type Sort = "featured" | "name";
 
@@ -106,18 +108,27 @@ export default function ShopClient({
   products,
   categories,
   initialCategory = "",
+  initialQuery = "",
 }: {
   products: Product[];
   categories: Category[];
   initialCategory?: string;
+  /** ?q= from the server when the page reads it (/catalog); see below. */
+  initialQuery?: string;
 }) {
-  const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
 
   // The active category comes from the route (/catalog/<slug>), not a query param.
   const activeCategory = initialCategory;
-  const query = searchParams.get("q") ?? "";
+  // Deliberately NOT useSearchParams(): on the statically cached category pages
+  // it makes Next bail out of server rendering, so the HTML (what Google reads)
+  // had no product grid at all. The query is read once on the client instead.
+  const [query, setQuery] = useState(initialQuery);
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("q") ?? "";
+    setQuery(q); // eslint-disable-line react-hooks/set-state-in-effect -- sync from URL after hydration
+  }, [pathname]);
   const [sort, setSort] = useState<Sort>("featured");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const stripRef = useRef<HTMLDivElement>(null);
@@ -274,7 +285,10 @@ export default function ShopClient({
         <div>
           {query.trim() && (
             <button
-              onClick={() => router.replace(pathname, { scroll: false })}
+              onClick={() => {
+                setQuery("");
+                router.replace(pathname, { scroll: false });
+              }}
               className="group flex items-center gap-2 rounded-full border border-orange bg-orange/10 px-4 py-2 text-sm font-semibold text-orange transition-colors hover:bg-orange hover:text-white"
             >
               Searching: &ldquo;{query.trim()}&rdquo;
@@ -308,9 +322,10 @@ export default function ShopClient({
         </div>
       ) : (
         <>
+          <h2 className="sr-only">Products</h2>
           <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
-            {filtered.slice(0, visible).map((p) => (
-              <ProductCard key={p.id} product={p} />
+            {filtered.slice(0, visible).map((p, i) => (
+              <ProductCard key={p.id} product={p} priority={i < 4} />
             ))}
           </div>
           {visible < filtered.length && (

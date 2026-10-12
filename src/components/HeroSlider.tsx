@@ -193,6 +193,8 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                         alt={s.image.alt}
                         width={600}
                         height={600}
+                        // rendered 240–320px wide: don't ship a 1200px file to phones
+                        sizes="(max-width: 640px) 240px, (max-width: 1024px) 288px, 320px"
                         priority={i === 0}
                         className="aspect-square w-full object-cover"
                       />

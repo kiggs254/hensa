@@ -32,11 +32,16 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Printing, Branding & Promotional Products in Nairobi, Kenya`,
+    // ≤60 chars so Google shows it whole
+    default: `Printing & Branding Company in Nairobi | ${site.name}`,
     template: `%s | ${site.name}`,
   },
-  description: site.seoDescription,
+  description: site.metaDescription,
   keywords: [
+    "2027 diaries Kenya",
+    "corporate diaries Nairobi",
+    "branded notebooks Kenya",
+    "executive notebooks Nairobi",
     "printing company Nairobi",
     "large format printing Kenya",
     "banner printing Kenya",
@@ -54,8 +59,8 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     siteName: site.name,
-    title: `${site.name} | Printing, Branding & Promotional Products in Nairobi`,
-    description: site.seoDescription,
+    title: `${site.name} | Printing, Branding & Corporate Gifts in Nairobi`,
+    description: site.metaDescription,
     url: site.url,
     locale: "en_KE",
     type: "website",
@@ -63,7 +68,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${site.name} | Printing & Branding in Nairobi, Kenya`,
-    description: site.seoDescription,
+    description: site.metaDescription,
   },
 };
 
@@ -81,7 +86,7 @@ export default async function RootLayout({
       <body
         className={`${bricolage.variable} ${hanken.variable} ${plexMono.variable} min-h-full flex flex-col antialiased`}
       >
-        <JsonLd data={siteGraph()} />
+        <JsonLd data={siteGraph(socials.filter((x) => x.platform !== "whatsapp").map((x) => x.url))} />
         <EnquiryProvider>
           <Header categories={categories} />
           <main className="flex-1">{children}</main>

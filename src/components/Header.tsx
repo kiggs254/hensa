@@ -18,6 +18,8 @@ import {
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/catalog", label: "Catalog", mega: true },
+  // seasonal: the most-searched range Oct–Jan; a sitewide link helps it rank
+  { href: "/catalog/corporate-stationery-diaries", label: "2027 Diaries" },
   { href: "/services", label: "Our Services" },
   { href: "/faq", label: "FAQ" },
   { href: "/about", label: "About Hensa" },

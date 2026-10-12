@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 import EnquireButton from "@/components/EnquireButton";
 import { WhatsAppIcon, ArrowIcon } from "@/components/icons";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product, priority = false }: { product: Product; priority?: boolean }) {
   // the specific tag ("Notebooks", "Pop Up Banner") is more useful than the
   // broad category, falling back to the product's top-level category name
   const subtitle = product.tags[0] ?? product.categoryName;
@@ -18,8 +18,9 @@ export default function ProductCard({ product }: { product: Product }) {
         <span className="relative block aspect-square overflow-hidden rounded-xl bg-white">
           <Image
             src={product.localImage}
-            alt={product.name}
+            alt={product.images[0]?.alt || product.name}
             fill
+            priority={priority}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
           />
