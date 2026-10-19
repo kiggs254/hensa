@@ -19,6 +19,11 @@ export const videoTestimonials: VideoTestimonial[] = [
     caption: "Clients on working with Hensa Solutions",
   },
   {
+    id: "BrM6TPwxEw4",
+    title: "Our partnership with JPIC Franciscans Africa",
+    caption: "Working together since 2014",
+  },
+  {
     id: "09_kGSyYzHM",
     title: "AIC Cure Children's Hospital of Kenya",
     caption: "Customer Service Week visit",

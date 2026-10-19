@@ -105,6 +105,22 @@ export default function VideoTestimonials() {
           </Reveal>
         </div>
 
+        {rest.length > 0 && (
+          <div className="mt-6 flex flex-wrap justify-center gap-5">
+            {rest.map((v, i) => (
+              <Reveal
+                key={v.id}
+                delay={(i % 3) * 90}
+                className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]"
+              >
+                <div className="relative aspect-video overflow-hidden rounded-2xl bg-ink-soft shadow-[0_20px_50px_rgba(0,0,0,0.4)] ring-1 ring-cream/10">
+                  <Player v={v} autoplay />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        )}
+
         {shorts.length > 0 && (
           <div className="mt-10 sm:mt-12">
             <p className="spec mb-4 text-center text-cream/60">Client visits</p>
@@ -120,17 +136,6 @@ export default function VideoTestimonials() {
           </div>
         )}
 
-        {rest.length > 0 && (
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {rest.map((v, i) => (
-              <Reveal key={v.id} delay={(i % 3) * 90}>
-                <div className="relative aspect-video overflow-hidden rounded-2xl bg-ink-soft ring-1 ring-cream/10">
-                  <Player v={v} autoplay />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   );

@@ -41,6 +41,9 @@ export interface Product {
   seoTitle?: string;
   seoDescription?: string;
   updatedAt?: string;
+  createdAt?: string;
+  /** The product's own (most specific) category slug. */
+  leafCategory?: string;
   /** Top-level category label/slug, resolved from the product's (sub)category. */
   categoryName?: string;
   categorySlug?: string;

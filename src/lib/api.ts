@@ -92,6 +92,7 @@ interface ApiProduct {
   seo_title?: string | null;
   seo_description?: string | null;
   updatedAt?: string | null;
+  createdAt?: string | null;
 }
 
 /** Category tree + a descendant→root lookup so a product in a subcategory still
@@ -167,6 +168,9 @@ function mapProduct(
     seoTitle: decodeEntities(p.seo_title) || undefined,
     seoDescription: decodeEntities(p.seo_description) || undefined,
     updatedAt: p.updatedAt || undefined,
+    createdAt: p.createdAt || undefined,
+    // most specific category (subcategory) — used to vary the homepage "latest" row
+    leafCategory: p.category?.slug || undefined,
     categoryName: rootSlug ? bySlug.get(rootSlug)?.name : undefined,
     categorySlug: rootSlug || undefined,
   };

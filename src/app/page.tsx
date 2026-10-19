@@ -23,16 +23,10 @@ import {
   GiftIcon,
 } from "@/components/icons";
 
-const FEATURED_SLUGS = [
-  "hoodies",
-  "executive-gift-sets-008",
-  "pop-up-banner",
-  "buckle-caps",
-  "executive-notebooks-005",
-  "thermal-mug",
-  "chef-jackets-and-beanies",
-  "double-wall-water-bottles",
-];
+/** Homepage "Latest products": newest first, at most this many per
+ *  subcategory so a big import of one range doesn't fill the whole row. */
+const LATEST_COUNT = 8;
+const LATEST_PER_CATEGORY = 2;
 
 const TRUST = [
   {
@@ -63,9 +57,21 @@ const TRUST = [
 
 export default async function Home() {
   const [categories, products] = await Promise.all([getCategories(), getProducts()]);
-  const featured = FEATURED_SLUGS.map((s) =>
-    products.find((p) => p.slug === s)
-  ).filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const featured = (() => {
+    const newest = [...products]
+      .filter((p) => p.createdAt && p.localImage)
+      .sort((a, b) => Date.parse(b.createdAt!) - Date.parse(a.createdAt!) || b.id - a.id);
+    const perCat = new Map<string, number>();
+    const out: typeof products = [];
+    for (const p of newest) {
+      const key = p.leafCategory || p.categorySlug || "other";
+      if ((perCat.get(key) ?? 0) >= LATEST_PER_CATEGORY) continue;
+      perCat.set(key, (perCat.get(key) ?? 0) + 1);
+      out.push(p);
+      if (out.length === LATEST_COUNT) break;
+    }
+    return out;
+  })();
 
   const img = (slug: string, fallback: string) =>
     products.find((p) => p.slug === slug)?.localImage ?? fallback;
@@ -459,9 +465,9 @@ export default async function Home() {
           <Reveal>
             <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
               <div>
-                <p className="spec text-green-deep">Fresh off the press</p>
+                <p className="spec text-green-deep">Just added</p>
                 <h2 className="font-display mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
-                  Popular picks
+                  Latest products
                 </h2>
               </div>
               <Link
