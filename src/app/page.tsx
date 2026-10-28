@@ -78,6 +78,18 @@ export default async function Home() {
 
   const slides: HeroSlide[] = [
     {
+      kicker: "Christmas · year-end corporate gifting",
+      title: ["Make your year-end gifting ", "memorable", "."],
+      copy: "Branded diaries, mugs, pens, hampers and executive gift sets for the clients, partners and team who made your year special.",
+      cta: { label: "Shop festive gifts", href: "/catalog/corporate-gifts" },
+      image: {
+        src: "/promos/christmas/year-end-gifting-poster.jpg",
+        alt: "Hensa year-end corporate gifting: branded hoodie, umbrella, diaries, bottles, awards and gift bags under Christmas lights",
+      },
+      video: { src: "/promos/christmas/year-end-gifting.mp4" },
+      theme: "christmas",
+    },
+    {
       kicker: "New season · 2027 diaries",
       title: ["Branded ", "2027 diaries", " & notebooks."],
       copy: "A4, A5 and B5 corporate diaries and executive notebooks in dozens of styles and colours, embossed or engraved with your logo and delivered across Kenya.",

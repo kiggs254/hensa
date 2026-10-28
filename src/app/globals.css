@@ -177,6 +177,22 @@ body {
   animation: hero-progress 6.5s linear both;
 }
 
+/* festive hero slide: twinkling fairy lights + slow snowfall */
+@keyframes bulb-twinkle {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px 2px currentColor; }
+  50% { opacity: 0.45; box-shadow: 0 0 2px 0 currentColor; }
+}
+.festive-bulb {
+  animation: bulb-twinkle 2.2s ease-in-out infinite;
+}
+@keyframes snow-fall {
+  from { transform: translate3d(0, -20px, 0); }
+  to { transform: translate3d(24px, 620px, 0); }
+}
+.festive-snow {
+  animation: snow-fall 11s linear infinite;
+}
+
 /* hide horizontal scrollbars on quick-nav strips */
 .scrollbar-hide {
   scrollbar-width: none;
@@ -224,6 +240,8 @@ body {
   .animate-float,
   .animate-wa-pulse,
   .animate-hero-progress,
+  .festive-bulb,
+  .festive-snow,
   .strip-in {
     animation: none;
   }

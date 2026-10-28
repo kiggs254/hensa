@@ -13,9 +13,11 @@ export interface HeroSlide {
   copy: string;
   cta: { label: string; href: string };
   image: { src: string; alt: string };
+  /** Optional looping clip shown instead of the image (portrait 4:5); `image` is its poster. */
+  video?: { src: string };
   /** Optional tag card pinned to the image's top-right corner. */
   sticker?: { big: string; small: string };
-  theme: "cream" | "green" | "dark" | "orange";
+  theme: "cream" | "green" | "dark" | "orange" | "christmas";
 }
 
 const THEMES = {
@@ -52,6 +54,17 @@ const THEMES = {
     cta: "bg-orange text-white hover:bg-cream hover:text-ink",
     frame: "border-cream/20",
   },
+  christmas: {
+    bg: "bg-[radial-gradient(120%_90%_at_70%_40%,#d33a1c_0%,#a8201a_55%,#7c1414_100%)]",
+    kicker: "text-[#ffd166]",
+    title: "text-cream",
+    accent: "text-[#ffd166]",
+    copy: "text-cream/85",
+    blob: "bg-cream/10",
+    halftone: "text-[#ffd166]/30",
+    cta: "bg-cream text-[#a8201a] hover:bg-[#ffd166] hover:text-ink",
+    frame: "border-cream",
+  },
   orange: {
     bg: "bg-[#fcece1]",
     kicker: "text-orange-deep",
@@ -66,6 +79,51 @@ const THEMES = {
 } as const;
 
 const INTERVAL = 6500;
+
+const dark = (t: HeroSlide["theme"]) => t === "dark" || t === "christmas";
+
+/** Fairy-light bulb colours strung across the top of a festive slide. */
+const BULBS = ["#ffd166", "#ef476f", "#06d6a0", "#4cc9f0", "#ff9f1c"];
+
+function FestiveDecor() {
+  return (
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+      {/* string lights */}
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none" className="absolute inset-x-0 top-0 h-10 w-full sm:h-12">
+        <path d="M0 8 Q 60 34 120 10 T 240 10 T 360 10 T 480 10 T 600 10 T 720 10 T 840 10 T 960 10 T 1080 10 T 1200 10" fill="none" stroke="#3b0d0a" strokeWidth="2" opacity="0.55" />
+      </svg>
+      <div className="absolute inset-x-0 top-0 flex justify-between px-[2%]">
+        {Array.from({ length: 20 }, (_, i) => (
+          <span
+            key={i}
+            className="festive-bulb mt-[14px] block h-3 w-2 rounded-b-full sm:mt-[18px] sm:h-3.5 sm:w-2.5"
+            style={{
+              background: BULBS[i % BULBS.length],
+              color: BULBS[i % BULBS.length],
+              animationDelay: `${(i * 0.37) % 2.2}s`,
+              transform: `translateY(${i % 2 ? 6 : 0}px)`,
+            }}
+          />
+        ))}
+      </div>
+      {/* snowfall */}
+      {Array.from({ length: 18 }, (_, i) => (
+        <span
+          key={i}
+          className="festive-snow absolute top-0 block rounded-full bg-white"
+          style={{
+            left: `${(i * 53) % 100}%`,
+            width: `${3 + (i % 3) * 2}px`,
+            height: `${3 + (i % 3) * 2}px`,
+            opacity: 0.35 + (i % 4) * 0.12,
+            animationDuration: `${9 + (i % 5) * 2}s`,
+            animationDelay: `${-(i * 1.3)}s`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
 export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
   const { openEnquiry } = useEnquiry();
@@ -118,6 +176,7 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                 on ? "z-10 opacity-100" : "pointer-events-none z-0 opacity-0"
               }`}
             >
+              {s.theme === "christmas" && <FestiveDecor />}
               <div className="grid min-h-[560px] sm:min-h-[520px] lg:min-h-[540px] lg:grid-cols-2 lg:items-center">
                 {/* ---- copy ---- */}
                 <div className="relative z-10 px-7 pb-2 pt-10 sm:px-10 lg:py-16 lg:pl-14 lg:pr-4">
@@ -155,7 +214,9 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                       onClick={() => openEnquiry()}
                       tabIndex={on ? 0 : -1}
                       className={`flex items-center gap-2 rounded-full px-6 py-3.5 font-display font-bold transition-all hover:-translate-y-0.5 hover:bg-wa hover:text-white ${
-                        s.theme === "dark"
+                        s.theme === "christmas"
+                          ? "bg-cream/15 text-cream ring-1 ring-cream/30"
+                          : dark(s.theme)
                           ? "bg-wa/20 text-wa"
                           : "bg-wa/15 text-green-deep"
                       }`}
@@ -165,7 +226,7 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                     </button>
                   </div>
                   <p
-                    className={`spec mt-8 hidden text-[10px] sm:block ${s.theme === "dark" ? "text-cream/50" : "text-ink-soft/80"} transition-all duration-700 delay-300 ${on ? "opacity-100" : "opacity-0"}`}
+                    className={`spec mt-8 hidden text-[10px] sm:block ${dark(s.theme) ? "text-cream/50" : "text-ink-soft/80"} transition-all duration-700 delay-300 ${on ? "opacity-100" : "opacity-0"}`}
                   >
                     M-Pesa accepted · Countrywide delivery · Bulk discounts
                   </p>
@@ -188,16 +249,20 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                       aria-hidden="true"
                       className={`block w-60 rotate-[-3deg] overflow-hidden rounded-3xl border-[6px] bg-white shadow-[0_30px_60px_rgba(28,26,22,0.28)] transition-transform duration-500 hover:rotate-0 sm:w-72 lg:w-80 ${t.frame}`}
                     >
-                      <Image
-                        src={s.image.src}
-                        alt={s.image.alt}
-                        width={600}
-                        height={600}
-                        // rendered 240–320px wide: don't ship a 1200px file to phones
-                        sizes="(max-width: 640px) 240px, (max-width: 1024px) 288px, 320px"
-                        priority={i === 0}
-                        className="aspect-square w-full object-cover"
-                      />
+                      {s.video ? (
+                        <HeroVideo src={s.video.src} poster={s.image.src} label={s.image.alt} playing={on} />
+                      ) : (
+                        <Image
+                          src={s.image.src}
+                          alt={s.image.alt}
+                          width={600}
+                          height={600}
+                          // rendered 240–320px wide: don't ship a 1200px file to phones
+                          sizes="(max-width: 640px) 240px, (max-width: 1024px) 288px, 320px"
+                          priority={i === 0}
+                          className="aspect-square w-full object-cover"
+                        />
+                      )}
                     </Link>
                     {/* price sticker */}
                     {s.sticker && (
@@ -213,7 +278,7 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                     {/* registration cross */}
                     <svg
                       viewBox="0 0 40 40"
-                      className={`absolute -bottom-8 -left-6 h-9 w-9 ${s.theme === "dark" ? "text-cream/30" : "text-ink/25"}`}
+                      className={`absolute -bottom-8 -left-6 h-9 w-9 ${dark(s.theme) ? "text-cream/30" : "text-ink/25"}`}
                       aria-hidden="true"
                     >
                       <circle cx="20" cy="20" r="12" fill="none" stroke="currentColor" strokeWidth="1.5" />
@@ -233,7 +298,7 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             aria-label="Previous slide"
             onClick={() => go(active - 1)}
             className={`flex h-11 w-11 items-center justify-center rounded-full border backdrop-blur transition-all hover:scale-105 ${
-              slides[active].theme === "dark"
+              dark(slides[active].theme)
                 ? "border-cream/25 bg-ink/40 text-cream hover:bg-cream hover:text-ink"
                 : "border-ink/15 bg-cream/70 text-ink hover:bg-ink hover:text-cream"
             }`}
@@ -245,7 +310,7 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
             aria-label="Next slide"
             onClick={() => go(active + 1)}
             className={`flex h-11 w-11 items-center justify-center rounded-full border backdrop-blur transition-all hover:scale-105 ${
-              slides[active].theme === "dark"
+              dark(slides[active].theme)
                 ? "border-cream/25 bg-ink/40 text-cream hover:bg-cream hover:text-ink"
                 : "border-ink/15 bg-cream/70 text-ink hover:bg-ink hover:text-cream"
             }`}
@@ -265,8 +330,8 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
               onClick={() => go(i)}
               className={`h-1.5 overflow-hidden rounded-full transition-all duration-300 ${
                 i === active
-                  ? "w-9 " + (slides[active].theme === "dark" ? "bg-cream/25" : "bg-ink/15")
-                  : "w-4 " + (slides[active].theme === "dark" ? "bg-cream/25 hover:bg-cream/40" : "bg-ink/15 hover:bg-ink/30")
+                  ? "w-9 " + (dark(slides[active].theme) ? "bg-cream/25" : "bg-ink/15")
+                  : "w-4 " + (dark(slides[active].theme) ? "bg-cream/25 hover:bg-cream/40" : "bg-ink/15 hover:bg-ink/30")
               }`}
             >
               {i === active && (
@@ -280,5 +345,30 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         </div>
       </div>
     </section>
+  );
+}
+
+/** Muted looping clip that only plays while its slide is showing (and never under reduced motion). */
+function HeroVideo({ src, poster, label, playing }: { src: string; poster: string; label: string; playing: boolean }) {
+  const ref = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const v = ref.current;
+    if (!v) return;
+    const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (playing && !still) v.play().catch(() => {});
+    else v.pause();
+  }, [playing]);
+  return (
+    <video
+      ref={ref}
+      src={src}
+      poster={poster}
+      aria-label={label}
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      className="aspect-[4/5] w-full object-cover"
+    />
   );
 }
